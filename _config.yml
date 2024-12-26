@@ -1,0 +1,98 @@
+# Site settings
+title: 暗影流金 博客
+SEOTitle: 暗影流金的博客
+header-img: img/home-bg.jpg
+email: ayljzj@gmail.com
+description: "这里是 @周杰 的个人博客，与你一起发现更大的世界"
+keyword: "个人网站, 互联网"
+#url: "https://huangxuan.me" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+#weibo_username: huxpro
+#zhihu_username: huxpro
+#github_username: huxpro
+#twitter_username: huxpro
+#facebook_username:  huxpro
+#linkedin_username:  firstname-lastname-idxxxx
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 15
+exclude:
+# 排除不需要的文件路径
+  [
+    "less",
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "README.zh.md",
+  ]
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+#插件用于分页功能，允许在博客中分页显示文章
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Disqus settings
+disqus_username: hux
+
+# Netease settings
+netease_comment: false
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
+
+# Sidebar settings
+sidebar: true # 是否启用侧边栏.
+sidebar-about-description: "热爱编程与技术探索"
+sidebar-avatar: /img/aylj_person/person_photo.jpg
+#sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` 和 `/about/`
+
+# Featured Tags
+featured-tags: false # 是否显示特色标签
+featured-condition-size: 1 # 只有当标签的文章数超过此条件值时，标签才会被标记为特色标签
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000" #设置浏览器标签页的主题颜色
+service-worker: true #是否启用服务工作者，用于支持渐进式 Web 应用功能
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+# Friends
+friends:
+  [
+    { title: "乱序（Midare）", href: "http://mida.re/" },
+  ]
