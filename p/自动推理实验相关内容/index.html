@@ -10,7 +10,7 @@
 <meta property='og:description' content=" “Work. ”\n前言 进行此项内容前，请确保已经完成环境的配置。\n相关网站：TPTP官网\n1、实验前准备 准备条件 拷贝好dist文件夹，确保内部具有正确的文件\nproblems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。\n在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：\ncse,eprover,tptp4X,以及相关jar包。\n若没有权限，使用如下命令对文件授予权限：chmod +x 文件名\n使用./eprover --verson或./vampire --verson查看对应软件的版本\n使用命令行版本测试时，将cse替换为自己导出的cse\n替换eprover的版本时，要将eprover和mcs_eprover.jar同时替换才正确。\n3.1以上的版本的Eprover会出现异常，则需要进行以下操作（重新打开一个终端，输入下述指令）：\n">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-06T16:18:32&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-06T18:26:01&#43;08:00'/>
 <meta name="twitter:title" content="自动推理（实验相关内容）">
 <meta name="twitter:description" content=" “Work. ”\n前言 进行此项内容前，请确保已经完成环境的配置。\n相关网站：TPTP官网\n1、实验前准备 准备条件 拷贝好dist文件夹，确保内部具有正确的文件\nproblems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。\n在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：\ncse,eprover,tptp4X,以及相关jar包。\n若没有权限，使用如下命令对文件授予权限：chmod +x 文件名\n使用./eprover --verson或./vampire --verson查看对应软件的版本\n使用命令行版本测试时，将cse替换为自己导出的cse\n替换eprover的版本时，要将eprover和mcs_eprover.jar同时替换才正确。\n3.1以上的版本的Eprover会出现异常，则需要进行以下操作（重新打开一个终端，输入下述指令）：\n">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -327,7 +327,7 @@
                
                 最后修改:
                 <time>
-                    2025-01-06 16:18
+                    2025-01-06 18:26
                 </time>
             </div>
     </footer>
@@ -482,7 +482,117 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="3融合系统e31以上版本卡住解决方法">3、融合系统E3.1以上版本卡住解决方法
-</h2><p>使用脚本</p>
+</h2><p>新建一个名为kill.sh的文件，其内代码编写如下：<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 获取脚本文件所在的路径
+</span></span><span class="line"><span class="cl">SCRIPT_DIR=$(dirname &#34;$(readlink -f &#34;$0&#34;)&#34;)
+</span></span><span class="line"><span class="cl"># 日志文件路径
+</span></span><span class="line"><span class="cl">LOG_FILE=&#34;$SCRIPT_DIR/kill-log.txt&#34;
+</span></span><span class="line"><span class="cl"># 检查并删除已存在的日志文件
+</span></span><span class="line"><span class="cl">if [ -f &#34;$LOG_FILE&#34; ]; then
+</span></span><span class="line"><span class="cl">    rm &#34;$LOG_FILE&#34;
+</span></span><span class="line"><span class="cl">fi
+</span></span><span class="line"><span class="cl"># 创建新的日志文件
+</span></span><span class="line"><span class="cl">touch &#34;$LOG_FILE&#34;
+</span></span><span class="line"><span class="cl"># 循环执行
+</span></span><span class="line"><span class="cl">echo &#34;实验进程守护中，请勿关闭此窗口&#34;
+</span></span><span class="line"><span class="cl">while true; do
+</span></span><span class="line"><span class="cl">    # 获取 proofStatistics.txt 的路径
+</span></span><span class="line"><span class="cl">    PROOF_FILE=&#34;$SCRIPT_DIR/proofStatistics.txt&#34;
+</span></span><span class="line"><span class="cl">    # 如果 PROOF_FILE 为空或文件不存在，直接跳到 sleep 420
+</span></span><span class="line"><span class="cl">    if [ -z &#34;$PROOF_FILE&#34; ] || [ ! -f &#34;$PROOF_FILE&#34; ]; then
+</span></span><span class="line"><span class="cl">        echo &#34;实验进程守护中，请勿关闭此窗口&#34;
+</span></span><span class="line"><span class="cl">        sleep 350
+</span></span><span class="line"><span class="cl">        continue
+</span></span><span class="line"><span class="cl">    fi
+</span></span><span class="line"><span class="cl">    # 获取 proofStatistics.txt 的修改时间（单位：秒）
+</span></span><span class="line"><span class="cl">    FILE_MOD_TIME=$(stat -c %Y &#34;$PROOF_FILE&#34;)
+</span></span><span class="line"><span class="cl">    # 获取当前系统时间（单位：秒）
+</span></span><span class="line"><span class="cl">    CURRENT_TIME=$(date +%s)
+</span></span><span class="line"><span class="cl">    # 计算时间差（单位：秒）
+</span></span><span class="line"><span class="cl">    TIME_DIFF=$((CURRENT_TIME - FILE_MOD_TIME))
+</span></span><span class="line"><span class="cl">    # 判断时间差是否超过 7 分钟 (420 秒)
+</span></span><span class="line"><span class="cl">    if [ &#34;$TIME_DIFF&#34; -le 420 ]; then
+</span></span><span class="line"><span class="cl">        # 如果时间差未超过 7 分钟，结束本轮循环
+</span></span><span class="line"><span class="cl">        echo &#34;实验进程守护中，请勿关闭此窗口&#34;
+</span></span><span class="line"><span class="cl">    else
+</span></span><span class="line"><span class="cl">        # 如果时间差超过 7 分钟，杀死所有名为 eprover 的进程
+</span></span><span class="line"><span class="cl">        PIDS=$(pgrep -f eprover)
+</span></span><span class="line"><span class="cl">        if [ -n &#34;$PIDS&#34; ]; then
+</span></span><span class="line"><span class="cl">            # 获取当前系统时间
+</span></span><span class="line"><span class="cl">            CURRENT_TIME_READABLE=$(date &#34;+%Y-%m-%d %H:%M:%S&#34;)
+</span></span><span class="line"><span class="cl">            # 记录杀死进程的 PID 并写入日志文件
+</span></span><span class="line"><span class="cl">            for PID in $PIDS; do
+</span></span><span class="line"><span class="cl">                echo &#34;$CURRENT_TIME_READABLE - 成功杀死进程, PID: $PID&#34; &gt;&gt; &#34;$LOG_FILE&#34;
+</span></span><span class="line"><span class="cl">            done
+</span></span><span class="line"><span class="cl">            # 杀死所有名为 eprover 的进程
+</span></span><span class="line"><span class="cl">            pkill -f eprover
+</span></span><span class="line"><span class="cl">	    echo &#34;成功杀死进程&#34;
+</span></span><span class="line"><span class="cl">        fi
+</span></span><span class="line"><span class="cl">    fi
+</span></span><span class="line"><span class="cl">    # 等待 7 分钟后再次循环
+</span></span><span class="line"><span class="cl">    sleep 420 # 420秒 == 7分钟
+</span></span><span class="line"><span class="cl">done
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><big>其原理如下：</big><br></p>
+<ul>
+<li>脚本检测dist路径下的proofStatistics.txt文件的修改时间，若超过7分钟，则杀死名为eprover的所有进程。</li>
+<li>若proofStatistics.txt文件的修改时间，未超过7分钟则等待7分钟后进入下一轮循环</li>
+<li>若未检测到proofStatistics.txt文件，则休眠7分钟。</li>
+</ul>
 
 </section>
 
@@ -500,7 +610,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 
 
         <span>
-            最后更新于 2025-01-06 16:18
+            最后更新于 2025-01-06 18:26
         </span>
     </section></footer>
 
@@ -598,7 +708,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
         
         
 
-        <p>发布了 10 篇文章 | 共 5943 字</p>
+        <p>发布了 10 篇文章 | 共 6582 字</p>
 
 
 
