@@ -340,6 +340,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;br&gt;
 &lt;big&gt;至此，全部完成&lt;/big&gt;&lt;br&gt;
+会在脚本所在目录下输出`wlan-connect.txt`的日志文件。&lt;br&gt;
 最后实现的效果如下图所示：&lt;br&gt;
 &lt;img src=&#34;./jxust-net-login.assets/final.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;</description>
         </item>

@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Mon, 06 Jan 2025 19:51:52 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 06 Jan 2025 19:53:51 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>markdown语法快速复制</title>
         <link>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</link>
         <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
@@ -341,6 +341,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;br&gt;
 &lt;big&gt;至此，全部完成&lt;/big&gt;&lt;br&gt;
+会在脚本所在目录下输出`wlan-connect.txt`的日志文件。&lt;br&gt;
 最后实现的效果如下图所示：&lt;br&gt;
 &lt;img src=&#34;./jxust-net-login.assets/final.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;</description>
         </item>
