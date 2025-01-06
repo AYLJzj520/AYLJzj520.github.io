@@ -2,17 +2,763 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on 暗影流金的博客</title>
-        <link>http://localhost:1313/post/</link>
+        <link>https://ayljzj520.github.io/post/</link>
         <description>Recent content in Posts on 暗影流金的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Fri, 27 Dec 2024 19:42:24 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 06 Jan 2025 04:23:05 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>markdown语法快速复制</title>
+        <link>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</link>
+        <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“Write！ ”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;br&gt;
+快速编辑！
+&lt;h2 id=&#34;1-markdown基础语法&#34;&gt;1. markdown基础语法
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;图片语法：&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;img src=&amp;#34;./aaaaaaaaa/aaaaa.png&amp;#34; width=&amp;#34;50%&amp;#34; align=&amp;#34;center&amp;#34; /&amp;gt;&amp;lt;br&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;文字加大，加颜色：&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;big&amp;gt;文字加大！！&amp;lt;/big&amp;gt;&amp;lt;br&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;font color=blue&amp;gt;文字加颜色！！&amp;lt;/font&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;big&amp;gt;&amp;lt;font color=blue&amp;gt;文字加大，加颜色！！！&amp;lt;/font&amp;gt;&amp;lt;/big&amp;gt;&amp;lt;br&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>江西理工大学校园网自动登录</title>
+        <link>https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
+        <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“NetWork”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;这篇文章针对本人的需求设计而来，也为了需要自动登录校园网的同学提供一个相关思路。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本文所处的地理位置为：江西理工大学三江校区（东区）&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;网络环境：电信网&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于电信网的原因，每登录24小时，网络就会自动断开，又要去浏览器页面重新登陆（对于一个把电脑扔在工作室的人来说，这是一件令人头疼的事）&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1原理&#34;&gt;1、原理
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;首先打开&lt;a class=&#34;link&#34; href=&#34;http://10.17.8.18/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;登录校园网&lt;/a&gt;的网页（前提是电脑已经连接了校园网JXUST-WLAN）&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;按下 F12 打开浏览器开发者工具（如果没反应那就 fn + F12）&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;输入账号密码，登录进入校园网&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;找到这一串请求url，就是通过这一串url就能够成功登录校园网，把这一串复制下来&lt;br&gt;
+&lt;img src=&#34;./auto-login-net-jxust.assets/login.png&#34; width=&#34;90%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;code&gt;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;amp;login_method=1&amp;amp;user_account=你的校园网账号%%40telecom&amp;amp;user_password=你的校园网密码。&lt;/code&gt;&lt;br&gt;
+其中，user_account就是学号；user_password就是密码；login_method是运营商信息。里面信息不需要全部保留也可以登录校园网，保留至user_password的结束位置也能登陆。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;在搜索栏直接粘贴上文所说的url点击回车，若出现下图的情况即联网成功。&lt;br&gt;
+&lt;img src=&#34;./auto-login-net-jxust.assets/login-success.png&#34; width=&#34;80%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;原理可行！&lt;/strong&gt;&lt;br&gt;
+那我只要每次开机后电脑能自动访问这条url那不就自动登录校园网了吗？&lt;br&gt;&lt;br&gt;
+&lt;big&gt;&lt;font color=blue&gt;直接进入实操！！！&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2实际操作&#34;&gt;2、实际操作
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在桌面新建一个txt文本文件，将文件后缀名修改为&lt;code&gt;.bat&lt;/code&gt;格式&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;右键选择编辑或用记事本打开，在里面粘贴如下代码：&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 设置控制台为 UTF-8 编码
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chcp 65001
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 启用延迟变量扩展
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;setlocal EnableDelayedExpansion
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 初始化计数器
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set /a counter=0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:loop
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 增加计数器
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set /a counter+=1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 输出当前是第几次判断
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;echo 当前为第 !counter! 次判断。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 检测是否有网络连接（超时 10 秒）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping -n 1 -w 10000 baidu.com &amp;gt;nul 2&amp;gt;&amp;amp;1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if errorlevel 1 (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    echo 无网络连接（ping超时10秒），尝试在浏览器中访问登录页面...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    :: 指定浏览器路径（假设使用 Chrome）打开指定网址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    start &amp;#34;&amp;#34; &amp;#34;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;amp;login_method=1&amp;amp;user_account=你的校园网账号%%40telecom&amp;amp;user_password=你的校园网密码&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    echo 登录页面已在浏览器中打开。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;) else (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    echo 网络连接正常，跳过登录操作...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 倒计时循环输出（每分钟输出一次）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;for /l %%i in (5,-1,1) do (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    set /a minutes=%%i
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    echo 倒计时（结束后会检测网络）：!minutes! 分
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    timeout /t 60 &amp;gt;nul
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 循环检测
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;goto loop
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;我对代码做一个简单的解释：（如果不想了解原理可以跳过该解释）&lt;br&gt;
+这段代码主要功能是持续监测网络连接状况，并在网络断开时自动通过浏览器打开校园网登录页面。&lt;br&gt;首先，代码设置控制台编码为 UTF-8(将运行在控制台下输出中文内容)，并启用延迟变量扩展以便在循环中动态使用变量。然后，它初始化一个计数器，用于记录执行循环的次数。&lt;br&gt;接下来，进入一个无限循环，程序每次都会通过 ping 命令检测是否ping通百度，如果检测到网络连接失败，则输出“无网络连接”并尝试在默认浏览器中访问指定的校园网登录请求。如果网络正常，程序则输出“网络连接正常”，跳过登录操作。&lt;br&gt;然后，为了避免频繁检测，代码会在每次检测后进入倒计时状态，每分钟输出倒计时信息，直到检测下次网络连接状态。整个过程会持续进行，直到手动终止脚本。&lt;br&gt;&lt;br&gt;
+注意：start &amp;quot;&amp;quot; &amp;ldquo;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;amp;login_method=1&amp;amp;user_account=你的校园网账号%%40telecom&amp;amp;user_password=你的校园网密码&amp;rdquo;&lt;br&gt;
+这段代码的url需要你自己通过上面的方法去获取。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=red&gt;接下来最重要的事一定要仔细看！&lt;/font&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=red&gt;接下来最重要的事一定要仔细看！&lt;/font&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=red&gt;接下来最重要的事一定要仔细看！&lt;/font&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=red&gt;重要的事说三遍！！！&lt;/font&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;请检查你自己所获取到的url，在&lt;code&gt;校园网账号&lt;/code&gt;后面应该会有&lt;code&gt;%40&lt;/code&gt;字符，由于复制进脚本后，由脚本通过start命令发起访问会将&lt;code&gt;%40&lt;/code&gt;识别为@，从而导致输进浏览器的url缺失这一关键信息&lt;br&gt;
+若不进行修改就会导致下图的访问结果。&lt;br&gt;
+&lt;img src=&#34;./auto-login-net-jxust.assets/login-fail.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;font color=red&gt;解决方法：&lt;/font&gt;在&lt;code&gt;%40&lt;/code&gt;这个字符前再加一个&lt;code&gt;%&lt;/code&gt;，这样就能确保url的正确读取并访问。&lt;br&gt;
+接下来运行这个.bat文件，就会自动向校园网登录端发送请求，然后登录你的校园网账号，并且每五分钟会ping一次百度的网站。&lt;br&gt;
+若ping不通，则会再次执行登录请求。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;在运行过程中请不要关闭此命令行窗口！！！&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3进阶操作&#34;&gt;3、进阶操作
+&lt;/h2&gt;&lt;p&gt;为了使开机能自动运行该脚本，需要将该脚本文件加入开机自启动。&lt;br&gt;
+按win+r打开运行窗口，输入下述指令进入到开机启动目录：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;shell:startup
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;将编写好的.bat脚本复制进去，即可做到开机自动运行。&lt;br&gt;
+&lt;img src=&#34;./auto-login-net-jxust.assets/start.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;补充&#34;&gt;补充
+&lt;/h2&gt;&lt;p&gt;有的时候电脑开机后没有自动连接到校园网，自然也无法完成登录请求。&lt;br&gt;
+由于只ping一个站点有时会造成误判，从而反复执行。所以增加一次操作，对baidu.com和qq.com均ping一次，&lt;br&gt;
+只有在两次都ping不通的情况下，才会去执行操作，使电脑先连接校园网再执行登录操作。&lt;br&gt;
+对代码循环执行时间调整为10分钟一次&lt;br&gt;
+本校的校园网名称为“JXUST-WLAN”，所以经过修改后的代码应该这么写：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 设置控制台为 UTF-8 编码
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chcp 65001
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 启用延迟变量扩展
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;setlocal EnableDelayedExpansion
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 设置无线网络名称（SSID）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set SSID=JXUST-WLAN
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:loop
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 增加计数器
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set /a counter+=1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 输出当前是第几次判断
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;echo 当前为第 !counter! 次判断。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 检测是否有网络连接（ping baidu.com 或 qq.com，超时 10 秒）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping -n 1 -w 10000 baidu.com &amp;gt;nul 2&amp;gt;&amp;amp;1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if errorlevel 1 (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    echo 百度 ping 超时，尝试 ping qq.com...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ping -n 1 -w 10000 qq.com &amp;gt;nul 2&amp;gt;&amp;amp;1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    if errorlevel 1 (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        echo 无网络连接（百度和qq.com都 ping 超时），尝试在浏览器中访问登录页面...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        :: 指定浏览器路径（假设使用 Chrome）打开指定网址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        start &amp;#34;&amp;#34; &amp;#34;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;amp;login_method=1&amp;amp;user_account=你的校园网账号%%40telecom&amp;amp;user_password=你的校园网密码&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        echo 登录页面已在浏览器中打开。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        :: 获取当前连接的 SSID
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        for /f &amp;#34;tokens=2 delims=:&amp;#34; %%i in (&amp;#39;netsh wlan show interfaces ^| findstr /i &amp;#34;SSID&amp;#34;&amp;#39;) do (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            set currentSSID=%%i
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            :: 去除前后空格
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            set currentSSID=!currentSSID: =!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        )
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        :: 判断是否已经连接到指定的 WLAN 网络
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        if /i &amp;#34;%currentSSID%&amp;#34;==&amp;#34;%SSID%&amp;#34; (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            echo 已经连接到网络 %SSID%，跳过连接操作。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ) else (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            echo 未连接到指定网络 %SSID%，尝试连接...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            :: 执行连接操作
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            netsh wlan connect name=%SSID%
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            :: 等待一段时间，确保网络连接
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            timeout /t 10 &amp;gt;nul
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            echo 连接操作完成。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        )
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;start &amp;#34;&amp;#34; &amp;#34;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;amp;login_method=1&amp;amp;user_account=你的校园网账号%%40telecom&amp;amp;user_password=你的校园网密码&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ) else (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        echo 网络连接正常（qq.com ping 通），跳过登录操作...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    )
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;) else (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    echo 网络连接正常（baidu.com ping 通），跳过登录操作...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 倒计时循环输出（每 10 分钟输出一次）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;for /l %%i in (10,-1,1) do (
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    set /a minutes=%%i
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    echo 倒计时（结束后会检测网络）：!minutes! 分
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    timeout /t 60 &amp;gt;nul
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;echo 倒计时结束，开始检测网络...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:: 循环检测
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;goto loop
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;big&gt;至此，全部完成&lt;/big&gt;&lt;br&gt;
+最后实现的效果如下图所示：&lt;br&gt;
+&lt;img src=&#34;./auto-login-net-jxust.assets/final.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;</description>
+        </item>
+        <item>
+        <title>git相关操作</title>
+        <link>https://ayljzj520.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</link>
+        <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“Work. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;br&gt;
+git相关指令学习
+&lt;h2 id=&#34;1-git基础指令&#34;&gt;1. git基础指令
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;测试&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git pull
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>自动推理（环境搭建）</title>
+        <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“Work. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;安装前可以浏览这三个教程：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/stellan/p/14409090.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;wsl安装教程&lt;/a&gt;
+&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/m0_74063149/article/details/137725577&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;安装wsl后虚拟机无法启动&lt;/a&gt;
+&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/opus/861067292754051097&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;原生ubuntu安装教程&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1安装系统&#34;&gt;1、安装系统
+&lt;/h2&gt;&lt;h3 id=&#34;步骤1---启用适用于-linux-的-windows-子系统&#34;&gt;步骤1 - 启用适用于 Linux 的 Windows 子系统：
+&lt;/h3&gt;&lt;p&gt;需要先启用“适用于 Linux 的 Windows 子系统”可选功能，然后才能在 Windows 上安装 Linux 分发。
+以管理员身份打开 PowerShell 并运行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤2---启用虚拟机功能&#34;&gt;步骤2 - 启用虚拟机功能：
+&lt;/h3&gt;&lt;p&gt;安装 WSL 2 之前，必须启用“虚拟机平台”可选功能。 计算机需要虚拟化功能才能使用此功能。
+以管理员身份打开 PowerShell 并运行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤3---下载-linux-内核更新包&#34;&gt;步骤3 - 下载 Linux 内核更新包：
+&lt;/h3&gt;&lt;p&gt;以管理员身份打开 PowerShell 并运行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wsl --install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤4---将-wsl-2-设置为默认版本&#34;&gt;步骤4 - 将 WSL 2 设置为默认版本：
+&lt;/h3&gt;&lt;p&gt;打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，将 WSL 2 设置为默认版本：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wsl --set-default-version 2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤5---安装所选的-linux-分发版&#34;&gt;步骤5 - 安装所选的 Linux 分发版：
+&lt;/h3&gt;&lt;p&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9pjn388hp8c9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu 16.04 LTS&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9N9TNGVNDL3Q&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu 18.04 LTS&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9n6svws3rx71&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu 20.04 LTS&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9NJFZK00FGKV&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;openSUSE Leap 15.1&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9MZ3D1TRP8T1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SUSE Linux Enterprise Server 12 SP5&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9PN498VPMF3Z&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SUSE Linux Enterprise Server 15 SP1&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9PKR34TNCV07&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Kali Linux&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9MSVKQC78PK6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Debian GNU/Linux&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9n6gdm4k2hnc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Fedora Remix for WSL&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9NV1GV1PXZ6P&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pengwin&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9N8LP0X93VCP&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pengwin Enterprise&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9p804crf0395&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Alpine WSL&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;./auto.assets/1.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2修改环境&#34;&gt;2、修改环境
+&lt;/h2&gt;&lt;h3 id=&#34;切换镜像&#34;&gt;切换镜像
+&lt;/h3&gt;&lt;p&gt;修改源：找到 &lt;code&gt;cd /etc/apt&lt;/code&gt; 路径下的 sources.list 文件对其进行修改&lt;br&gt;在此路径下打开命令行，输入sudo vim sources.list&lt;br&gt;命令行中相关操作命令如下：&lt;br&gt;•	g 光标到头部&lt;br&gt;•	d 删除&lt;br&gt;•	shift + g 全部删除&lt;br&gt;•	i 写入&lt;br&gt;•	粘贴 以下 阿里源 或 清华源&lt;br&gt;•	ESC 退出写入模式&lt;br&gt;•	:wq 保存退出&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;复制镜像源&#34;&gt;复制镜像源
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;##测试版源  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 源码  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;##测试版源  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# Canonical 合作伙伴和附加  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb http://archive.canonical.com/ubuntu/ xenial partner  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb http://extras.ubuntu.com/ubuntu/ xenial main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;更新镜像&#34;&gt;更新镜像
+&lt;/h3&gt;&lt;p&gt;操作完成后使用如下命令更新镜像：&lt;br&gt;•	&lt;code&gt;sudo apt-get updata&lt;/code&gt; 更新&lt;br&gt;•	&lt;code&gt;sudo apt-get upgrade&lt;/code&gt; 更新&lt;br&gt;&lt;code&gt;sudo add-apt-repository ppa:openjdk-r/ppa&lt;/code&gt;&lt;br&gt;安装jdk：&lt;code&gt;sudo apt-get install openjdk-8-jdk&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;拓展篇(在环境Ubuntu/Mint物理机上安装python环境)：&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls /usr/bin/python*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;update-alternatives --list python
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo update-alternatives --config python
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install python3-pip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;h2 id=&#34;3-纠错&#34;&gt;3、 纠错
+&lt;/h2&gt;&lt;h3 id=&#34;错误1证明器不存在&#34;&gt;错误1：证明器不存在
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./auto.assets/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+检查dist文件夹下有没有这个cprover_priority&lt;br&gt;
+&lt;img src=&#34;./auto.assets/error1/solve1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+若没有那就把cse 改成这个名字，然后再添加可执行权限&lt;br&gt;
+&lt;img src=&#34;./auto.assets/error1/solve2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;错误2判定异常&#34;&gt;错误2：判定异常
+&lt;/h3&gt;&lt;p&gt;若验证检查结果异常，需记录判定情况，需要记录的有：
+策略：多策略模式下为桌面的strategy文件夹；单策略模式下为strategy.txt文件
+判定过程文件夹：桌面output文件夹下与判定例子同名的文件夹。
+在代码操作中，指针越界&lt;/p&gt;
+&lt;h3 id=&#34;错误3格式转换失败&#34;&gt;错误3：格式转换失败
+&lt;/h3&gt;&lt;p&gt;可能的原因：
+1、没有放置公理集Axioms
+2、没有使用Eprover融合系统，没有使用到转换的文件
+3、由于问题的原因，可能无法转换
+4、可能转换成功，但是界面显示错误&lt;/p&gt;
+&lt;h3 id=&#34;错误4调试失败一般少见&#34;&gt;错误4：调试失败（一般少见）
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt;
+同样的例子在调试过程中超时导致无法判定
+但是在带界面版本能得到不可满足
+在别的电脑上调试也能成功
+&lt;strong&gt;解决方法：&lt;/strong&gt;
+重装ubuntu系统&lt;br&gt;
+&lt;img src=&#34;./auto.assets/error4/error4.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>自动推理（实验相关内容）</title>
+        <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</link>
+        <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“Work. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;进行此项内容前，请确保已经完成环境的配置。&lt;br&gt;
+相关网站：&lt;a class=&#34;link&#34; href=&#34;https://www.tptp.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TPTP官网&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1实验前准备&#34;&gt;1、实验前准备
+&lt;/h2&gt;&lt;h3 id=&#34;准备条件&#34;&gt;准备条件
+&lt;/h3&gt;&lt;p&gt;拷贝好dist文件夹，确保内部具有正确的文件&lt;br&gt;
+&lt;img src=&#34;./auto-test.assets/dist.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+problems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。&lt;br&gt;
+在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：&lt;br&gt;
+&lt;code&gt;cse&lt;/code&gt;,&lt;code&gt;eprover&lt;/code&gt;,&lt;code&gt;tptp4X&lt;/code&gt;,以及相关jar包。&lt;br&gt;
+若没有权限，使用如下命令对文件授予权限：&lt;code&gt;chmod +x 文件名&lt;/code&gt;&lt;br&gt;
+使用&lt;code&gt;./eprover --verson&lt;/code&gt;或&lt;code&gt;./vampire --verson&lt;/code&gt;查看对应软件的版本&lt;br&gt;
+使用命令行版本测试时，将&lt;code&gt;cse&lt;/code&gt;替换为自己导出的&lt;code&gt;cse&lt;/code&gt;&lt;br&gt;
+替换eprover的版本时，要将&lt;code&gt;eprover&lt;/code&gt;和&lt;code&gt;mcs_eprover.jar&lt;/code&gt;同时替换才正确。&lt;br&gt;
+3.1以上的版本的Eprover会出现异常，则需要进行以下操作（重新打开一个终端，输入下述指令）：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ps -ef|grep eprover
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后使用&lt;code&gt;kill&lt;/code&gt;指令将前三个icdc进程杀死&lt;br&gt;
+拓展(输入./vampire &amp;ndash;ignore_missing on &amp;ndash;mode casc -t 300 +一个问题的绝对路径，就能得到下面这样的证明搜索路径和时间，这样子只能测单个的原始时间)&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;命令行版本测试命令&#34;&gt;命令行版本测试命令
+&lt;/h3&gt;&lt;p&gt;测试CSE和Eprover融合系统命令：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar mcs_epr.jar CSE_E problems 0 1 4 1 300 0 1 10
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;测试CSE和Vampire融合系统命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar mcs_vampire.jar CSE_V problems 0 1 2 1 260 30 1 10
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;单独测试CSE系统命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar mcs_scs.jar CSE problems 0 1 0 1 1 150
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其中260 20 为时间参数
+如果那两个数值变为300 0，意味着是原始测出来的数据，
+前一个数值代表eprover测的时间，后一个数值代表CSE测的时间，
+300秒减去前两个数值所剩下的时间也是eprover参与的&lt;/p&gt;
+&lt;h2 id=&#34;2代码修改基础项&#34;&gt;2、代码修改（基础项）
+&lt;/h2&gt;&lt;h3 id=&#34;基础代码修改项&#34;&gt;基础代码修改项
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;必改项&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2217&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Resolution.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;for(int i=0;i&lt;cla-&gt;uLitNum;++1i){删除1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;使用776行的main函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;替换原始800行的main函数&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;验证检查&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;原始代码&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;修改后，会生成run文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Prover.cpp&lt;br&gt;319&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;if(1){&lt;br&gt;        FileOp::delRunFiles();&lt;br&gt;    }&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;if(0){&lt;br&gt;        FileOp::delRunFiles();&lt;br&gt;    }&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;选改项&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;main.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;debug&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;编译release&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;216&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;#define newTriDebug&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;//#define newTriDebug&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;755&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;//child = fork();&lt;br&gt;    if (0 == 0)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;child = fork();&lt;br&gt;if (child == 0) {&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;生成cse文件&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;文字变元输出&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cout&amp;lt;&amp;lt; QLit-&amp;gt;subTerm-&amp;gt;ToString()&amp;lt;&amp;lt;endl;//debug输出当前文字项
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cout&amp;lt;&amp;lt;QLit-&amp;gt;subTerm-&amp;gt;ToStringBind()&amp;lt;&amp;lt;endl;//debug输出当前文字项和变元元替换项
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;3融合系统e31以上版本卡住解决方法&#34;&gt;3、融合系统E3.1以上版本卡住解决方法
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>海岛奇兵</title>
-        <link>http://localhost:1313/p/%E6%B5%B7%E5%B2%9B%E5%A5%87%E5%85%B5/</link>
+        <link>https://ayljzj520.github.io/p/%E6%B5%B7%E5%B2%9B%E5%A5%87%E5%85%B5/</link>
         <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E6%B5%B7%E5%B2%9B%E5%A5%87%E5%85%B5/</guid>
+        <guid>https://ayljzj520.github.io/p/%E6%B5%B7%E5%B2%9B%E5%A5%87%E5%85%B5/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;“A Happy Game. ”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -32,28 +778,47 @@
     &gt;最新版腾讯切号使用教程+qq突破登录上限说明&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;相关介绍&#34;&gt;相关介绍
-&lt;/h2&gt;&lt;p&gt;养号：ULGOXKK&lt;br&gt;
-查序列：VZNKMZK&lt;br&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h2&gt;&lt;p&gt;养号：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ULGOXKK
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查序列：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;VZNKMZK
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;obsidian常用技巧&lt;/a&gt;，
 &lt;a class=&#34;link&#34; href=&#34;https://forum-zh.obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;中文论坛&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;龙行天下&lt;br&gt;
-注册手机一加12&lt;br&gt;
-2024年6月&lt;br&gt;
-江西赣州&lt;br&gt;&lt;/p&gt;
+    &gt;中文论坛&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+小号QQ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;龙行天下&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;注册手机一加12&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;2024年6月&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;江西赣州&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;沙滩树教程&#34;&gt;沙滩树教程
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;想种沙滩树要先种压岸树&lt;/strong&gt;&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;big&gt;&lt;font color=blue&gt;想种沙滩树要先种压岸树！&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1压岸树&#34;&gt;1压岸树
 &lt;/h3&gt;&lt;p&gt;压岸树首先将基地左上角靠山的位置空出来，别的位置用建筑填上，建筑直接的间隔不要留有大于(包括)2×2的位置（防止长树），确保树往左上角长。&lt;br&gt;
-&lt;img src=&#34;./boom-beach.assets/沙滩树1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;./boom-beach.assets/沙滩树1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2砍部分树&#34;&gt;2砍部分树
 &lt;/h3&gt;&lt;p&gt;当树长的较多的时候，可以将靠近上方的树砍掉，然后用建筑堵住，防止长回去，将树生长的方向挤向岸边。&lt;br&gt;
-&lt;img src=&#34;./boom-beach.assets/沙滩树2.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;./boom-beach.assets/沙滩树2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3挂脚本&#34;&gt;3挂脚本
 &lt;/h3&gt;&lt;p&gt;当岸边长满树的时候，或者长较多树的时候，可以尝试开始挂航母脚本，促进沙滩树的生长。&lt;br&gt;
-&lt;img src=&#34;./boom-beach.assets/沙滩树3.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;./boom-beach.assets/沙滩树3.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
 </description>
         </item>
         

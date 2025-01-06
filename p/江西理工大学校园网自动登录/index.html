@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="开机自启动，循环检测">
+<title>江西理工大学校园网自动登录</title>
+
+<link rel='canonical' href='https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/'>
+
+<link rel="stylesheet" href="/scss/style.min.8742a56d21f8852bc1bd1770ce700eed3c70e37cca58636e622b099ba3b936bd.css"><meta property='og:title' content="江西理工大学校园网自动登录">
+<meta property='og:description' content="开机自启动，循环检测">
+<meta property='og:url' content='https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/'>
+<meta property='og:site_name' content='暗影流金的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-06T12:21:18&#43;08:00'/>
+<meta name="twitter:title" content="江西理工大学校园网自动登录">
+<meta name="twitter:description" content="开机自启动，循环检测">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu15005021105466144611.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">暗影流金的博客</a></h1>
+            <h2 class="site-description">记录个人生活</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#1原理">1、原理</a></li>
+    <li><a href="#2实际操作">2、实际操作</a></li>
+    <li><a href="#3进阶操作">3、进阶操作</a></li>
+    <li><a href="#补充">补充</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/" >
+                江西理工大学
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/">江西理工大学校园网自动登录</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            开机自启动，循环检测
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                
+                创建日期:
+                <time class="article-time--published">2024-12-29</time>
+            </div>
+        
+        <div class="article-lastmod">
+               
+                最后修改:
+                <time>
+                    2025-01-06 12:21
+                </time>
+            </div>
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <blockquote>
+<p>“NetWork”</p>
+</blockquote>
+<h2 id="前言">前言
+</h2><p>这篇文章针对本人的需求设计而来，也为了需要自动登录校园网的同学提供一个相关思路。<br></p>
+<ul>
+<li>本文所处的地理位置为：江西理工大学三江校区（东区）<br></li>
+<li>网络环境：电信网<br></li>
+</ul>
+<p>由于电信网的原因，每登录24小时，网络就会自动断开，又要去浏览器页面重新登陆（对于一个把电脑扔在工作室的人来说，这是一件令人头疼的事）<br></p>
+<hr>
+<h2 id="1原理">1、原理
+</h2><ul>
+<li>首先打开<a class="link" href="http://10.17.8.18/"  target="_blank" rel="noopener"
+    >登录校园网</a>的网页（前提是电脑已经连接了校园网JXUST-WLAN）<br></li>
+<li>按下 F12 打开浏览器开发者工具（如果没反应那就 fn + F12）<br></li>
+<li>输入账号密码，登录进入校园网<br></li>
+<li>找到这一串请求url，就是通过这一串url就能够成功登录校园网，把这一串复制下来<br>
+<img src="./auto-login-net-jxust.assets/login.png" width="90%" align="center" /><br>
+<code>http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;login_method=1&amp;user_account=你的校园网账号%%40telecom&amp;user_password=你的校园网密码。</code><br>
+其中，user_account就是学号；user_password就是密码；login_method是运营商信息。里面信息不需要全部保留也可以登录校园网，保留至user_password的结束位置也能登陆。<br></li>
+<li>在搜索栏直接粘贴上文所说的url点击回车，若出现下图的情况即联网成功。<br>
+<img src="./auto-login-net-jxust.assets/login-success.png" width="80%" align="center" /><br></li>
+</ul>
+<p><strong>原理可行！</strong><br>
+那我只要每次开机后电脑能自动访问这条url那不就自动登录校园网了吗？<br><br>
+<big><font color=blue>直接进入实操！！！</font></big><br></p>
+<hr>
+<h2 id="2实际操作">2、实际操作
+</h2><ul>
+<li>在桌面新建一个txt文本文件，将文件后缀名修改为<code>.bat</code>格式<br></li>
+<li>右键选择编辑或用记事本打开，在里面粘贴如下代码：<br></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@echo off
+</span></span><span class="line"><span class="cl">:: 设置控制台为 UTF-8 编码
+</span></span><span class="line"><span class="cl">chcp 65001
+</span></span><span class="line"><span class="cl">:: 启用延迟变量扩展
+</span></span><span class="line"><span class="cl">setlocal EnableDelayedExpansion
+</span></span><span class="line"><span class="cl">:: 初始化计数器
+</span></span><span class="line"><span class="cl">set /a counter=0
+</span></span><span class="line"><span class="cl">:loop
+</span></span><span class="line"><span class="cl">:: 增加计数器
+</span></span><span class="line"><span class="cl">set /a counter+=1
+</span></span><span class="line"><span class="cl">:: 输出当前是第几次判断
+</span></span><span class="line"><span class="cl">echo 当前为第 !counter! 次判断。
+</span></span><span class="line"><span class="cl">:: 检测是否有网络连接（超时 10 秒）
+</span></span><span class="line"><span class="cl">ping -n 1 -w 10000 baidu.com &gt;nul 2&gt;&amp;1
+</span></span><span class="line"><span class="cl">if errorlevel 1 (
+</span></span><span class="line"><span class="cl">    echo 无网络连接（ping超时10秒），尝试在浏览器中访问登录页面...
+</span></span><span class="line"><span class="cl">    :: 指定浏览器路径（假设使用 Chrome）打开指定网址
+</span></span><span class="line"><span class="cl">    start &#34;&#34; &#34;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;login_method=1&amp;user_account=你的校园网账号%%40telecom&amp;user_password=你的校园网密码&#34;
+</span></span><span class="line"><span class="cl">    echo 登录页面已在浏览器中打开。
+</span></span><span class="line"><span class="cl">) else (
+</span></span><span class="line"><span class="cl">    echo 网络连接正常，跳过登录操作...
+</span></span><span class="line"><span class="cl">)
+</span></span><span class="line"><span class="cl">:: 倒计时循环输出（每分钟输出一次）
+</span></span><span class="line"><span class="cl">for /l %%i in (5,-1,1) do (
+</span></span><span class="line"><span class="cl">    set /a minutes=%%i
+</span></span><span class="line"><span class="cl">    echo 倒计时（结束后会检测网络）：!minutes! 分
+</span></span><span class="line"><span class="cl">    timeout /t 60 &gt;nul
+</span></span><span class="line"><span class="cl">)
+</span></span><span class="line"><span class="cl">:: 循环检测
+</span></span><span class="line"><span class="cl">goto loop
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我对代码做一个简单的解释：（如果不想了解原理可以跳过该解释）<br>
+这段代码主要功能是持续监测网络连接状况，并在网络断开时自动通过浏览器打开校园网登录页面。<br>首先，代码设置控制台编码为 UTF-8(将运行在控制台下输出中文内容)，并启用延迟变量扩展以便在循环中动态使用变量。然后，它初始化一个计数器，用于记录执行循环的次数。<br>接下来，进入一个无限循环，程序每次都会通过 ping 命令检测是否ping通百度，如果检测到网络连接失败，则输出“无网络连接”并尝试在默认浏览器中访问指定的校园网登录请求。如果网络正常，程序则输出“网络连接正常”，跳过登录操作。<br>然后，为了避免频繁检测，代码会在每次检测后进入倒计时状态，每分钟输出倒计时信息，直到检测下次网络连接状态。整个过程会持续进行，直到手动终止脚本。<br><br>
+注意：start &quot;&quot; &ldquo;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;login_method=1&amp;user_account=你的校园网账号%%40telecom&amp;user_password=你的校园网密码&rdquo;<br>
+这段代码的url需要你自己通过上面的方法去获取。<br></p>
+<ul>
+<li><font color=red>接下来最重要的事一定要仔细看！</font><br></li>
+<li><font color=red>接下来最重要的事一定要仔细看！</font><br></li>
+<li><font color=red>接下来最重要的事一定要仔细看！</font><br></li>
+<li><font color=red>重要的事说三遍！！！</font><br></li>
+</ul>
+<p>请检查你自己所获取到的url，在<code>校园网账号</code>后面应该会有<code>%40</code>字符，由于复制进脚本后，由脚本通过start命令发起访问会将<code>%40</code>识别为@，从而导致输进浏览器的url缺失这一关键信息<br>
+若不进行修改就会导致下图的访问结果。<br>
+<img src="./auto-login-net-jxust.assets/login-fail.png" width="70%" align="center" /><br>
+<font color=red>解决方法：</font>在<code>%40</code>这个字符前再加一个<code>%</code>，这样就能确保url的正确读取并访问。<br>
+接下来运行这个.bat文件，就会自动向校园网登录端发送请求，然后登录你的校园网账号，并且每五分钟会ping一次百度的网站。<br>
+若ping不通，则会再次执行登录请求。<br></p>
+<ul>
+<li><big><font color=blue>在运行过程中请不要关闭此命令行窗口！！！</font></big><br></li>
+</ul>
+<h2 id="3进阶操作">3、进阶操作
+</h2><p>为了使开机能自动运行该脚本，需要将该脚本文件加入开机自启动。<br>
+按win+r打开运行窗口，输入下述指令进入到开机启动目录：<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">shell:startup
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将编写好的.bat脚本复制进去，即可做到开机自动运行。<br>
+<img src="./auto-login-net-jxust.assets/start.png" width="70%" align="center" /><br></p>
+<h2 id="补充">补充
+</h2><p>有的时候电脑开机后没有自动连接到校园网，自然也无法完成登录请求。<br>
+由于只ping一个站点有时会造成误判，从而反复执行。所以增加一次操作，对baidu.com和qq.com均ping一次，<br>
+只有在两次都ping不通的情况下，才会去执行操作，使电脑先连接校园网再执行登录操作。<br>
+对代码循环执行时间调整为10分钟一次<br>
+本校的校园网名称为“JXUST-WLAN”，所以经过修改后的代码应该这么写：<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@echo off
+</span></span><span class="line"><span class="cl">:: 设置控制台为 UTF-8 编码
+</span></span><span class="line"><span class="cl">chcp 65001
+</span></span><span class="line"><span class="cl">:: 启用延迟变量扩展
+</span></span><span class="line"><span class="cl">setlocal EnableDelayedExpansion
+</span></span><span class="line"><span class="cl">:: 设置无线网络名称（SSID）
+</span></span><span class="line"><span class="cl">set SSID=JXUST-WLAN
+</span></span><span class="line"><span class="cl">:loop
+</span></span><span class="line"><span class="cl">:: 增加计数器
+</span></span><span class="line"><span class="cl">set /a counter+=1
+</span></span><span class="line"><span class="cl">:: 输出当前是第几次判断
+</span></span><span class="line"><span class="cl">echo 当前为第 !counter! 次判断。
+</span></span><span class="line"><span class="cl">:: 检测是否有网络连接（ping baidu.com 或 qq.com，超时 10 秒）
+</span></span><span class="line"><span class="cl">ping -n 1 -w 10000 baidu.com &gt;nul 2&gt;&amp;1
+</span></span><span class="line"><span class="cl">if errorlevel 1 (
+</span></span><span class="line"><span class="cl">    echo 百度 ping 超时，尝试 ping qq.com...
+</span></span><span class="line"><span class="cl">    ping -n 1 -w 10000 qq.com &gt;nul 2&gt;&amp;1
+</span></span><span class="line"><span class="cl">    if errorlevel 1 (
+</span></span><span class="line"><span class="cl">        echo 无网络连接（百度和qq.com都 ping 超时），尝试在浏览器中访问登录页面...
+</span></span><span class="line"><span class="cl">        :: 指定浏览器路径（假设使用 Chrome）打开指定网址
+</span></span><span class="line"><span class="cl">        start &#34;&#34; &#34;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;login_method=1&amp;user_account=你的校园网账号%%40telecom&amp;user_password=你的校园网密码&#34;
+</span></span><span class="line"><span class="cl">        echo 登录页面已在浏览器中打开。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        :: 获取当前连接的 SSID
+</span></span><span class="line"><span class="cl">        for /f &#34;tokens=2 delims=:&#34; %%i in (&#39;netsh wlan show interfaces ^| findstr /i &#34;SSID&#34;&#39;) do (
+</span></span><span class="line"><span class="cl">            set currentSSID=%%i
+</span></span><span class="line"><span class="cl">            :: 去除前后空格
+</span></span><span class="line"><span class="cl">            set currentSSID=!currentSSID: =!
+</span></span><span class="line"><span class="cl">        )
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        :: 判断是否已经连接到指定的 WLAN 网络
+</span></span><span class="line"><span class="cl">        if /i &#34;%currentSSID%&#34;==&#34;%SSID%&#34; (
+</span></span><span class="line"><span class="cl">            echo 已经连接到网络 %SSID%，跳过连接操作。
+</span></span><span class="line"><span class="cl">        ) else (
+</span></span><span class="line"><span class="cl">            echo 未连接到指定网络 %SSID%，尝试连接...
+</span></span><span class="line"><span class="cl">            :: 执行连接操作
+</span></span><span class="line"><span class="cl">            netsh wlan connect name=%SSID%
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            :: 等待一段时间，确保网络连接
+</span></span><span class="line"><span class="cl">            timeout /t 10 &gt;nul
+</span></span><span class="line"><span class="cl">            echo 连接操作完成。
+</span></span><span class="line"><span class="cl">        )
+</span></span><span class="line"><span class="cl">start &#34;&#34; &#34;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;login_method=1&amp;user_account=你的校园网账号%%40telecom&amp;user_password=你的校园网密码&#34;
+</span></span><span class="line"><span class="cl">    ) else (
+</span></span><span class="line"><span class="cl">        echo 网络连接正常（qq.com ping 通），跳过登录操作...
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">) else (
+</span></span><span class="line"><span class="cl">    echo 网络连接正常（baidu.com ping 通），跳过登录操作...
+</span></span><span class="line"><span class="cl">)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">:: 倒计时循环输出（每 10 分钟输出一次）
+</span></span><span class="line"><span class="cl">for /l %%i in (10,-1,1) do (
+</span></span><span class="line"><span class="cl">    set /a minutes=%%i
+</span></span><span class="line"><span class="cl">    echo 倒计时（结束后会检测网络）：!minutes! 分
+</span></span><span class="line"><span class="cl">    timeout /t 60 &gt;nul
+</span></span><span class="line"><span class="cl">)
+</span></span><span class="line"><span class="cl">echo 倒计时结束，开始检测网络...
+</span></span><span class="line"><span class="cl">:: 循环检测
+</span></span><span class="line"><span class="cl">goto loop
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br>
+<big>至此，全部完成</big><br>
+最后实现的效果如下图所示：<br>
+<img src="./auto-login-net-jxust.assets/final.png" width="50%" align="center" /><br>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2025-01-06 12:21
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><footer class="site-footer">
+    <section class="copyright">
+        © 
+        
+            2024 - 
+        
+        2025 暗影流金
+    </section>
+    
+    <section class="powerby">
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <p>发布了 10 篇文章 | 共 5939 字</p>
+
+
+
+<section class="powerby">
+    <a>总访客数: </a><span id='busuanzi_value_site_uv'>Loading</span> <a> | </a> <a>总访问量: </a><span id='busuanzi_value_site_pv'>Loading</span></br>
+    <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> <a>designed by Jimmy</a>
+</section>
+
+    </section>
+</footer>
+</body></html>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script defer src="https://cn.vercount.one/js"></script>
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
+    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
+    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
+    crossorigin="anonymous"
+/>
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+    </body>
+</html>
