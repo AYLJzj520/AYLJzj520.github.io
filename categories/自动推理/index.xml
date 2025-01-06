@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Mon, 06 Jan 2025 18:42:42 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 06 Jan 2025 21:10:42 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自动推理（环境搭建）</title>
         <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
@@ -356,6 +356,67 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
           &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;生成cse文件&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;big&gt;&lt;strong&gt;部分演绎框架&lt;/strong&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;CSE1.3_pre&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;文件&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;位置&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;方法名&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;较优子句&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;TriAlg.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;345&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GenerateTriByRecodePath&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;优化演绎路径&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;TriAlg.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1832&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GenerateTriByRecodePathLROptimalProofSearch&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;充分使用子句&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;TriAlg.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2983&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GenerateTriByRecodePathLR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;单元子句排序规则&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;SortRule.h&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;168&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;候选子句排序&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Resolution.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4833&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;合一算法&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Unify.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;320&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;LitMgu&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;预处理&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Resolution.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3183&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;

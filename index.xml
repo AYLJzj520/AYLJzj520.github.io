@@ -57,7 +57,43 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;big&amp;gt;&amp;lt;font color=blue&amp;gt;文字加大，加颜色！！！&amp;lt;/font&amp;gt;&amp;lt;/big&amp;gt;&amp;lt;br&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;表格语法：&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 标题1      | 标题2      |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| ---------- | ---------- |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Header      | Title       |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Paragraph   | Text        |
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;效果如下：&lt;br&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;标题1&lt;/th&gt;
+          &lt;th&gt;标题2&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Header&lt;/td&gt;
+          &lt;td&gt;Title&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Paragraph&lt;/td&gt;
+          &lt;td&gt;Text&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
         </item>
         <item>
         <title>江西理工大学校园网自动登录</title>
@@ -748,6 +784,67 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
           &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;生成cse文件&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;big&gt;&lt;strong&gt;部分演绎框架&lt;/strong&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;CSE1.3_pre&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;文件&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;位置&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;方法名&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;较优子句&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;TriAlg.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;345&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GenerateTriByRecodePath&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;优化演绎路径&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;TriAlg.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1832&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GenerateTriByRecodePathLROptimalProofSearch&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;充分使用子句&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;TriAlg.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2983&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GenerateTriByRecodePathLR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;单元子句排序规则&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;SortRule.h&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;168&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;候选子句排序&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Resolution.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4833&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;合一算法&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Unify.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;320&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;LitMgu&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;预处理&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Resolution.cpp&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3183&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
