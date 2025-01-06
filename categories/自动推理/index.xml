@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Mon, 06 Jan 2025 12:21:18 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 06 Jan 2025 16:18:32 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自动推理（环境搭建）</title>
         <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
@@ -371,7 +371,8 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;3融合系统e31以上版本卡住解决方法&#34;&gt;3、融合系统E3.1以上版本卡住解决方法
-&lt;/h2&gt;</description>
+&lt;/h2&gt;&lt;p&gt;使用脚本&lt;/p&gt;
+</description>
         </item>
         
     </channel>
