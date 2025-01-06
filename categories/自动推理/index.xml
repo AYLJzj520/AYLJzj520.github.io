@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Mon, 06 Jan 2025 18:26:01 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 06 Jan 2025 18:42:42 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自动推理（环境搭建）</title>
         <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
@@ -481,6 +481,13 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;li&gt;脚本检测dist路径下的proofStatistics.txt文件的修改时间，若超过7分钟，则杀死名为eprover的所有进程。&lt;/li&gt;
 &lt;li&gt;若proofStatistics.txt文件的修改时间，未超过7分钟则等待7分钟后进入下一轮循环&lt;/li&gt;
 &lt;li&gt;若未检测到proofStatistics.txt文件，则休眠7分钟。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;big&gt;使用规则：&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将kill.sh文件置于dist文件夹内；&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;chmod +x kill.sh&lt;/code&gt;授予权限；&lt;/li&gt;
+&lt;li&gt;在命令窗口使用&lt;code&gt;./kill.sh&lt;/code&gt;启动脚本；&lt;/li&gt;
+&lt;li&gt;脚本会在dist文件夹内生成kill-log.txt日志文件。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

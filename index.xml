@@ -861,6 +861,13 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;li&gt;若proofStatistics.txt文件的修改时间，未超过7分钟则等待7分钟后进入下一轮循环&lt;/li&gt;
 &lt;li&gt;若未检测到proofStatistics.txt文件，则休眠7分钟。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;big&gt;使用规则：&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将kill.sh文件置于dist文件夹内；&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;chmod +x kill.sh&lt;/code&gt;授予权限；&lt;/li&gt;
+&lt;li&gt;在命令窗口使用&lt;code&gt;./kill.sh&lt;/code&gt;启动脚本；&lt;/li&gt;
+&lt;li&gt;脚本会在dist文件夹内生成kill-log.txt日志文件。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
