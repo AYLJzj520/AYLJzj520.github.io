@@ -10,7 +10,7 @@
 <meta property='og:description' content=" “Work. ”\n前言 进行此项内容前，请确保已经完成环境的配置。\n相关网站：TPTP官网\n1、实验前准备 准备条件 拷贝好dist文件夹，确保内部具有正确的文件\nproblems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。\n在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：\ncse,eprover,tptp4X,以及相关jar包。\n若没有权限，使用如下命令对文件授予权限：chmod +x 文件名\n使用./eprover --verson或./vampire --verson查看对应软件的版本\n使用命令行版本测试时，将cse替换为自己导出的cse\n替换eprover的版本时，要将eprover和mcs_eprover.jar同时替换才正确。\n3.1以上的版本的Eprover会出现异常，则需要进行以下操作（重新打开一个终端，输入下述指令）：\n">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-06T21:10:42&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-06T22:06:22&#43;08:00'/>
 <meta name="twitter:title" content="自动推理（实验相关内容）">
 <meta name="twitter:description" content=" “Work. ”\n前言 进行此项内容前，请确保已经完成环境的配置。\n相关网站：TPTP官网\n1、实验前准备 准备条件 拷贝好dist文件夹，确保内部具有正确的文件\nproblems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。\n在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：\ncse,eprover,tptp4X,以及相关jar包。\n若没有权限，使用如下命令对文件授予权限：chmod +x 文件名\n使用./eprover --verson或./vampire --verson查看对应软件的版本\n使用命令行版本测试时，将cse替换为自己导出的cse\n替换eprover的版本时，要将eprover和mcs_eprover.jar同时替换才正确。\n3.1以上的版本的Eprover会出现异常，则需要进行以下操作（重新打开一个终端，输入下述指令）：\n">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -269,10 +269,11 @@
     <li><a href="#1实验前准备">1、实验前准备</a>
       <ul>
         <li><a href="#准备条件">准备条件</a></li>
+        <li><a href="#带界面版本测试命令">带界面版本测试命令</a></li>
         <li><a href="#命令行版本测试命令">命令行版本测试命令</a></li>
       </ul>
     </li>
-    <li><a href="#2代码修改基础项">2、代码修改（基础项）</a>
+    <li><a href="#2代码相关逻辑">2、代码相关逻辑</a>
       <ul>
         <li><a href="#基础代码修改项">基础代码修改项</a></li>
       </ul>
@@ -327,7 +328,7 @@
                
                 最后修改:
                 <time>
-                    2025-01-06 21:10
+                    2025-01-06 22:06
                 </time>
             </div>
     </footer>
@@ -370,6 +371,14 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 </div>
 </div><p>然后使用<code>kill</code>指令将前三个icdc进程杀死<br>
 拓展(输入./vampire &ndash;ignore_missing on &ndash;mode casc -t 300 +一个问题的绝对路径，就能得到下面这样的证明搜索路径和时间，这样子只能测单个的原始时间)<br></p>
+<h3 id="带界面版本测试命令">带界面版本测试命令
+</h3><p>在虚拟机内：</p>
+<ul>
+<li>(1)启动Terminal;<br></li>
+<li>(2)切换⽬录：cd Desktop/dist;<br></li>
+<li>(3) 执⾏命令：<code>./kzprover.sh</code>，脚本没有可执⾏权限时， <code>sudo chmod +x kzprover.sh</code>;<br></li>
+<li>(4) 启动时把单组合模式改为多组合模式，其他不需要改.<br></li>
+</ul>
 <h3 id="命令行版本测试命令">命令行版本测试命令
 </h3><p>测试CSE和Eprover融合系统命令：<br></p>
 <div class="highlight"><div class="chroma">
@@ -402,7 +411,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 如果那两个数值变为300 0，意味着是原始测出来的数据，
 前一个数值代表eprover测的时间，后一个数值代表CSE测的时间，
 300秒减去前两个数值所剩下的时间也是eprover参与的</p>
-<h2 id="2代码修改基础项">2、代码修改（基础项）
+<h2 id="2代码相关逻辑">2、代码相关逻辑
 </h2><h3 id="基础代码修改项">基础代码修改项
 </h3><div class="table-wrapper"><table>
   <thead>
@@ -531,6 +540,30 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
       </tr>
   </tbody>
 </table></div>
+<p><big><strong>构建标准矛盾体思想</strong></big><br></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">方法</th>
+          <th style="text-align: left">从左到右构建</th>
+          <th style="text-align: left">从右到左构建</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">思想</td>
+          <td style="text-align: left">选择了候选子句集的文字，<br>在决策文字集上遍历文字判断是否互补</td>
+          <td style="text-align: left">选择了决策文字集上的文字，<br>在候选子句集中遍历子句，再遍历文字是否互补</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">代表算法</td>
+          <td style="text-align: left">充分使用子句，优化演绎路径</td>
+          <td style="text-align: left">较优子句</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>标准矛盾体：<br>
+决策文字及其下拉文字，但不包含对角线最后一位</p>
 <p>文字变元输出<br></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -543,7 +576,19 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="3融合系统e31以上版本卡住解决方法">3、融合系统E3.1以上版本卡住解决方法
-</h2><p>新建一个名为kill.sh的文件，其内代码编写如下：<br></p>
+</h2><p><big><font color=blue>解决方法1：原始方法</font></big><br>
+新打开一个命令行窗口输入以下指令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ps -ef|grep eprover
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用kill指令将前三个eprover的进程杀死。<br>
+<big><font color=blue>解决方法2：自编sh脚本方法</font></big><br>
+新建一个名为kill.sh的文件，其内代码编写如下：<br></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -678,7 +723,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 
 
         <span>
-            最后更新于 2025-01-06 21:10
+            最后更新于 2025-01-06 22:06
         </span>
     </section></footer>
 
@@ -774,7 +819,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
         
         
 
-        <p>发布了 10 篇文章 | 共 6801 字</p>
+        <p>发布了 10 篇文章 | 共 7105 字</p>
 
 
 
