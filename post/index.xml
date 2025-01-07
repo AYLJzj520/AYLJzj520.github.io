@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Tue, 07 Jan 2025 19:04:22 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 07 Jan 2025 21:16:39 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>markdown语法快速复制</title>
         <link>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</link>
         <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
@@ -69,10 +69,10 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 标题1      | 标题2      |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| ---------- | ---------- |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Header      | Title       |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Paragraph   | Text        |
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 标题1      | 标题2      |标题3 |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| ---------- | ---------- | ---------- |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Header      | Title       | Title2       |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Paragraph   | Text        | Text        |
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果如下：&lt;br&gt;&lt;/p&gt;
@@ -81,15 +81,18 @@
       &lt;tr&gt;
           &lt;th&gt;标题1&lt;/th&gt;
           &lt;th&gt;标题2&lt;/th&gt;
+          &lt;th&gt;标题3&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td&gt;Header&lt;/td&gt;
           &lt;td&gt;Title&lt;/td&gt;
+          &lt;td&gt;Title2&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;Paragraph&lt;/td&gt;
+          &lt;td&gt;Text&lt;/td&gt;
           &lt;td&gt;Text&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
