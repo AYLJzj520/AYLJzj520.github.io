@@ -795,8 +795,8 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;big&gt;&lt;strong&gt;部分演绎框架&lt;/strong&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
-&lt;table&gt;
+&lt;h3 id=&#34;部分演绎框架&#34;&gt;部分演绎框架
+&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th style=&#34;text-align: left&#34;&gt;CSE1.3_pre&lt;/th&gt;
@@ -856,8 +856,8 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;big&gt;&lt;strong&gt;构建标准矛盾体思想&lt;/strong&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
-&lt;table&gt;
+&lt;h3 id=&#34;构建标准矛盾体思想&#34;&gt;构建标准矛盾体思想
+&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th style=&#34;text-align: left&#34;&gt;方法&lt;/th&gt;

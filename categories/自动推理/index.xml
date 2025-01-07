@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Mon, 06 Jan 2025 22:06:22 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 07 Jan 2025 11:03:42 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自动推理（环境搭建）</title>
         <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
@@ -367,8 +367,8 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;big&gt;&lt;strong&gt;部分演绎框架&lt;/strong&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
-&lt;table&gt;
+&lt;h3 id=&#34;部分演绎框架&#34;&gt;部分演绎框架
+&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th style=&#34;text-align: left&#34;&gt;CSE1.3_pre&lt;/th&gt;
@@ -428,8 +428,8 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;big&gt;&lt;strong&gt;构建标准矛盾体思想&lt;/strong&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
-&lt;table&gt;
+&lt;h3 id=&#34;构建标准矛盾体思想&#34;&gt;构建标准矛盾体思想
+&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th style=&#34;text-align: left&#34;&gt;方法&lt;/th&gt;
