@@ -30,7 +30,9 @@
         <description>&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;java&lt;/p&gt;
+&lt;h2 id=&#34;1jdk下载&#34;&gt;1、JDK下载
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.injdk.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;JDK下载&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -44,10 +46,10 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;br&gt;
-帮助快速编辑！
+帮助实现个人博客的快速编辑！！！
 &lt;h2 id=&#34;1-markdown基础语法&#34;&gt;1. markdown基础语法
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;图片语法：&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;图片语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -58,7 +60,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;文字加大，加颜色：&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;文字加大，加颜色&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -85,7 +87,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;表格语法：&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;超链接语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[百度](https://www.baidu.com/)&amp;lt;br&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;表格语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
