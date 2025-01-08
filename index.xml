@@ -7,6 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright><atom:link href="https://ayljzj520.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>java学习</title>
+        <link>https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“Work！ ”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;学习完java基础之后，学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
+等这一套学习了完了之后，去学习设计模式，了解设计思想。然后再去学习数据结构，了解底层。最后才是jvm
+从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。
+还有一点，springboot相较与javaweb和ssm，会简单很多，毕竟springboot约定大于配置。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>markdown语法快速复制</title>
         <link>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</link>
         <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
