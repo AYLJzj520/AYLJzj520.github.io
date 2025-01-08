@@ -1177,11 +1177,31 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
         <description></description>
         </item>
         <item>
-        <title></title>
-        <link>https://ayljzj520.github.io/</link>
+        <title>关于我</title>
+        <link>https://ayljzj520.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/</guid>
+        <guid>https://ayljzj520.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+        <description>&lt;p&gt;&lt;big&gt;Personal Introduction&lt;/big&gt;&lt;br&gt;
+保护我的眼睛：&lt;br&gt;
+右眼450 散光50 轴位180 瞳距34&lt;br&gt;
+左眼475 散光75 轴位180 瞳距32&lt;br&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>https://ayljzj520.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>友情链接</title>
+        <link>https://ayljzj520.github.io/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1209,26 +1229,6 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>关于我</title>
-        <link>https://ayljzj520.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayljzj520.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
-        <description>&lt;p&gt;&lt;big&gt;Personal Introduction&lt;/big&gt;&lt;br&gt;
-保护我的眼睛：&lt;br&gt;
-右眼450 散光50 轴位180 瞳距34&lt;br&gt;
-左眼475 散光75 轴位180 瞳距32&lt;br&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>搜索</title>
-        <link>https://ayljzj520.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayljzj520.github.io/search/</guid>
-        <description></description>
         </item>
         
     </channel>
