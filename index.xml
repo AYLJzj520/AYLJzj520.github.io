@@ -15,7 +15,8 @@
         <description>&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;学习完java基础之后，学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
+&lt;p&gt;&lt;img src=&#34;./java.assets/javaroad.jpg&#34; width=&#34;80%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+学习完java基础之后，学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
 等这一套学习了完了之后，去学习设计模式，了解设计思想。然后再去学习数据结构，了解底层。最后才是jvm
 从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。
 还有一点，springboot相较与javaweb和ssm，会简单很多，毕竟springboot约定大于配置。&lt;/p&gt;
@@ -56,7 +57,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;img src=&amp;#34;./aaaaaaaaa/aaaaa.png&amp;#34; width=&amp;#34;50%&amp;#34; align=&amp;#34;center&amp;#34; /&amp;gt;&amp;lt;br&amp;gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;img src=&amp;#34;./boom-beach.assets/3.png&amp;#34; width=&amp;#34;70%&amp;#34; align=&amp;#34;center&amp;#34; /&amp;gt;&amp;lt;br&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
