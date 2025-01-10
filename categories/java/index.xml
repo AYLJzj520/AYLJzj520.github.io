@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Fri, 10 Jan 2025 21:42:12 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 10 Jan 2025 21:47:23 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>java学习</title>
         <link>https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
@@ -46,7 +46,8 @@
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.injdk.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;JDK下载&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2编辑器下载&#34;&gt;2、编辑器下载
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com.cn/idea/download/?section=windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h2&gt;&lt;p&gt;a
+&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com.cn/idea/download/?section=windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IDEA&lt;/a&gt;&amp;mdash;
 &lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_46485638/article/details/134891162&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IDEA教程&lt;/a&gt;&lt;br&gt;&lt;br&gt;
