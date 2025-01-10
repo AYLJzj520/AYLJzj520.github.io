@@ -74,6 +74,14 @@
 等这一套学习了完了之后，去学习设计模式，了解设计思想。然后再去学习数据结构，了解底层。最后才是jvm
 从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。
 还有一点，springboot相较与javaweb和ssm，会简单很多，毕竟springboot约定大于配置。&lt;/p&gt;
+&lt;p&gt;java架构层次&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pojo（或entity）：实体类&lt;/li&gt;
+&lt;li&gt;util：工具类&lt;/li&gt;
+&lt;li&gt;service：代码逻辑&lt;/li&gt;
+&lt;li&gt;mapper：数据库接口层&lt;/li&gt;
+&lt;li&gt;web：&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -85,9 +93,20 @@
         <description>&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://xiaolincoding.com/interview/java.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Java八股&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1jdk下载&#34;&gt;1、JDK下载
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.injdk.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;JDK下载&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2编辑器下载&#34;&gt;2、编辑器下载
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com.cn/idea/download/?section=windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;IDEA&lt;/a&gt;&amp;mdash;-
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_46485638/article/details/134891162&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VS_code教程&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/Download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VS_code&lt;/a&gt;&amp;mdash;-
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/msdcp/article/details/127033151&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VS_code教程&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
