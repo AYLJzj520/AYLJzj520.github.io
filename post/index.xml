@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 11 Jan 2025 13:36:27 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 11 Jan 2025 13:39:21 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>研究生毕业要求</title>
         <link>https://ayljzj520.github.io/p/%E7%A0%94%E7%A9%B6%E7%94%9F%E6%AF%95%E4%B8%9A%E8%A6%81%E6%B1%82/</link>
         <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
@@ -161,117 +161,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;完成后将Maven添加到ieda中。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>markdown语法快速复制</title>
-        <link>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</link>
-        <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;“Write！ ”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;br&gt;
-帮助实现个人博客的快速编辑！！！
-&lt;h2 id=&#34;1-markdown基础语法&#34;&gt;1. markdown基础语法
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;图片语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;img src=&amp;#34;./boom-beach.assets/3.png&amp;#34; width=&amp;#34;70%&amp;#34; align=&amp;#34;center&amp;#34; /&amp;gt;&amp;lt;br&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;文字加大，加颜色&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;big&amp;gt;文字加大！！&amp;lt;/big&amp;gt;&amp;lt;br&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;font color=blue&amp;gt;文字加颜色！！&amp;lt;/font&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;big&amp;gt;&amp;lt;font color=blue&amp;gt;文字加大，加颜色！！！&amp;lt;/font&amp;gt;&amp;lt;/big&amp;gt;&amp;lt;br&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;超链接语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[百度](https://www.baidu.com/)&amp;lt;br&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&amp;lt;font color=blue&amp;gt;百度&amp;lt;/font&amp;gt;](https://www.baidu.com/)&amp;lt;br&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;表格语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 标题1      | 标题2      |标题3 |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| ---------- | ---------- | ---------- |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Header      | Title       | Title2       |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| Paragraph   | Text        | Text        |
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;效果如下：&lt;br&gt;&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;标题1&lt;/th&gt;
-          &lt;th&gt;标题2&lt;/th&gt;
-          &lt;th&gt;标题3&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Header&lt;/td&gt;
-          &lt;td&gt;Title&lt;/td&gt;
-          &lt;td&gt;Title2&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Paragraph&lt;/td&gt;
-          &lt;td&gt;Text&lt;/td&gt;
-          &lt;td&gt;Text&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
 </description>
         </item>
         <item>
@@ -1344,6 +1233,75 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;li&gt;在命令窗口使用&lt;code&gt;./kill.sh&lt;/code&gt;启动脚本；&lt;/li&gt;
 &lt;li&gt;脚本会在dist文件夹内生成kill-log.txt日志文件。&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>海岛奇兵</title>
+        <link>https://ayljzj520.github.io/p/%E6%B5%B7%E5%B2%9B%E5%A5%87%E5%85%B5/</link>
+        <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/%E6%B5%B7%E5%B2%9B%E5%A5%87%E5%85%B5/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“A Happy Game. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;相关链接&#34;&gt;相关链接
+&lt;/h2&gt;&lt;p&gt;海岛奇兵下载链接：&lt;a class=&#34;link&#34; href=&#34;https://bb.qq.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;海岛奇兵国服&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+海岛奇兵相关脚本：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.123865.com/s/yyl7Vv-A8OF3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;梦想脚本&lt;/font&gt;&lt;/a&gt;(链接失效)&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.123865.com/s/yyl7Vv-o8OF3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;梦想梦想模拟雕像脚本&lt;/font&gt;&lt;/a&gt;(链接失效)&lt;br&gt;
+养号说明：&lt;a class=&#34;link&#34; href=&#34;https://note.youdao.com/s/P86dxEYd&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;单号配置&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;个人上传：&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/s/MEejVv-OEwo3.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;个人云盘海岛脚本&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://note.youdao.com/s/gBwzRrG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;最新版腾讯切号使用教程+qq突破登录上限说明&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;相关介绍&#34;&gt;相关介绍
+&lt;/h2&gt;&lt;p&gt;养号：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ULGOXKK
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查序列：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;VZNKMZK
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;zhima123&amp;mdash;666&amp;mdash;17306971&lt;br&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;obsidian常用技巧&lt;/font&gt;&lt;/a&gt;，
+&lt;a class=&#34;link&#34; href=&#34;https://forum-zh.obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;中文论坛&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+小号QQ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;龙行天下&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;注册手机一加12&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;2024年6月&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;江西赣州&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;沙滩树教程&#34;&gt;沙滩树教程
+&lt;/h2&gt;&lt;p&gt;&lt;big&gt;&lt;font color=blue&gt;想种沙滩树要先种压岸树！&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1压岸树&#34;&gt;1压岸树
+&lt;/h3&gt;&lt;p&gt;压岸树首先将基地左上角靠山的位置空出来，别的位置用建筑填上，建筑直接的间隔不要留有大于(包括)2×2的位置（防止长树），确保树往左上角长。&lt;br&gt;
+&lt;img src=&#34;./boom-beach.assets/沙滩树1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2砍部分树&#34;&gt;2砍部分树
+&lt;/h3&gt;&lt;p&gt;当树长的较多的时候，可以将靠近上方的树砍掉，然后用建筑堵住，防止长回去，将树生长的方向挤向岸边。&lt;br&gt;
+&lt;img src=&#34;./boom-beach.assets/沙滩树2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3挂脚本&#34;&gt;3挂脚本
+&lt;/h3&gt;&lt;p&gt;当岸边长满树的时候，或者长较多树的时候，可以尝试开始挂航母脚本，促进沙滩树的生长。&lt;br&gt;
+&lt;img src=&#34;./boom-beach.assets/沙滩树3.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
