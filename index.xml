@@ -171,6 +171,14 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[百度](https://www.baidu.com/)&amp;lt;br&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&amp;lt;font color=blue&amp;gt;IDEA&amp;lt;/font&amp;gt;](链接)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;表格语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -596,11 +604,11 @@ git相关指令学习
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;安装前可以浏览这三个教程：&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/stellan/p/14409090.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;wsl安装教程&lt;/a&gt;
-&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/m0_74063149/article/details/137725577&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;安装wsl后虚拟机无法启动&lt;/a&gt;
-&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/opus/861067292754051097&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;原生ubuntu安装教程&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;wsl安装教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/m0_74063149/article/details/137725577&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;安装wsl后虚拟机无法启动&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/opus/861067292754051097&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;原生ubuntu安装教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1安装系统&#34;&gt;1、安装系统
 &lt;/h2&gt;&lt;h3 id=&#34;步骤1---启用适用于-linux-的-windows-子系统&#34;&gt;步骤1 - 启用适用于 Linux 的 Windows 子系统：
 &lt;/h3&gt;&lt;p&gt;需要先启用“适用于 Linux 的 Windows 子系统”可选功能，然后才能在 Windows 上安装 Linux 分发。
@@ -813,7 +821,7 @@ git相关指令学习
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;进行此项内容前，请确保已经完成环境的配置。&lt;br&gt;
 相关网站：&lt;a class=&#34;link&#34; href=&#34;https://www.tptp.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;TPTP官网&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;TPTP官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1实验前准备&#34;&gt;1、实验前准备
 &lt;/h2&gt;&lt;h3 id=&#34;准备条件&#34;&gt;准备条件
 &lt;/h3&gt;&lt;p&gt;拷贝好dist文件夹，确保内部具有正确的文件&lt;br&gt;
@@ -1184,18 +1192,18 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;相关链接&#34;&gt;相关链接
 &lt;/h2&gt;&lt;p&gt;海岛奇兵下载链接：&lt;a class=&#34;link&#34; href=&#34;https://bb.qq.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;海岛奇兵国服&lt;/a&gt;&lt;br&gt;
+    &gt;&lt;font color=blue&gt;海岛奇兵国服&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
 海岛奇兵相关脚本：&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.123865.com/s/yyl7Vv-A8OF3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;梦想脚本&lt;/a&gt;(链接失效)&lt;br&gt;
+    &gt;&lt;font color=blue&gt;梦想脚本&lt;/font&gt;&lt;/a&gt;(链接失效)&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.123865.com/s/yyl7Vv-o8OF3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;梦想模拟雕像&lt;/a&gt;(链接失效)&lt;br&gt;
+    &gt;&lt;font color=blue&gt;梦想梦想模拟雕像脚本&lt;/font&gt;&lt;/a&gt;(链接失效)&lt;br&gt;
 养号说明：&lt;a class=&#34;link&#34; href=&#34;https://note.youdao.com/s/P86dxEYd&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;单号配置&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;单号配置&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;个人上传：&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/s/MEejVv-OEwo3.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;个人云盘海岛脚本&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;个人云盘海岛脚本&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://note.youdao.com/s/gBwzRrG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最新版腾讯切号使用教程+qq突破登录上限说明&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;最新版腾讯切号使用教程+qq突破登录上限说明&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;相关介绍&#34;&gt;相关介绍
 &lt;/h2&gt;&lt;p&gt;养号：&lt;br&gt;&lt;/p&gt;
@@ -1218,9 +1226,9 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;zhima123&amp;mdash;666&amp;mdash;17306971&lt;br&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;obsidian常用技巧&lt;/a&gt;，
+    &gt;&lt;font color=blue&gt;obsidian常用技巧&lt;/font&gt;&lt;/a&gt;，
 &lt;a class=&#34;link&#34; href=&#34;https://forum-zh.obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;中文论坛&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+    &gt;&lt;font color=blue&gt;中文论坛&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
 小号QQ：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;龙行天下&lt;br&gt;&lt;/li&gt;

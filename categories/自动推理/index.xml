@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Tue, 07 Jan 2025 11:03:42 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 11 Jan 2025 15:41:30 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自动推理（环境搭建）</title>
         <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
@@ -19,11 +19,11 @@
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;安装前可以浏览这三个教程：&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/stellan/p/14409090.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;wsl安装教程&lt;/a&gt;
-&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/m0_74063149/article/details/137725577&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;安装wsl后虚拟机无法启动&lt;/a&gt;
-&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/opus/861067292754051097&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;原生ubuntu安装教程&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;wsl安装教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/m0_74063149/article/details/137725577&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;安装wsl后虚拟机无法启动&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/opus/861067292754051097&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;原生ubuntu安装教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1安装系统&#34;&gt;1、安装系统
 &lt;/h2&gt;&lt;h3 id=&#34;步骤1---启用适用于-linux-的-windows-子系统&#34;&gt;步骤1 - 启用适用于 Linux 的 Windows 子系统：
 &lt;/h3&gt;&lt;p&gt;需要先启用“适用于 Linux 的 Windows 子系统”可选功能，然后才能在 Windows 上安装 Linux 分发。
@@ -236,7 +236,7 @@
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;进行此项内容前，请确保已经完成环境的配置。&lt;br&gt;
 相关网站：&lt;a class=&#34;link&#34; href=&#34;https://www.tptp.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;TPTP官网&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;TPTP官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1实验前准备&#34;&gt;1、实验前准备
 &lt;/h2&gt;&lt;h3 id=&#34;准备条件&#34;&gt;准备条件
 &lt;/h3&gt;&lt;p&gt;拷贝好dist文件夹，确保内部具有正确的文件&lt;br&gt;
