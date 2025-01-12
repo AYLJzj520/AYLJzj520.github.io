@@ -20,13 +20,16 @@
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;前往【&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Git官网&lt;/a&gt;】，下载安装程序&lt;/li&gt;
-&lt;li&gt;一直点下一步，默认安装即可&lt;/li&gt;
+&lt;li&gt;一直点下一步，默认安装即可
+&lt;img src=&#34;./person-hugo.assets/1git下载.jpg&#34; width=&#34;100%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;12-hugo下载&#34;&gt;1.2 Hugo下载
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;前往【[Hugo Github Tags(https://github.com/gohugoio/hugo/tags)]】，选择对应版本下载，下载后解压即可&lt;/li&gt;
 &lt;li&gt;Windows下载版本：hugo_extended_xxxxx_windows_amd64.zip&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;2搭建博客&#34;&gt;2、搭建博客
 &lt;/h2&gt;&lt;h3 id=&#34;21-创建博客&#34;&gt;2.1 创建博客
 &lt;/h3&gt;&lt;ul&gt;
@@ -35,6 +38,7 @@
 &lt;li&gt;（3）敲打命名cd xxxx切换目录，并把hugo.exe复制到刚生成的文件夹中&lt;/li&gt;
 &lt;li&gt;（4）敲打命令&lt;code&gt;hugo server -D&lt;/code&gt;启动服务，访问http://localhost:1313，Ctrl+C停止服务 （hugo默认是没有主题的，需要进行主题配置）&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;22-配置主题&#34;&gt;2.2 配置主题
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;（1）前往【Hugo Themes】，查找自己喜欢的主题，进行下载&lt;/li&gt;
@@ -43,6 +47,7 @@
 &lt;li&gt;（4）修改 hugo.yaml 中的 theme，将他修改为跟主题文件夹同名&lt;/li&gt;
 &lt;li&gt;（5）再次启动hugo服务，查看主题，具体主题配置修改 hugo.yaml，这里不细说，感兴趣可自行查找相关文章&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;3github部署&#34;&gt;3、Github部署
 &lt;/h2&gt;&lt;h3 id=&#34;31-常规部署&#34;&gt;3.1 常规部署
 &lt;/h3&gt;&lt;ul&gt;
@@ -72,6 +77,7 @@
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;（5）上传成功后访问 https://{github用户名}.github.io，成功搭建属于自己的Hugo博客&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;32-github-action自动部署&#34;&gt;3.2 Github Action自动部署
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;（1）Github创建一个新的仓库，用于存放Hugo的主文件&lt;/li&gt;
@@ -91,7 +97,7 @@
         
         <guid>https://ayljzj520.github.io/p/markdown%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;“Write！ ”&lt;/p&gt;
+&lt;p&gt;“Write！”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;br&gt;
@@ -117,7 +123,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;文字加大，加颜色&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;文字格式&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -141,6 +147,14 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;big&amp;gt;&amp;lt;font color=blue&amp;gt;文字加大，加颜色！！！&amp;lt;/font&amp;gt;&amp;lt;/big&amp;gt;&amp;lt;br&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;center&amp;gt;文字居中&amp;lt;/center&amp;gt;&amp;lt;br&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
