@@ -80,7 +80,8 @@
 &lt;h2 id=&#34;3github部署&#34;&gt;3、Github部署
 &lt;/h2&gt;&lt;h3 id=&#34;31-常规部署&#34;&gt;3.1 常规部署
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;（1）前往【Github官网】，创建仓库 {github用户名}.github.io&lt;/li&gt;
+&lt;li&gt;（1）前往【&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github官网&lt;/a&gt;】，创建仓库 {github用户名}.github.io&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/3.1-1github仓库创建.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;ul&gt;
@@ -132,7 +133,8 @@
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/3.2-4createToken3.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/3.2-4setToken1.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;（5）在hugo主文件创建一个.github/workflows/xxxx.yaml文件，将以下内容复制进去，想具体了解更多，可查看【Github Action文档】&lt;/li&gt;
+&lt;li&gt;（5）在hugo主文件创建一个.github/workflows/xxxx.yaml文件，将以下内容复制进去，想具体了解更多，可查看【&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/zh/actions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github Action文档&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
