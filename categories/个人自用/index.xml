@@ -36,7 +36,7 @@
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;（1）在hugo.exe所在文件夹的地址栏敲打cmd，然后Enter唤起命令行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/2.1-1启动cmd.jpg&#34; align=&#34;center&#34; /&gt;&lt;/div&gt;&lt;br&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/2.1-1启动cmd.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;
 - （2）敲打命令hugo new site xxxx创建hugo文件
 &lt;img src=&#34;./person-hugo.assets/2.1-2newSite.jpg&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 - （3）敲打命名cd xxxx切换目录，并把hugo.exe复制到刚生成的文件夹中
