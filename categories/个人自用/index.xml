@@ -26,10 +26,11 @@
 &lt;hr&gt;
 &lt;h3 id=&#34;12-hugo下载&#34;&gt;1.2 Hugo下载
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;前往【[Hugo Github Tags(https://github.com/gohugoio/hugo/tags)]】，选择对应版本下载，下载后解压即可&lt;/li&gt;
+&lt;li&gt;前往【&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/tags&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Github Tags&lt;/a&gt;】，选择对应版本下载，下载后解压即可&lt;/li&gt;
 &lt;li&gt;Windows下载版本：hugo_extended_xxxxx_windows_amd64.zip&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;/div&gt;&lt;img src=&#34;./person-hugo.assets/1.2hugo下载.jpg&#34;/&gt;&lt;br&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/1.2hugo下载.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;
 ---
 ## 2、搭建博客
 ### 2.1 创建博客

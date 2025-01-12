@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sun, 12 Jan 2025 20:05:42 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Jan 2025 20:08:44 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo &#43; Github 免费部署自己的博客</title>
         <link>https://ayljzj520.github.io/p/hugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
@@ -27,10 +27,11 @@
 &lt;hr&gt;
 &lt;h3 id=&#34;12-hugo下载&#34;&gt;1.2 Hugo下载
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;前往【[Hugo Github Tags(https://github.com/gohugoio/hugo/tags)]】，选择对应版本下载，下载后解压即可&lt;/li&gt;
+&lt;li&gt;前往【&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/tags&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Github Tags&lt;/a&gt;】，选择对应版本下载，下载后解压即可&lt;/li&gt;
 &lt;li&gt;Windows下载版本：hugo_extended_xxxxx_windows_amd64.zip&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div align=&#34;center&#34;&gt;&lt;/div&gt;&lt;img src=&#34;./person-hugo.assets/1.2hugo下载.jpg&#34;/&gt;&lt;br&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/1.2hugo下载.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;
 ---
 ## 2、搭建博客
 ### 2.1 创建博客
