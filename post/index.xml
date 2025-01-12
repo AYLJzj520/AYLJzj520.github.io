@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sun, 12 Jan 2025 20:20:29 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Jan 2025 20:54:33 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo &#43; Github 免费部署自己的博客</title>
         <link>https://ayljzj520.github.io/p/hugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
@@ -60,16 +60,17 @@
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/2.2-1hugo主题下载.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;（2）这边以【Stack主题】为例，将下载好的主题解压，放到/themes文件夹中&lt;/li&gt;
+&lt;li&gt;（2）这边以【&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/tags&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack主题&lt;/a&gt;】为例，将下载好的主题解压，放到/themes文件夹中&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/2.2-2主题解压.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;（3）将exampleSite样例数据中的 Content 和 hugo.yaml 复制到主文件夹中，并删掉hugo.toml和content/post/rich-content&lt;/li&gt;
+&lt;li&gt;（3）将&lt;code&gt;exampleSite&lt;/code&gt;样例数据中的 &lt;code&gt;Content&lt;/code&gt; 和 &lt;code&gt;hugo.yaml&lt;/code&gt; 复制到主文件夹中，并删掉&lt;code&gt;hugo.toml&lt;/code&gt;和&lt;code&gt;content/post/rich-content&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/2.2-3主题复制1.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/2.2-3主题复制2.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;（4）修改 hugo.yaml 中的 theme，将他修改为跟主题文件夹同名&lt;/li&gt;
+&lt;li&gt;（4）修改 &lt;code&gt;hugo.yaml&lt;/code&gt; 中的 &lt;code&gt;theme&lt;/code&gt;，将他修改为跟主题文件夹同名&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./person-hugo.assets/2.2-4主题名修改.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;
 &lt;ul&gt;
