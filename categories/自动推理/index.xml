@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 11 Jan 2025 15:41:30 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Jan 2025 10:41:34 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自动推理（环境搭建）</title>
         <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
@@ -198,11 +198,11 @@
 &lt;/div&gt;&lt;br&gt;
 &lt;h2 id=&#34;3-纠错&#34;&gt;3、 纠错
 &lt;/h2&gt;&lt;h3 id=&#34;错误1证明器不存在&#34;&gt;错误1：证明器不存在
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./auto.assets/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./jxust-autoEnvironment.assets/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 检查dist文件夹下有没有这个cprover_priority&lt;br&gt;
-&lt;img src=&#34;./auto.assets/error1/solve1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;./jxust-autoEnvironment.assets/error1/solve1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 若没有那就把cse 改成这个名字，然后再添加可执行权限&lt;br&gt;
-&lt;img src=&#34;./auto.assets/error1/solve2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;./jxust-autoEnvironment.assets/error1/solve2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3 id=&#34;错误2判定异常&#34;&gt;错误2：判定异常
 &lt;/h3&gt;&lt;p&gt;若验证检查结果异常，需记录判定情况，需要记录的有：
 策略：多策略模式下为桌面的strategy文件夹；单策略模式下为strategy.txt文件
@@ -221,7 +221,7 @@
 在别的电脑上调试也能成功
 &lt;strong&gt;解决方法：&lt;/strong&gt;
 重装ubuntu系统&lt;br&gt;
-&lt;img src=&#34;./auto.assets/error4/error4.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;./jxust-autoEnvironment.assets/error4/error4.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -240,7 +240,7 @@
 &lt;h2 id=&#34;1实验前准备&#34;&gt;1、实验前准备
 &lt;/h2&gt;&lt;h3 id=&#34;准备条件&#34;&gt;准备条件
 &lt;/h3&gt;&lt;p&gt;拷贝好dist文件夹，确保内部具有正确的文件&lt;br&gt;
-&lt;img src=&#34;./auto-test.assets/dist.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;./jxust-autoTest.assets/dist.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 problems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。&lt;br&gt;
 在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：&lt;br&gt;
 &lt;code&gt;cse&lt;/code&gt;,&lt;code&gt;eprover&lt;/code&gt;,&lt;code&gt;tptp4X&lt;/code&gt;,以及相关jar包。&lt;br&gt;
