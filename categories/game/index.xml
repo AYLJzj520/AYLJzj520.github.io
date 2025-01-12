@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Game on 暗影流金的博客</title>
+        <title>个人自用 on 暗影流金的博客</title>
         <link>https://ayljzj520.github.io/categories/game/</link>
-        <description>Recent content in Game on 暗影流金的博客</description>
+        <description>Recent content in 个人自用 on 暗影流金的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>暗影流金</copyright>
-        <lastBuildDate>Sun, 12 Jan 2025 11:29:19 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/game/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>暗影流金</copyright><atom:link href="https://ayljzj520.github.io/categories/game/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>海岛奇兵</title>
         <link>https://ayljzj520.github.io/p/%E6%B5%B7%E5%B2%9B%E5%A5%87%E5%85%B5/</link>
         <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
