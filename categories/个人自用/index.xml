@@ -430,13 +430,6 @@
         <description>&lt;img src="https://ayljzj520.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E8%AF%AD%E6%B3%95%E7%A4%BA%E8%8C%83/person-markdown.assets/main.jpg" alt="Featured image of post hugo博客语法示范" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Write！”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;details&gt;
-  &lt;summary&gt;**Lorem ipsum**&lt;/summary&gt;
-  Lorem ipsum _dolor sit amet_, consectetur [adipiscing elit](https://example.org/)
-&lt;/details&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;br&gt;
-帮助实现个人博客的快速编辑！！！
 &lt;h2 id=&#34;标题语法&#34;&gt;标题语法
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -466,7 +459,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;1-markdown基础语法&#34;&gt;1. markdown基础语法
+&lt;/div&gt;&lt;h2 id=&#34;折叠语法&#34;&gt;折叠语法
+&lt;/h2&gt;&lt;details&gt;
+  &lt;summary&gt;这是一段折叠内容，语法格式如下&lt;/summary&gt;
+  此处为被折叠的内容
+&lt;/details&gt;
+```
+&lt;details&gt;
+  &lt;summary&gt;这是一段折叠内容，语法格式如下&lt;/summary&gt;
+  此处为被折叠的内容
+&lt;/details&gt;
+```
+&lt;h2 id=&#34;1-markdown基础语法&#34;&gt;1. markdown基础语法
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;图片语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
