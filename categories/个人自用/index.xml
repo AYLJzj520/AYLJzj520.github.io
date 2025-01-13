@@ -478,7 +478,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/details&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;1-markdown基础语法&#34;&gt;1. markdown基础语法
+&lt;/div&gt;&lt;h2 id=&#34;markdown基础语法&#34;&gt;markdown基础语法
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;big&gt;&lt;font color=blue&gt;图片语法&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -599,6 +599,10 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id=&#34;底色文字段&#34;&gt;底色文字段
+&lt;/h2&gt;&lt;p&gt;{{&amp;lt; quote author=&amp;ldquo;作者/说话的人&amp;rdquo; source=&amp;ldquo;书名/来源&amp;rdquo; url=&amp;ldquo;链接（可选）&amp;rdquo; &amp;gt;}}
+内容
+{{&amp;lt; /quote &amp;gt;}}&lt;/p&gt;
 </description>
         </item>
         <item>
