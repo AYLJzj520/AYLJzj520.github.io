@@ -12,8 +12,8 @@
         <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E7%A0%94%E7%A9%B6%E7%94%9F%E6%AF%95%E4%B8%9A%E8%A6%81%E6%B1%82/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/p/%E7%A0%94%E7%A9%B6%E7%94%9F%E6%AF%95%E4%B8%9A%E8%A6%81%E6%B1%82/jxust-graduate.assets/main.jpg" alt="Featured image of post 研究生毕业要求" /&gt;&lt;blockquote&gt;
-&lt;p&gt;“研究生！ ”&lt;/p&gt;
+        <description>&lt;img src="https://ayljzj520.github.io/p/%E7%A0%94%E7%A9%B6%E7%94%9F%E6%AF%95%E4%B8%9A%E8%A6%81%E6%B1%82/jxust04-graduate.assets/main.jpg" alt="Featured image of post 研究生毕业要求" /&gt;&lt;blockquote&gt;
+&lt;p&gt;“研究生！”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;085410 人工智能&lt;br&gt;
 信息工程学院研究方向包括： 计算机视觉、语音信号处理与识别和自然语言处理。&lt;/p&gt;
@@ -66,7 +66,7 @@
         <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/jxust-netlogin.assets/main.jpg" alt="Featured image of post 江西理工大学校园网自动登录" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/jxust03-netlogin.assets/main.jpg" alt="Featured image of post 江西理工大学校园网自动登录" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“NetWork”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
@@ -84,11 +84,11 @@
 &lt;li&gt;按下 F12 打开浏览器开发者工具（如果没反应那就 fn + F12）&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;输入账号密码，登录进入校园网&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;找到这一串请求url，就是通过这一串url就能够成功登录校园网，把这一串复制下来&lt;br&gt;
-&lt;img src=&#34;./jxust-netlogin.assets/login.png&#34; width=&#34;90%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;./jxust03-netlogin.assets/login.png&#34; width=&#34;90%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 &lt;code&gt;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;amp;login_method=1&amp;amp;user_account=你的校园网账号%%40telecom&amp;amp;user_password=你的校园网密码。&lt;/code&gt;&lt;br&gt;
 其中，user_account就是学号；user_password就是密码；login_method是运营商信息。里面信息不需要全部保留也可以登录校园网，保留至user_password的结束位置也能登陆。&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;在搜索栏直接粘贴上文所说的url点击回车，若出现下图的情况即联网成功。&lt;br&gt;
-&lt;img src=&#34;./jxust-netlogin.assets/login-success.png&#34; width=&#34;80%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/li&gt;
+&lt;img src=&#34;./jxust03-netlogin.assets/login-success.png&#34; width=&#34;80%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;原理可行！&lt;/strong&gt;&lt;br&gt;
 那我只要每次开机后电脑能自动访问这条url那不就自动登录校园网了吗？&lt;br&gt;&lt;br&gt;
@@ -177,7 +177,7 @@
 &lt;/ul&gt;
 &lt;p&gt;请检查你自己所获取到的url，在&lt;code&gt;校园网账号&lt;/code&gt;后面应该会有&lt;code&gt;%40&lt;/code&gt;字符，由于复制进脚本后，由脚本通过start命令发起访问会将&lt;code&gt;%40&lt;/code&gt;识别为@，从而导致输进浏览器的url缺失这一关键信息&lt;br&gt;
 若不进行修改就会导致下图的访问结果。&lt;br&gt;
-&lt;img src=&#34;./jxust-netlogin.assets/login-fail.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;./jxust03-netlogin.assets/login-fail.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 &lt;font color=red&gt;解决方法：&lt;/font&gt;在&lt;code&gt;%40&lt;/code&gt;这个字符前再加一个&lt;code&gt;%&lt;/code&gt;，这样就能确保url的正确读取并访问。&lt;br&gt;
 接下来运行这个.bat文件，就会自动向校园网登录端发送请求，然后登录你的校园网账号，并且每五分钟会ping一次百度的网站。&lt;br&gt;
 若ping不通，则会再次执行登录请求。&lt;br&gt;&lt;/p&gt;
@@ -196,7 +196,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;将编写好的.bat脚本复制进去，即可做到开机自动运行。&lt;br&gt;
-&lt;img src=&#34;./jxust-netlogin.assets/start.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;./jxust03-netlogin.assets/start.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;补充&#34;&gt;补充
 &lt;/h2&gt;&lt;p&gt;有的时候电脑开机后没有自动连接到校园网，自然也无法完成登录请求。&lt;br&gt;
 由于只ping一个站点有时会造成误判，从而反复执行。所以增加一次操作，对baidu.com和qq.com均ping一次，&lt;br&gt;
@@ -375,7 +375,7 @@
 &lt;big&gt;至此，全部完成&lt;/big&gt;&lt;br&gt;
 会在脚本所在目录下输出`wlan-connect.txt`的日志文件。&lt;br&gt;
 最后实现的效果如下图所示：&lt;br&gt;
-&lt;img src=&#34;./jxust-netlogin.assets/final.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;</description>
+&lt;img src=&#34;./jxust03-netlogin.assets/final.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;</description>
         </item>
         <item>
         <title>自动推理（环境搭建）</title>
@@ -383,7 +383,7 @@
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/jxust-autoEnvironment.assets/main.jpg" alt="Featured image of post 自动推理（环境搭建）" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/jxust01-autoEnvironment.assets/main.jpg" alt="Featured image of post 自动推理（环境搭建）" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work. ”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
@@ -451,7 +451,7 @@
     &gt;Pengwin&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9N8LP0X93VCP&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Pengwin Enterprise&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9p804crf0395&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Alpine WSL&lt;/a&gt;&lt;br&gt;
-&lt;img src=&#34;./auto.assets/1.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;./jxust01-autoEnvironment.assets/1.jpg&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2修改环境&#34;&gt;2、修改环境
 &lt;/h2&gt;&lt;h3 id=&#34;切换镜像&#34;&gt;切换镜像
 &lt;/h3&gt;&lt;p&gt;修改源：找到 &lt;code&gt;cd /etc/apt&lt;/code&gt; 路径下的 sources.list 文件对其进行修改&lt;br&gt;在此路径下打开命令行，输入sudo vim sources.list&lt;br&gt;命令行中相关操作命令如下：&lt;br&gt;•	g 光标到头部&lt;br&gt;•	d 删除&lt;br&gt;•	shift + g 全部删除&lt;br&gt;•	i 写入&lt;br&gt;•	粘贴 以下 阿里源 或 清华源&lt;br&gt;•	ESC 退出写入模式&lt;br&gt;•	:wq 保存退出&lt;br&gt;&lt;/p&gt;
@@ -568,11 +568,11 @@
 &lt;/div&gt;&lt;br&gt;
 &lt;h2 id=&#34;3-纠错&#34;&gt;3、 纠错
 &lt;/h2&gt;&lt;h3 id=&#34;错误1证明器不存在&#34;&gt;错误1：证明器不存在
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./jxust-autoEnvironment.assets/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./jxust01-autoEnvironment.assets/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 检查dist文件夹下有没有这个cprover_priority&lt;br&gt;
-&lt;img src=&#34;./jxust-autoEnvironment.assets/error1/solve1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;./jxust01-autoEnvironment.assets/error1/solve1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 若没有那就把cse 改成这个名字，然后再添加可执行权限&lt;br&gt;
-&lt;img src=&#34;./jxust-autoEnvironment.assets/error1/solve2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;./jxust01-autoEnvironment.assets/error1/solve2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3 id=&#34;错误2判定异常&#34;&gt;错误2：判定异常
 &lt;/h3&gt;&lt;p&gt;若验证检查结果异常，需记录判定情况，需要记录的有：
 策略：多策略模式下为桌面的strategy文件夹；单策略模式下为strategy.txt文件
@@ -591,7 +591,7 @@
 在别的电脑上调试也能成功
 &lt;strong&gt;解决方法：&lt;/strong&gt;
 重装ubuntu系统&lt;br&gt;
-&lt;img src=&#34;./jxust-autoEnvironment.assets/error4/error4.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;./jxust01-autoEnvironment.assets/error4/error4.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -600,7 +600,7 @@
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/jxust-autoTest.assets/main.jpg" alt="Featured image of post 自动推理（实验相关内容）" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/jxust02-autoTest.assets/main.jpg" alt="Featured image of post 自动推理（实验相关内容）" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work. ”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
@@ -610,7 +610,7 @@
 &lt;h2 id=&#34;1实验前准备&#34;&gt;1、实验前准备
 &lt;/h2&gt;&lt;h3 id=&#34;准备条件&#34;&gt;准备条件
 &lt;/h3&gt;&lt;p&gt;拷贝好dist文件夹，确保内部具有正确的文件&lt;br&gt;
-&lt;img src=&#34;./jxust-autoTest.assets/dist.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;./jxust02-autoTest.assets/dist.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 problems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。&lt;br&gt;
 在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：&lt;br&gt;
 &lt;code&gt;cse&lt;/code&gt;,&lt;code&gt;eprover&lt;/code&gt;,&lt;code&gt;tptp4X&lt;/code&gt;,以及相关jar包。&lt;br&gt;
