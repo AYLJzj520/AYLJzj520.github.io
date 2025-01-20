@@ -20,21 +20,15 @@
 本文将为你提供一份基础软件清单，帮助你快速配置并提升个人电脑的工作效率。&lt;/p&gt;
 &lt;h2 id=&#34;电脑基础配置&#34;&gt;电脑基础配置
 &lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;bitlocker
-通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;br&gt;
-或者&lt;br&gt;
-通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;电脑必须检查删除McAfee软件&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;删除defender软件:【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i37nv2lfc0bc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;下载链接&lt;/a&gt;】&lt;br&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;bitlocker
+通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;br&gt;或者&lt;br&gt;通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]&lt;/li&gt;
+&lt;li&gt;电脑必须检查删除McAfee软件&lt;/li&gt;
+&lt;li&gt;删除defender软件:【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i37nv2lfc0bc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;br&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
+&lt;li&gt;微软常用运行库：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iWxgw2lfh49e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;英伟达显卡驱动：【&lt;a class=&#34;link&#34; href=&#34;https://www.nvidia.cn/geforce/drivers/results/237755/#&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;AMD显卡驱动：【&lt;a class=&#34;link&#34; href=&#34;https://www.amd.com/zh-cn/support/download/drivers.html#windows-linux-drivers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -52,6 +46,8 @@
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;TIM：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/icvOa2lf6rre&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;TIM绿色精简化版：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i97wl2lfwzne&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;腾讯会议：【&lt;a class=&#34;link&#34; href=&#34;https://meeting.tencent.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;飞书：【&lt;a class=&#34;link&#34; href=&#34;https://www.feishu.cn/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -59,11 +55,79 @@
 &lt;li&gt;钉钉：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iUaz52lf9azi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2办公类软件&#34;&gt;2、办公类软件
-&lt;/h2&gt;&lt;p&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/p&gt;
-&lt;h2 id=&#34;3游戏类&#34;&gt;3、游戏类
-&lt;/h2&gt;&lt;h2 id=&#34;4实用软件&#34;&gt;4、实用软件
-&lt;/h2&gt;</description>
+&lt;h2 id=&#34;2办公软件&#34;&gt;2、办公软件
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;文件处理
+&lt;ul&gt;
+&lt;li&gt;WPS：【&lt;a class=&#34;link&#34; href=&#34;https://www.wps.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;2019Office：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ifaHX2lfk50j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Visio：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/itPSd2lfkj1e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;远程工具
+&lt;ul&gt;
+&lt;li&gt;向日葵：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iwVat2lfu6mh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;ToDesk：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i3FVI2lfu3uh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3常用软件&#34;&gt;3、常用软件
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;浏览器
+&lt;ul&gt;
+&lt;li&gt;浏览器必备IDM：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iaDsq2lfwg2j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Edge：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iSAUk2lfmr1e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Chrome：【&lt;a class=&#34;link&#34; href=&#34;https://www.google.cn/chrome/?standalone=1&amp;amp;platform=win64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;火狐浏览器：【&lt;a class=&#34;link&#34; href=&#34;https://www.firefox.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;网盘
+&lt;ul&gt;
+&lt;li&gt;阿里云盘：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iEF2u2lfshsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;百度云盘：【&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/download#win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;123云盘：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i0uNk2lfsdhc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;夸克云盘：【&lt;a class=&#34;link&#34; href=&#34;https://pan.quark.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;视频软件
+&lt;ul&gt;
+&lt;li&gt;OBS：【&lt;a class=&#34;link&#34; href=&#34;https://download.obs.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Potplayer：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iHGsL2lftlze&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;剪映：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iBTMm2lftged&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;压缩工具
+&lt;ul&gt;
+&lt;li&gt;Bandzip：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iuEjs2lfw0ri&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;WinRar：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i3YRX2lfw17e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;7-zip：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iQYfG2lfvzxi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4游戏软件&#34;&gt;4、游戏软件
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+</description>
         </item>
         <item>
         <title>【hugo】Stack主题自定义修改</title>
