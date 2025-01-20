@@ -15,7 +15,47 @@
         <description>&lt;img src="https://ayljzj520.github.io/p/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/person05-computer.assets/main.jpg" alt="Featured image of post 电脑软件配置" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“电脑配置！”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;1显示文章更新时间&#34;&gt;1、显示文章更新时间
+&lt;p&gt;&lt;strong&gt;工欲善其事，必先利其器&lt;/strong&gt;
+每次重装操作系统，我们都希望能迅速恢复工作环境，减少不必要的配置时间。正如古语所说：“工欲善其事，必先利其器”，只有准备好合适的工具，才能高效地完成任务。在电脑重装后的初期，我们需要下载并安装一系列基础软件，确保系统稳定、安全、便捷地运行。&lt;br&gt;
+本文将为你提供一份基础软件清单，帮助你快速配置并提升个人电脑的工作效率。&lt;/p&gt;
+&lt;h2 id=&#34;电脑基础配置&#34;&gt;电脑基础配置
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;bitlocker
+通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;br&gt;
+或者通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]&lt;/li&gt;
+&lt;li&gt;电脑必须检查删除McAfee软件&lt;/li&gt;
+&lt;li&gt;删除defender软件:【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i37nv2lfc0bc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;英伟达显卡驱动：【&lt;a class=&#34;link&#34; href=&#34;https://www.nvidia.cn/geforce/drivers/results/237755/#&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;AMD显卡驱动：【&lt;a class=&#34;link&#34; href=&#34;https://www.amd.com/zh-cn/support/download/drivers.html#windows-linux-drivers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;联想驱动管理：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/icvHl2lfaxpc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1聊天软件&#34;&gt;1、聊天软件
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;QQ：【&lt;a class=&#34;link&#34; href=&#34;https://im.qq.com/pcqq/index.shtml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;https://pc.weixin.qq.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;企业微信：【&lt;a class=&#34;link&#34; href=&#34;https://work.weixin.qq.com/wework_admin/commdownload?platform=win&amp;amp;from=wwindex&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;TIM：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/icvOa2lf6rre&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;腾讯会议：【&lt;a class=&#34;link&#34; href=&#34;https://meeting.tencent.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;飞书：【&lt;a class=&#34;link&#34; href=&#34;https://www.feishu.cn/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;钉钉：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iUaz52lf9azi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2办公类软件&#34;&gt;2、办公类软件
+&lt;/h2&gt;&lt;p&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/p&gt;
+&lt;h2 id=&#34;3游戏类&#34;&gt;3、游戏类
+&lt;/h2&gt;&lt;h2 id=&#34;4实用软件&#34;&gt;4、实用软件
 &lt;/h2&gt;</description>
         </item>
         <item>
