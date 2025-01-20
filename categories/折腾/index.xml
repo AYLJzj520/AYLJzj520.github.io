@@ -15,12 +15,12 @@
         <description>&lt;img src="https://ayljzj520.github.io/p/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/person05-computer.assets/main.jpg" alt="Featured image of post 电脑软件配置" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“电脑配置！”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;工欲善其事，必先利其器&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;工欲善其事，必先利其器&lt;/strong&gt;&lt;br&gt;
 每次重装操作系统，我们都希望能迅速恢复工作环境，减少不必要的配置时间。正如古语所说：“工欲善其事，必先利其器”，只有准备好合适的工具，才能高效地完成任务。在电脑重装后的初期，我们需要下载并安装一系列基础软件，确保系统稳定、安全、便捷地运行。&lt;br&gt;
 本文将为你提供一份基础软件清单，帮助你快速配置并提升个人电脑的工作效率。&lt;/p&gt;
 &lt;h2 id=&#34;电脑基础配置&#34;&gt;电脑基础配置
 &lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;bitlocker
+&lt;li&gt;必须关闭bitlocker
 通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;br&gt;或者&lt;br&gt;通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]&lt;/li&gt;
 &lt;li&gt;电脑必须检查删除McAfee软件&lt;/li&gt;
 &lt;li&gt;删除defender软件:【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i37nv2lfc0bc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -37,7 +37,8 @@
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;1聊天软件&#34;&gt;1、聊天软件
-&lt;/h2&gt;&lt;ul&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;QQ：【&lt;a class=&#34;link&#34; href=&#34;https://im.qq.com/pcqq/index.shtml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;https://pc.weixin.qq.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -55,19 +56,21 @@
 &lt;li&gt;钉钉：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iUaz52lf9azi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2办公软件&#34;&gt;2、办公软件
+&lt;h2 id=&#34;2办公学习软件&#34;&gt;2、办公学习软件
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;文件处理
+&lt;li&gt;文件处理&lt;font color=blue&gt;【必装】&lt;/font&gt;
 &lt;ul&gt;
 &lt;li&gt;WPS：【&lt;a class=&#34;link&#34; href=&#34;https://www.wps.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;2019Office：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ifaHX2lfk50j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Acrobat（PDF编辑）：【&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/0d578f4cbd411035/EelLd-AmZw1Psabkgy_XQeEB-nOrV0emMb75F50U0qzoeQ?e=xhs9D6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载请挂梯&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;Visio：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/itPSd2lfkj1e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;远程工具
+&lt;li&gt;远程工具&lt;font color=blue&gt;【必装】&lt;/font&gt;
 &lt;ul&gt;
 &lt;li&gt;向日葵：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iwVat2lfu6mh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
@@ -75,10 +78,20 @@
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;学习软件
+&lt;ul&gt;
+&lt;li&gt;ChatGpt：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iZjJw2lgtxpc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;MathType：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iXqTh2lguw4b&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Zotero：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/igXYS2lgvcmf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;3常用软件&#34;&gt;3、常用软件
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;浏览器
+&lt;li&gt;浏览器&lt;font color=blue&gt;【必装】&lt;/font&gt;
 &lt;ul&gt;
 &lt;li&gt;浏览器必备IDM：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iaDsq2lfwg2j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
@@ -90,19 +103,23 @@
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;网盘
+&lt;li&gt;网盘&lt;font color=blue&gt;【必装】&lt;/font&gt;
 &lt;ul&gt;
 &lt;li&gt;阿里云盘：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iEF2u2lfshsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;百度云盘：【&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/download#win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;百度云盘去广告精简版：【&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/0d578f4cbd411035/ESkaHRiRSaZIiiq7P1sLjfMBFC1doTdCrfRCzAwMUW7oig?e=jdSuWi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载请挂梯&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;123云盘：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i0uNk2lfsdhc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;夸克云盘：【&lt;a class=&#34;link&#34; href=&#34;https://pan.quark.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;蜗牛云盘：【&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/0d578f4cbd411035/EXl7LjABiT5BkWIKTDgwF8YBgCHC9onD2o8GetcnGOnVhg?e=z9fxgy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载请挂梯&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;视频软件
+&lt;li&gt;视频软件&lt;font color=blue&gt;【必装】&lt;/font&gt;
 &lt;ul&gt;
 &lt;li&gt;OBS：【&lt;a class=&#34;link&#34; href=&#34;https://download.obs.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
@@ -112,7 +129,7 @@
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;压缩工具
+&lt;li&gt;压缩工具&lt;font color=blue&gt;【选一安装】&lt;/font&gt;
 &lt;ul&gt;
 &lt;li&gt;Bandzip：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iuEjs2lfw0ri&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
@@ -122,10 +139,75 @@
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;卸载工具&lt;font color=blue&gt;【必装】&lt;/font&gt;
+&lt;ul&gt;
+&lt;li&gt;geek：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iFpzS2lgjwxe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Uninstall：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCv5N2lgjzsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;IObitUninstaller：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iWKwn2lgjzaj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;4游戏软件&#34;&gt;4、游戏软件
+&lt;/li&gt;
+&lt;li&gt;其他
+&lt;ul&gt;
+&lt;li&gt;火绒：【&lt;a class=&#34;link&#34; href=&#34;https://www.huorong.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Clash：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i2Eof2lgmu4b&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Hiddify：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iLTRH2lgn3ij&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;v2RayN：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iDJDw2lgne1i&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;比特彗星：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iwYTo2lgnipg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4开发工具&#34;&gt;4、开发工具
 &lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Git：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iYknh2lh1vtc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;idea激活插件：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ih95T2lh1vyh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;visual Studio：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i8ZKD2lh1wva&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;VS Code：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/irz3f2lh2b0j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Obsidian：【&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/0d578f4cbd411035/EYJvDtExztFKo732n4oC05gB11eMiuWrxTwrvSTmPYI0gw?e=QuHRFa&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载请挂梯&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5游戏软件&#34;&gt;5、游戏软件
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;游戏平台
+&lt;ul&gt;
+&lt;li&gt;Epic：【&lt;a class=&#34;link&#34; href=&#34;https://www.epicgames.com/site/zh-CN/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;Steam：【&lt;a class=&#34;link&#34; href=&#34;https://store.steampowered.com/about/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;战网：【&lt;a class=&#34;link&#34; href=&#34;https://ow.blizzard.cn/home.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;海岛奇兵
+&lt;ul&gt;
 &lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;其他
+&lt;ul&gt;
+&lt;li&gt;城市天际线：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iYq2C2lh441a&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;罗技驱动：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/igu9g2lh43tc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;APEX宏文件：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iriri2lh3z5e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;微信：【&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
