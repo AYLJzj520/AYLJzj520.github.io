@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Thu, 23 Jan 2025 12:58:31 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 23 Jan 2025 14:23:45 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>组装个人电脑</title>
         <link>https://ayljzj520.github.io/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</link>
         <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
@@ -18,46 +18,132 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;接下来将阐述我自己组装的电脑配件，以及相关配件当时的价格，以及后续配置升级的相关硬件的处理。&lt;/p&gt;
-&lt;h2 id=&#34;1电脑硬件配置&#34;&gt;1、电脑硬件配置
-&lt;/h2&gt;&lt;h3 id=&#34;处理器-cpu&#34;&gt;处理器 (CPU)
+&lt;h2 id=&#34;电脑硬件配置&#34;&gt;电脑硬件配置
+&lt;/h2&gt;&lt;h3 id=&#34;1处理器-cpu&#34;&gt;1、处理器 (CPU)
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;买入（i3 12100f）(i5 12400f)&lt;/li&gt;
+&lt;li&gt;买入~~(i3 12100f)~~(i5 12400f)&lt;/li&gt;
+&lt;li&gt;支出：475.8+780=1255.8&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;./life02-diypc.assets/1-cpu-1.jpg&#34; width=&#34;50%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/1-cpu-3.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;img src=&#34;./life02-diypc.assets/1-cpu-1.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/1-cpu-3.jpg&#34; width=&#34;40%&#34;/&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;主板-motherboard&#34;&gt;主板 (Motherboard)
-&lt;/h3&gt;&lt;p&gt;匹配CPU型号和品牌（AMD用AM4或AM5接口，Intel用LGA接口）。
-根据扩展需求选择合适芯片组，例如 B760（中端）或 X670（高端）。
-接口数量（USB、PCIe插槽、SATA等）决定扩展性。&lt;/p&gt;
-&lt;h3 id=&#34;内存-ram&#34;&gt;内存 (RAM)
-&lt;/h3&gt;&lt;p&gt;建议至少16GB（2×8GB双通道），高需求场景选32GB。
-频率：主流 DDR4 或 DDR5（与主板兼容）。
-品牌：Corsair、G.SKILL 或 Kingston。&lt;/p&gt;
-&lt;h3 id=&#34;显卡-gpu&#34;&gt;显卡 (GPU)
-&lt;/h3&gt;&lt;p&gt;游戏：NVIDIA RTX 系列（如 RTX 4060/4070）或 AMD Radeon RX 系列。
-创作：选择支持 CUDA 的显卡（如 RTX 3080）。
-办公：集成显卡即可（如 Intel UHD Graphics 或 AMD Vega）。
-存储 (Storage)&lt;/p&gt;
-&lt;h3 id=&#34;固态硬盘-ssd建议-500gb-至-1tbnvme-m2-优先速度快&#34;&gt;固态硬盘 (SSD)：建议 500GB 至 1TB（NVMe M.2 优先，速度快）。
-&lt;/h3&gt;&lt;h3 id=&#34;机械硬盘-hdd大容量存储数据如-2tb-或更高&#34;&gt;机械硬盘 (HDD)：大容量存储数据（如 2TB 或更高）。
-&lt;/h3&gt;&lt;p&gt;品牌：Samsung、Western Digital、Seagate。&lt;/p&gt;
-&lt;h3 id=&#34;电源-psu&#34;&gt;电源 (PSU)
-&lt;/h3&gt;&lt;p&gt;功率：根据硬件需求选择 500W 至 750W。
-认证：选择 80 Plus 金牌或以上认证。
-品牌：Corsair、Seasonic、EVGA。
-机箱 (Case)&lt;/p&gt;
-&lt;p&gt;大小：ATX（标准）、Micro-ATX 或 Mini-ITX（根据主板尺寸）。
-考虑散热布局和风道设计。
-美观需求：玻璃侧透或 RGB 灯效。&lt;/p&gt;
-&lt;h3 id=&#34;散热器-cooler&#34;&gt;散热器 (Cooler)
-&lt;/h3&gt;&lt;p&gt;CPU原装风冷通常够用，超频或高性能 CPU 可选风冷塔式或水冷散热（如 NZXT 或 Noctua）。
-显示器 (Monitor)&lt;/p&gt;
-&lt;p&gt;分辨率：1080p（60Hz~144Hz）适合日常；2K 或 4K 适合游戏和创作。&lt;/p&gt;
-&lt;h3 id=&#34;面板ips-更适合色彩准确需求va-性价比高&#34;&gt;面板：IPS 更适合色彩准确需求，VA 性价比高。
-&lt;/h3&gt;&lt;p&gt;外设&lt;/p&gt;
-&lt;p&gt;键盘、鼠标：机械键盘或普通键盘，视偏好而定。
-音箱或耳机：选游戏耳机或 Hi-Fi 耳机。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;卖出：&lt;del&gt;(i3 12100f)&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;收入：475&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/1-cpu-2.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出7805font&#34;&gt;&lt;font color=red&gt;总支出：780.5&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;2主板-motherboard&#34;&gt;2、主板 (Motherboard)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入(微星B660迫击炮WIFI版)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/2-主板.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出979font&#34;&gt;&lt;font color=red&gt;总支出：979&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;3内存-ram&#34;&gt;3、内存 (RAM)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入(金百达银爵32G*2 DDR4 3600)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/3-内存-1.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/3-内存-2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出31530886238font&#34;&gt;&lt;font color=red&gt;总支出：315+308.8=623.8&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;4显卡-gpu&#34;&gt;4、显卡 (GPU)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入~~(索泰2070S 8G)(映众760 2G)~~(讯景6750Gre海外版12G)&lt;/li&gt;
+&lt;li&gt;支出：1303+130+2099=3532&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/4-显卡-1.jpg&#34; width=&#34;30%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/4-显卡-3.jpg&#34; width=&#34;30%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/4-显卡-5.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;卖出：&lt;del&gt;(索泰2070S 8G)(映众760 2G)&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;收入：1000+135=1135&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/4-显卡-2.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/4-显卡-3.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出2397font&#34;&gt;&lt;font color=red&gt;总支出：2397&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;5硬盘&#34;&gt;5、硬盘
+&lt;/h3&gt;&lt;h4 id=&#34;固态硬盘-ssd&#34;&gt;固态硬盘 (SSD)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;买入(致态TiPlus 5000 1TB)(幻影Hv2000 1TB)&lt;/li&gt;
+&lt;li&gt;支出：416.5+244.21=660.21&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/5-硬盘-固态1.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/5-硬盘-固态2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;机械硬盘-hdd&#34;&gt;机械硬盘 (HDD)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;买入(海康机械ST4X015垂直盘)(二手机械)&lt;/li&gt;
+&lt;li&gt;支出：399.18+16=415.18&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;还有一些其它的二手机械盘，送给同学了就不记录了&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/5-硬盘-机械1.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/5-硬盘-机械2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出6602141518107539font&#34;&gt;&lt;font color=red&gt;总支出：660.21+415.18=1075.39&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;6电源-psu&#34;&gt;6、电源 (PSU)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入(海韵G12 GC850 金牌直出)&lt;/li&gt;
+&lt;li&gt;支出：547&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/6-电源.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出547font&#34;&gt;&lt;font color=red&gt;总支出：547&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;7散热器-cooler&#34;&gt;7、散热器 (Cooler)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入(利民PA120SE ARGB)&lt;del&gt;(利民公包TL-C12C无灯)&lt;/del&gt;(积木风扇 三正三反)&lt;/li&gt;
+&lt;li&gt;支出：141.16+11.8*6+110=321.96&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/7-散热-cpu.jpg&#34; width=&#34;30%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/7-散热-机箱1.jpg&#34; width=&#34;30%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/7-散热-机箱2.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出32196font&#34;&gt;&lt;font color=red&gt;总支出：321.96&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;8机箱&#34;&gt;8、机箱
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入~~(先马朱雀air)(半岛铁盒F20 【已丢】)~~(积木风扇 三正三反)&lt;/li&gt;
+&lt;li&gt;支出：145.02+184.83+159=488.85&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/8-机箱1.jpg&#34; width=&#34;30%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/8-机箱2.jpg&#34; width=&#34;30%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/8-机箱3.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;卖出：&lt;del&gt;(先马朱雀air)&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;收入：50&lt;/li&gt;
+&lt;li&gt;和6把利民风扇一起打包便宜给同学了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/4-显卡-2.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/4-显卡-3.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出43885font&#34;&gt;&lt;font color=red&gt;总支出：438.85&lt;/font&gt;
+&lt;/h4&gt;&lt;h2 id=&#34;外设&#34;&gt;外设
+&lt;/h2&gt;&lt;h3 id=&#34;1显示器&#34;&gt;1、显示器
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入~~(翔野显示器【纯垃圾，坏了，已丢】)~~(泰坦军团)&lt;/li&gt;
+&lt;li&gt;支出：837.1+518.98=1356.28&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/9-显示器1.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/9-显示器2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出135628font&#34;&gt;&lt;font color=red&gt;总支出：1356.28&lt;/font&gt;
+&lt;/h4&gt;&lt;h3 id=&#34;2键鼠&#34;&gt;2、键鼠
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入(罗技GPW1代)(RK R75)&lt;/li&gt;
+&lt;li&gt;支出：339+163.98=402.98&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/10-鼠标.jpg&#34; width=&#34;40%&#34;/&gt;&lt;img src=&#34;./life02-diypc.assets/10-键盘.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;font-colorred总支出40298font&#34;&gt;&lt;font color=red&gt;总支出：402.98&lt;/font&gt;
+&lt;/h4&gt;&lt;h2 id=&#34;font-colorred最终总支出780597962382397107539547321964388513562840298892276font&#34;&gt;&lt;font color=red&gt;最终总支出：780.5+979+623.8+2397+1075.39+547+321.96+438.85+1356.28+402.98=8922.76&lt;/font&gt;
+&lt;/h2&gt;&lt;p&gt;写到最后才知道自己原本是想简单的装一台电脑，为了方便以后的升级，因此把主板与电源留了比较大的阈值，但是实际上到写这篇笔记的时候，装机已经完成了一年半左右，对于显卡与CPU的更换实际没有达到更高的地步。&lt;br&gt;
+因此在装机的时候，一定要明确自己的需求，确定好配置，不然后期修改配置的话，费事费力又费钱，不过这台电脑全程是我自己装的。嘿嘿，人工费为0。&lt;br&gt;
+对于这台电脑的安装我也是很高兴的，对于我来说他的价值足够了！！！&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -1002,6 +1088,19 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;img src=&amp;#34;./boom-beach.assets/3.png&amp;#34; width=&amp;#34;70%&amp;#34; align=&amp;#34;center&amp;#34; /&amp;gt;&amp;lt;br&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;多图并列：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;div align=&amp;#34;center&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;img src=&amp;#34;./life02-diypc.assets/1-cpu-1.jpg&amp;#34; width=&amp;#34;40%&amp;#34;/&amp;gt;&amp;lt;img src=&amp;#34;./life02-diypc.assets/1-cpu-3.jpg&amp;#34; width=&amp;#34;40%&amp;#34;/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/div&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
