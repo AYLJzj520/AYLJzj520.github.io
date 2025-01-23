@@ -7,6 +7,60 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright><atom:link href="https://ayljzj520.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>组装个人电脑</title>
+        <link>https://ayljzj520.github.io/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</link>
+        <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</guid>
+        <description>&lt;img src="https://ayljzj520.github.io/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/life02-diypc.assets/main.jpg" alt="Featured image of post 组装个人电脑" /&gt;&lt;blockquote&gt;
+&lt;p&gt;“DIY PC！”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;接下来将阐述我自己组装的电脑配件，以及相关配件当时的价格，以及后续配置升级的相关硬件的处理。&lt;/p&gt;
+&lt;h2 id=&#34;1电脑硬件配置&#34;&gt;1、电脑硬件配置
+&lt;/h2&gt;&lt;h3 id=&#34;处理器-cpu&#34;&gt;处理器 (CPU)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;买入（i3 12100f）(i5 12400f)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;./life02-diypc.assets/1-cpu-1.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;img src=&#34;./life02-diypc.assets/1-cpu-3.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;主板-motherboard&#34;&gt;主板 (Motherboard)
+&lt;/h3&gt;&lt;p&gt;匹配CPU型号和品牌（AMD用AM4或AM5接口，Intel用LGA接口）。
+根据扩展需求选择合适芯片组，例如 B760（中端）或 X670（高端）。
+接口数量（USB、PCIe插槽、SATA等）决定扩展性。&lt;/p&gt;
+&lt;h3 id=&#34;内存-ram&#34;&gt;内存 (RAM)
+&lt;/h3&gt;&lt;p&gt;建议至少16GB（2×8GB双通道），高需求场景选32GB。
+频率：主流 DDR4 或 DDR5（与主板兼容）。
+品牌：Corsair、G.SKILL 或 Kingston。&lt;/p&gt;
+&lt;h3 id=&#34;显卡-gpu&#34;&gt;显卡 (GPU)
+&lt;/h3&gt;&lt;p&gt;游戏：NVIDIA RTX 系列（如 RTX 4060/4070）或 AMD Radeon RX 系列。
+创作：选择支持 CUDA 的显卡（如 RTX 3080）。
+办公：集成显卡即可（如 Intel UHD Graphics 或 AMD Vega）。
+存储 (Storage)&lt;/p&gt;
+&lt;h3 id=&#34;固态硬盘-ssd建议-500gb-至-1tbnvme-m2-优先速度快&#34;&gt;固态硬盘 (SSD)：建议 500GB 至 1TB（NVMe M.2 优先，速度快）。
+&lt;/h3&gt;&lt;h3 id=&#34;机械硬盘-hdd大容量存储数据如-2tb-或更高&#34;&gt;机械硬盘 (HDD)：大容量存储数据（如 2TB 或更高）。
+&lt;/h3&gt;&lt;p&gt;品牌：Samsung、Western Digital、Seagate。&lt;/p&gt;
+&lt;h3 id=&#34;电源-psu&#34;&gt;电源 (PSU)
+&lt;/h3&gt;&lt;p&gt;功率：根据硬件需求选择 500W 至 750W。
+认证：选择 80 Plus 金牌或以上认证。
+品牌：Corsair、Seasonic、EVGA。
+机箱 (Case)&lt;/p&gt;
+&lt;p&gt;大小：ATX（标准）、Micro-ATX 或 Mini-ITX（根据主板尺寸）。
+考虑散热布局和风道设计。
+美观需求：玻璃侧透或 RGB 灯效。&lt;/p&gt;
+&lt;h3 id=&#34;散热器-cooler&#34;&gt;散热器 (Cooler)
+&lt;/h3&gt;&lt;p&gt;CPU原装风冷通常够用，超频或高性能 CPU 可选风冷塔式或水冷散热（如 NZXT 或 Noctua）。
+显示器 (Monitor)&lt;/p&gt;
+&lt;p&gt;分辨率：1080p（60Hz~144Hz）适合日常；2K 或 4K 适合游戏和创作。&lt;/p&gt;
+&lt;h3 id=&#34;面板ips-更适合色彩准确需求va-性价比高&#34;&gt;面板：IPS 更适合色彩准确需求，VA 性价比高。
+&lt;/h3&gt;&lt;p&gt;外设&lt;/p&gt;
+&lt;p&gt;键盘、鼠标：机械键盘或普通键盘，视偏好而定。
+音箱或耳机：选游戏耳机或 Hi-Fi 耳机。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>个人云盘使用</title>
         <link>https://ayljzj520.github.io/p/%E4%B8%AA%E4%BA%BA%E4%BA%91%E7%9B%98%E4%BD%BF%E7%94%A8/</link>
         <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
