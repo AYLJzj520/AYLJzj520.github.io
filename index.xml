@@ -1117,7 +1117,7 @@
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;./java01-study.assets/javaroad.jpg&#34; width=&#34;80%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
-学习完java基础之后，学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
+学习完java基础之后，先学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
 等这一套学习了完了之后，去学习设计模式，了解设计思想。然后再去学习数据结构，了解底层。最后才是jvm
 从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。
 还有一点，springboot相较与javaweb和ssm，会简单很多，毕竟springboot约定大于配置。&lt;/p&gt;
