@@ -28,6 +28,23 @@
 &lt;li&gt;mapper：数据库接口层&lt;/li&gt;
 &lt;li&gt;web：&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;表现层(servlet,SpringMVC)
+业务层()
+数据层(JDBC,MyBatis)&lt;/p&gt;
+&lt;p&gt;创建接口后，在接口中定义方法，在接口的实现类中实现方法&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&#34;spring-mvc表现层框架&#34;&gt;spring MVC(表现层框架)
+&lt;/h1&gt;&lt;p&gt;导jar包&lt;br&gt;
+创建SpringMVC控制类&lt;br&gt;
+创建SpringMVC配置类&lt;br&gt;
+方法前加@controller&lt;br&gt;
+设置访问路径@requestmapping(&amp;quot;/aaa&amp;quot;)&lt;br&gt;
+@responsebody&lt;br&gt;
+get请求与post请求&lt;br&gt;
+rest风格&lt;br&gt;
+查询get&lt;br&gt;
+添加post&lt;br&gt;
+修改put&lt;br&gt;
+删除delete&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
