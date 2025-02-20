@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Mon, 17 Feb 2025 13:16:56 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 20 Feb 2025 11:05:40 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>新手机到手安装软件</title>
         <link>https://ayljzj520.github.io/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
@@ -1142,11 +1142,48 @@
 设置访问路径@requestmapping(&amp;quot;/aaa&amp;quot;)&lt;br&gt;
 @responsebody&lt;br&gt;
 get请求与post请求&lt;br&gt;
-rest风格&lt;br&gt;
+rest代码风格&lt;br&gt;
 查询get&lt;br&gt;
 添加post&lt;br&gt;
 修改put&lt;br&gt;
 删除delete&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;静态资源放行tomcat处理&lt;/p&gt;
+&lt;h1 id=&#34;ssm整合&#34;&gt;SSM整合
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;spring
+&lt;ul&gt;
+&lt;li&gt;springConfig&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;mybatis
+&lt;ul&gt;
+&lt;li&gt;mybatisConfig&lt;/li&gt;
+&lt;li&gt;jdbcConfig&lt;/li&gt;
+&lt;li&gt;jdbc.properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SpringMVC
+&lt;ul&gt;
+&lt;li&gt;servletConfig&lt;/li&gt;
+&lt;li&gt;SpringMVCConfig&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;功能模块&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;表与实体类&lt;/li&gt;
+&lt;li&gt;dao（接口+自动代理）&lt;/li&gt;
+&lt;li&gt;service（接口+实现类）
+&lt;ul&gt;
+&lt;li&gt;业务层接口测试（整合JUnit）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;controller
+&lt;ul&gt;
+&lt;li&gt;表现层接口测试（PostMan）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
