@@ -95,7 +95,15 @@ rest代码风格&lt;br&gt;
 业务层（Service）将结果返回给控制器（Controller）。
 控制器（Controller）将结果传递给视图层（View），并最终展示给用户。&lt;/p&gt;
 &lt;h1 id=&#34;springboot&#34;&gt;SpringBoot
-&lt;/h1&gt;</description>
+&lt;/h1&gt;&lt;h1 id=&#34;mybatisplus&#34;&gt;MyBatisPlus
+&lt;/h1&gt;&lt;p&gt;新增
+删除
+修改
+根据id查询
+查询全部
+分页查询
+按条件查询&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>java资源与介绍</title>
