@@ -82,8 +82,20 @@ rest代码风格&lt;br&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;表现层数据封装规范&lt;/p&gt;
-</description>
+&lt;p&gt;表现层数据封装规范
+异常处理器
+表现层 → 业务层：表现层接收用户请求，调用业务层的接口处理请求。
+业务层 → 持久层：业务层通过调用持久层的接口（如Repository）来访问和操作数据库。
+持久层 → 数据库：持久层通过JPA、MyBatis或JDBC等技术与数据库进行交互。
+简单的流程示例：
+用户通过浏览器发起HTTP请求。
+控制器（Controller）接收请求，调用业务层（Service）的方法。
+业务层（Service）处理逻辑，并可能调用持久层（Repository）进行数据库操作。
+持久层（Repository）查询数据库或更新数据。
+业务层（Service）将结果返回给控制器（Controller）。
+控制器（Controller）将结果传递给视图层（View），并最终展示给用户。&lt;/p&gt;
+&lt;h1 id=&#34;springboot&#34;&gt;SpringBoot
+&lt;/h1&gt;</description>
         </item>
         <item>
         <title>java资源与介绍</title>
