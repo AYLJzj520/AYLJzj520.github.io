@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Wed, 26 Feb 2025 21:06:44 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Mar 2025 21:38:11 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>git相关操作1</title>
         <link>https://ayljzj520.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C1/</link>
         <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
@@ -60,9 +60,9 @@ git相关指令学习
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;使用不同的代理工具会有不同的端口，需要将git对应的端口设置相同&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通过在终端执行以下命令，可以取消 Git 的代理设置：
+&lt;/div&gt;&lt;h2 id=&#34;2-在使用不同的代理工具时会有不同的端口需要将git的代理设置相同的端口&#34;&gt;2. 在使用不同的代理工具时会有不同的端口，需要将git的代理设置相同的端口
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在终端执行以下命令，可以清除Git的原代理设置：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -74,8 +74,7 @@ git相关指令学习
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;根据系统代理端口号设置Git使用本地代理
-在终端输入以下命令，设置  本地代理：
+&lt;li&gt;根据系统设置中的代理端口号（7890）设置Git使用本地代理，在终端输入以下命令，设置本地代理：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

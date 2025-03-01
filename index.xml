@@ -1202,8 +1202,81 @@ rest代码风格&lt;br&gt;
 修改
 根据id查询
 查询全部
-分页查询
+分页查询（配置拦截器）
 按条件查询&lt;/p&gt;
+&lt;p&gt;代码生成器（快速搭建框架）&lt;/p&gt;
+&lt;h1 id=&#34;项目描述&#34;&gt;项目描述：
+&lt;/h1&gt;&lt;p&gt;瑞吉外卖是一款专门为餐饮企业（餐厅、饭店）定制的软件产品，包括系统管理后台和移动端应用两部分。系统管理后台主要提供给餐饮企业内部员工使用，用于对餐厅的分类、菜品、套餐、订单、员工等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;开发环境：
+环境(软件): JDK +MySQL +IDEA+Git+Tomcat
+技术: Spring Boot、SSM、Mybatis Plus、Spring Security、Redis、Spring Cache、Swagger、Linux、ShardingJDBC、Nginx&lt;/li&gt;
+&lt;li&gt;责任描述：
+负责系统管理后台的员工、分类、菜品、套餐模块的编写。&lt;br&gt;
+负责移动端应用的开发，实现短信验证码登录功能。&lt;br&gt;
+开发移动端应用的菜品浏览功能，使用户可以方便地浏览菜品信息。&lt;br&gt;
+实现移动端应用中用户地址簿信息的管理功能，方便用户管理收货地址。&lt;br&gt;
+开发移动端应用的购物车功能，使用户可以方便地添加菜品到购物车并管理订单。&lt;br&gt;
+实现移动端应用中提交订单的功能，确保用户能够成功下单。&lt;br&gt;
+进行移动端应用的数据展示缓存优化，提高系统的响应速度和用户体验。&lt;br&gt;
+负责数据库主从配置以及读写分离的实现，提高数据库的性能和可靠性。&lt;br&gt;
+实现项目接口API文档生成功能，使用Swagger生成清晰明了的接口文档。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;技术描述：
+使用Redis缓存高频数据，并使用Spring Cache优化代码，提高系统的性能和响应速度。&lt;br&gt;
+在整个开发过程中使用Linux系统进行部署，充分利用Linux系统的稳定性和安全性。&lt;br&gt;
+使用Nginx部署前端项目，实现前后端分离的部署方式，提高系统的灵活性和可维护性。&lt;br&gt;
+使用Nginx实现反向代理和负载均衡，提高系统的并发处理能力和可用性。&lt;br&gt;
+使用ShardingJDBC实现数据库读写分离，提高数据库的读取性能和写入性能。&lt;br&gt;
+使用Spring Security框架进行权限模块的开发，采用经典的RBAC模型进行精细的权限管理。&lt;br&gt;
+使用YApi实现前后端分离开发，并使用Swagger生成接口API文档，提高团队的协作效率。&lt;br&gt;
+使用Git进行项目的版本控制和代码管理，充分利用分支功能进行项目优化和问题修复。&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我创建的一个springboot项目，其目录结构包含如下组成部分：
+common、
+config、
+controller、
+dto、
+entity、
+filter、
+mapper、
+service、
+utils、
+请告诉我各个层次的功能。&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Controller 接收请求，调用 Service 层处理业务逻辑。&lt;br&gt;
+Service 层调用 Mapper 层进行数据库操作。&lt;br&gt;
+Mapper 层操作 Entity 对象，与数据库交互。&lt;br&gt;
+DTO 用于在 Controller 和 Service 之间传递数据。&lt;br&gt;
+Utils 和 Common 提供通用的工具和常量，供其他层级使用。&lt;br&gt;
+Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;common：
+功能：存放项目中通用的工具类、常量、枚举、异常处理等。
+示例：自定义异常类、全局常量、通用工具类等。&lt;/li&gt;
+&lt;li&gt;config：
+功能：存放项目的配置类，用于配置Spring Boot应用的各种行为。
+示例：数据库配置、安全配置、Swagger配置、自定义Bean配置等。&lt;/li&gt;
+&lt;li&gt;controller：
+功能：负责处理HTTP请求，接收前端传递的参数，调用Service层处理业务逻辑，并返回结果。
+示例：RESTful API接口、请求参数校验、返回JSON数据等。&lt;/li&gt;
+&lt;li&gt;dto：
+功能：存放数据传输对象（Data Transfer Object），用于在不同层之间传递数据，通常用于封装请求和响应的数据。
+示例：前端传递的请求参数封装、返回给前端的响应数据封装等。&lt;/li&gt;
+&lt;li&gt;entity：
+功能：存放与数据库表对应的实体类，通常使用JPA或MyBatis等ORM框架进行映射。
+示例：数据库表的实体类，包含字段、getter/setter方法等。&lt;/li&gt;
+&lt;li&gt;filter：
+功能：存放过滤器类，用于在请求到达Controller之前或响应返回客户端之前进行一些处理，如日志记录、权限校验等。
+示例：自定义过滤器、拦截器等。&lt;/li&gt;
+&lt;li&gt;mapper：
+功能：存放与数据库交互的接口或类，通常使用MyBatis或JPA进行数据库操作。
+示例：MyBatis的Mapper接口、JPA的Repository接口等。&lt;/li&gt;
+&lt;li&gt;service：
+功能：负责业务逻辑的处理，通常被Controller层调用，并调用Mapper层进行数据持久化操作。
+示例：业务逻辑处理、事务管理、调用Mapper层接口等。&lt;/li&gt;
+&lt;li&gt;utils：
+功能：存放项目中常用的工具类，提供一些通用的方法供其他模块调用。
+示例：日期处理工具类、字符串处理工具类、加密解密工具类等。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -1859,9 +1932,9 @@ git相关指令学习
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;使用不同的代理工具会有不同的端口，需要将git对应的端口设置相同&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通过在终端执行以下命令，可以取消 Git 的代理设置：
+&lt;/div&gt;&lt;h2 id=&#34;2-在使用不同的代理工具时会有不同的端口需要将git的代理设置相同的端口&#34;&gt;2. 在使用不同的代理工具时会有不同的端口，需要将git的代理设置相同的端口
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在终端执行以下命令，可以清除Git的原代理设置：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1873,8 +1946,7 @@ git相关指令学习
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;根据系统代理端口号设置Git使用本地代理
-在终端输入以下命令，设置  本地代理：
+&lt;li&gt;根据系统设置中的代理端口号（7890）设置Git使用本地代理，在终端输入以下命令，设置本地代理：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
