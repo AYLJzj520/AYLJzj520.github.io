@@ -12,9 +12,7 @@
         <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg" alt="Featured image of post java学习" /&gt;&lt;p&gt;@import &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://haogeshuohuanihaohaoting.github.io/static/mdCreateMenu.js%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://haogeshuohuanihaohaoting.github.io/static/mdCreateMenu.js&#34;&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
+        <description>&lt;img src="https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg" alt="Featured image of post java学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;学习顺序&#34;&gt;学习顺序
@@ -40,7 +38,7 @@
 创建SpringMVC控制类&lt;br&gt;
 创建SpringMVC配置类&lt;br&gt;
 方法前加@controller&lt;br&gt;
-设置访问路径@requestmapping(&amp;quot;/aaa&amp;rdquo;)&lt;br&gt;
+设置访问路径@requestmapping(&amp;quot;/aaa&amp;quot;)&lt;br&gt;
 @responsebody&lt;br&gt;
 get请求与post请求&lt;br&gt;
 rest代码风格&lt;br&gt;
