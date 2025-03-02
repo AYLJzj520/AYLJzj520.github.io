@@ -10,7 +10,7 @@
 <meta property='og:description' content="Java后端开发入门知识">
 <meta property='og:url' content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-08T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-02T19:58:40&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-08T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-02T21:23:15&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg' />
 <meta name="twitter:title" content="java学习">
 <meta name="twitter:description" content="Java后端开发入门知识"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg' />
@@ -318,7 +318,7 @@
                
                 最后修改:
                 <time>
-                    2025-03-02 19:58
+                    2025-03-02 21:23
                 </time>
             </div>
     </footer>
@@ -339,7 +339,7 @@
 </h2><div align="center"><img src="./javaroad.jpg"/></div><br>
 <p>学习完java基础之后，先学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
 等这一套学习了完了之后，去学习设计模式，了解设计思想。然后再去学习数据结构，了解底层。最后才是jvm
-从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。
+从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。<br>
 还有一点，springboot相较与javaweb和ssm，会简单很多，毕竟springboot约定大于配置。</p>
 <p>java架构层次<br></p>
 <ul>
@@ -403,53 +403,64 @@ rest代码风格<br>
 </ul>
 </li>
 </ul>
-<p>表现层数据封装规范
-异常处理器
-表现层 → 业务层：表现层接收用户请求，调用业务层的接口处理请求。
-业务层 → 持久层：业务层通过调用持久层的接口（如Repository）来访问和操作数据库。
-持久层 → 数据库：持久层通过JPA、MyBatis或JDBC等技术与数据库进行交互。
-简单的流程示例：
-用户通过浏览器发起HTTP请求。
-控制器（Controller）接收请求，调用业务层（Service）的方法。
-业务层（Service）处理逻辑，并可能调用持久层（Repository）进行数据库操作。
-持久层（Repository）查询数据库或更新数据。
-业务层（Service）将结果返回给控制器（Controller）。
-控制器（Controller）将结果传递给视图层（View），并最终展示给用户。</p>
+<p>表现层数据封装规范<br>
+异常处理器<br>
+表现层 → 业务层：表现层接收用户请求，调用业务层的接口处理请求。<br>
+业务层 → 持久层：业务层通过调用持久层的接口（如Repository）来访问和操作数据库。<br>
+持久层 → 数据库：持久层通过JPA、MyBatis或JDBC等技术与数据库进行交互。<br></p>
+<ul>
+<li>简单的流程示例：
+<ul>
+<li>用户通过浏览器发起HTTP请求。</li>
+<li>控制器（Controller）接收请求，调用业务层（Service）的方法。</li>
+<li>业务层（Service）处理逻辑，并可能调用持久层（Repository）进行数据库操作。</li>
+<li>持久层（Repository）查询数据库或更新数据。</li>
+<li>业务层（Service）将结果返回给控制器（Controller）。</li>
+<li>控制器（Controller）将结果传递给视图层（View），并最终展示给用户。</li>
+</ul>
+</li>
+</ul>
 <h2 id="springboot">SpringBoot
 </h2><h2 id="mybatisplus">MyBatisPlus
-</h2><p>新增
-删除
-修改
-根据id查询
-查询全部
-分页查询（配置拦截器）
-按条件查询</p>
-<p>代码生成器（快速搭建框架）</p>
+</h2><p>新增<br>
+删除<br>
+修改<br>
+根据id查询<br>
+查询全部<br>
+分页查询（配置拦截器）<br>
+按条件查询<br></p>
+<p>代码生成器（快速搭建框架）<br></p>
 <h2 id="项目描述">项目描述：
 </h2><p>瑞吉外卖是一款专门为餐饮企业（餐厅、饭店）定制的软件产品，包括系统管理后台和移动端应用两部分。系统管理后台主要提供给餐饮企业内部员工使用，用于对餐厅的分类、菜品、套餐、订单、员工等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。<br></p>
 <ul>
 <li>开发环境：
-环境(软件): JDK +MySQL +IDEA+Git+Tomcat
+环境(软件): JDK +MySQL +IDEA+Git+Tomcat<br>
 技术: Spring Boot、SSM、Mybatis Plus、Spring Security、Redis、Spring Cache、Swagger、Linux、ShardingJDBC、Nginx</li>
 <li>责任描述：
-负责系统管理后台的员工、分类、菜品、套餐模块的编写。<br>
-负责移动端应用的开发，实现短信验证码登录功能。<br>
-开发移动端应用的菜品浏览功能，使用户可以方便地浏览菜品信息。<br>
-实现移动端应用中用户地址簿信息的管理功能，方便用户管理收货地址。<br>
-开发移动端应用的购物车功能，使用户可以方便地添加菜品到购物车并管理订单。<br>
-实现移动端应用中提交订单的功能，确保用户能够成功下单。<br>
-进行移动端应用的数据展示缓存优化，提高系统的响应速度和用户体验。<br>
-负责数据库主从配置以及读写分离的实现，提高数据库的性能和可靠性。<br>
-实现项目接口API文档生成功能，使用Swagger生成清晰明了的接口文档。<br></li>
+<ul>
+<li>负责系统管理后台的员工、分类、菜品、套餐模块的编写。</li>
+<li>负责移动端应用的开发，实现短信验证码登录功能。</li>
+<li>开发移动端应用的菜品浏览功能，使用户可以方便地浏览菜品信息。</li>
+<li>实现移动端应用中用户地址簿信息的管理功能，方便用户管理收货地址。</li>
+<li>开发移动端应用的购物车功能，使用户可以方便地添加菜品到购物车并管理订单。</li>
+<li>实现移动端应用中提交订单的功能，确保用户能够成功下单。</li>
+<li>进行移动端应用的数据展示缓存优化，提高系统的响应速度和用户体验。</li>
+<li>负责数据库主从配置以及读写分离的实现，提高数据库的性能和可靠性。</li>
+<li>实现项目接口API文档生成功能，使用Swagger生成清晰明了的接口文档。</li>
+</ul>
+</li>
 <li>技术描述：
-使用Redis缓存高频数据，并使用Spring Cache优化代码，提高系统的性能和响应速度。<br>
-在整个开发过程中使用Linux系统进行部署，充分利用Linux系统的稳定性和安全性。<br>
-使用Nginx部署前端项目，实现前后端分离的部署方式，提高系统的灵活性和可维护性。<br>
-使用Nginx实现反向代理和负载均衡，提高系统的并发处理能力和可用性。<br>
-使用ShardingJDBC实现数据库读写分离，提高数据库的读取性能和写入性能。<br>
-使用Spring Security框架进行权限模块的开发，采用经典的RBAC模型进行精细的权限管理。<br>
-使用YApi实现前后端分离开发，并使用Swagger生成接口API文档，提高团队的协作效率。<br>
-使用Git进行项目的版本控制和代码管理，充分利用分支功能进行项目优化和问题修复。<br></li>
+<ul>
+<li>使用Redis缓存高频数据，并使用Spring Cache优化代码，提高系统的性能和响应速度。</li>
+<li>在整个开发过程中使用Linux系统进行部署，充分利用Linux系统的稳定性和安全性。</li>
+<li>使用Nginx部署前端项目，实现前后端分离的部署方式，提高系统的灵活性和可维护性。</li>
+<li>使用Nginx实现反向代理和负载均衡，提高系统的并发处理能力和可用性。</li>
+<li>使用ShardingJDBC实现数据库读写分离，提高数据库的读取性能和写入性能。</li>
+<li>使用Spring Security框架进行权限模块的开发，采用经典的RBAC模型进行精细的权限管理。</li>
+<li>使用YApi实现前后端分离开发，并使用Swagger生成接口API文档，提高团队的协作效率。</li>
+<li>使用Git进行项目的版本控制和代码管理，充分利用分支功能进行项目优化和问题修复。</li>
+</ul>
+</li>
 </ul>
 <p>我创建的一个springboot项目，其目录结构包含如下组成部分：
 common、
@@ -470,49 +481,74 @@ Utils 和 Common 提供通用的工具和常量，供其他层级使用。<br>
 Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。<br></p>
 <ul>
 <li>common：
-功能：存放项目中通用的工具类、常量、枚举、异常处理等。
-示例：自定义异常类、全局常量、通用工具类等。</li>
+<ul>
+<li>功能：存放项目中通用的工具类、常量、枚举、异常处理等。</li>
+<li>示例：自定义异常类、全局常量、通用工具类等。</li>
+</ul>
+</li>
 <li>config：
-功能：存放项目的配置类，用于配置Spring Boot应用的各种行为。
-示例：数据库配置、安全配置、Swagger配置、自定义Bean配置等。</li>
+<ul>
+<li>功能：存放项目的配置类，用于配置Spring Boot应用的各种行为。</li>
+<li>示例：数据库配置、安全配置、Swagger配置、自定义Bean配置等。</li>
+</ul>
+</li>
 <li>controller：
-功能：负责处理HTTP请求，接收前端传递的参数，调用Service层处理业务逻辑，并返回结果。
-示例：RESTful API接口、请求参数校验、返回JSON数据等。</li>
+<ul>
+<li>功能：负责处理HTTP请求，接收前端传递的参数，调用Service层处理业务逻辑，并返回结果。</li>
+<li>示例：RESTful API接口、请求参数校验、返回JSON数据等。</li>
+</ul>
+</li>
 <li>dto：
-功能：存放数据传输对象（Data Transfer Object），用于在不同层之间传递数据，通常用于封装请求和响应的数据。
-示例：前端传递的请求参数封装、返回给前端的响应数据封装等。</li>
+<ul>
+<li>功能：存放数据传输对象（Data Transfer Object），用于在不同层之间传递数据，通常用于封装请求和响应的数据。</li>
+<li>示例：前端传递的请求参数封装、返回给前端的响应数据封装等。</li>
+</ul>
+</li>
 <li>entity：
-功能：存放与数据库表对应的实体类，通常使用JPA或MyBatis等ORM框架进行映射。
-示例：数据库表的实体类，包含字段、getter/setter方法等。</li>
+<ul>
+<li>功能：存放与数据库表对应的实体类，通常使用JPA或MyBatis等ORM框架进行映射。</li>
+<li>示例：数据库表的实体类，包含字段、getter/setter方法等。</li>
+</ul>
+</li>
 <li>filter：
-功能：存放过滤器类，用于在请求到达Controller之前或响应返回客户端之前进行一些处理，如日志记录、权限校验等。
-示例：自定义过滤器、拦截器等。</li>
+<ul>
+<li>功能：存放过滤器类，用于在请求到达Controller之前或响应返回客户端之前进行一些处理，如日志记录、权限校验等。</li>
+<li>示例：自定义过滤器、拦截器等。</li>
+</ul>
+</li>
 <li>mapper：
-功能：存放与数据库交互的接口或类，通常使用MyBatis或JPA进行数据库操作。
-示例：MyBatis的Mapper接口、JPA的Repository接口等。</li>
+<ul>
+<li>功能：存放与数据库交互的接口或类，通常使用MyBatis或JPA进行数据库操作。</li>
+<li>示例：MyBatis的Mapper接口、JPA的Repository接口等。</li>
+</ul>
+</li>
 <li>service：
-功能：负责业务逻辑的处理，通常被Controller层调用，并调用Mapper层进行数据持久化操作。
-示例：业务逻辑处理、事务管理、调用Mapper层接口等。</li>
+<ul>
+<li>功能：负责业务逻辑的处理，通常被Controller层调用，并调用Mapper层进行数据持久化操作。</li>
+<li>示例：业务逻辑处理、事务管理、调用Mapper层接口等。</li>
+</ul>
+</li>
 <li>utils：
-功能：存放项目中常用的工具类，提供一些通用的方法供其他模块调用。
-示例：日期处理工具类、字符串处理工具类、加密解密工具类等。</li>
+<ul>
+<li>功能：存放项目中常用的工具类，提供一些通用的方法供其他模块调用。</li>
+<li>示例：日期处理工具类、字符串处理工具类、加密解密工具类等。</li>
+</ul>
+</li>
 </ul>
 <h2 id="redis-192168179135">redis 192.168.179.135
 </h2><p><a class="link" href="https://www.redis.net.cn"  target="_blank" rel="noopener"
-    >redis中文网</a>
-/usr/local/redis-4.0.0/src
-./redis-server
-修改为后台运行：/usr/local/redis-4.0.0/redis.conf
-配置修改：daemonize yes
-运行：src/redis-server ./redis.conf
-密码：123456
-退出：redis-cli -h 你的IP地址 -p 你的redis端口号 shutdown
-设置允许远程链接：127.0.0.1添加注释#
-./redis-cli.exe -h 192.168.179.135 -p 6379 -a 123456
-关闭防火墙：firewall-cmd &ndash;zone=public &ndash;add-port=6379/tcp &ndash;permanent<br>
-重启防火墙：firewall-cmd &ndash;reload
-关firewall-cmd &ndash;zone=public &ndash;add-port=6379/tcp &ndash;permanent
-立即生效firewall-cmd &ndash;reload</p>
+    >redis中文网</a><br>
+/usr/local/redis-4.0.0/src<br>
+./redis-server<br>
+修改为后台运行：/usr/local/redis-4.0.0/redis.conf<br>
+配置修改：daemonize yes<br>
+运行：src/redis-server ./redis.conf<br>
+密码：123456<br>
+退出：redis-cli -h 你的IP地址 -p 你的redis端口号 shutdown<br>
+设置允许远程链接：127.0.0.1添加注释#<br>
+./redis-cli.exe -h 192.168.179.135 -p 6379 -a 123456<br>
+关闭防火墙：firewall-cmd &ndash;zone=public &ndash;add-port=6379/tcp &ndash;permanent   <br>
+重启防火墙：firewall-cmd &ndash;reload<br></p>
 
 </section>
 
@@ -530,7 +566,7 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。<br></
 
 
         <span>
-            最后更新于 2025-03-02 19:58
+            最后更新于 2025-03-02 21:23
         </span>
     </section></footer>
 
@@ -662,7 +698,7 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。<br></
         
         
 
-        <p>发布了 20 篇文章 | 共 37375 字</p>
+        <p>发布了 20 篇文章 | 共 37342 字</p>
 
 
 
