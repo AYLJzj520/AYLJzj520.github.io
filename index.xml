@@ -1319,11 +1319,10 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;h2 id=&#34;redis-192168179135&#34;&gt;redis 192.168.179.135
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;redis中文网&lt;/a&gt;&lt;br&gt;
-/usr/local/redis-4.0.0/src&lt;br&gt;
-./redis-server&lt;br&gt;
+进入路径：/usr/local/redis-4.0.0/src&lt;br&gt;
+运行命令：src/redis-server ./redis.conf&lt;br&gt;
 修改为后台运行：/usr/local/redis-4.0.0/redis.conf&lt;br&gt;
 配置修改：daemonize yes&lt;br&gt;
-运行：src/redis-server ./redis.conf&lt;br&gt;
 密码：123456&lt;br&gt;
 退出：redis-cli -h 你的IP地址 -p 你的redis端口号 shutdown&lt;br&gt;
 设置允许远程链接：127.0.0.1添加注释#&lt;br&gt;
