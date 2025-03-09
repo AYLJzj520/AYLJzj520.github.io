@@ -227,7 +227,12 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 设置允许远程链接：127.0.0.1添加注释#&lt;br&gt;
 ./redis-cli.exe -h 192.168.179.135 -p 6379 -a 123456&lt;br&gt;
 关闭防火墙：firewall-cmd &amp;ndash;zone=public &amp;ndash;add-port=6379/tcp &amp;ndash;permanent   &lt;br&gt;
-重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;&lt;/p&gt;
+重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;
+关机：shutdown -h now&lt;/p&gt;
+&lt;p&gt;启动数据库：systemctl start mysqld
+update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;&lt;/p&gt;
+&lt;h2 id=&#34;nginx&#34;&gt;Nginx
+&lt;/h2&gt;&lt;p&gt;安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel&lt;/p&gt;
 </description>
         </item>
         <item>
