@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sun, 09 Mar 2025 01:55:08 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 09 Mar 2025 03:17:16 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>新手机到手安装软件</title>
         <link>https://ayljzj520.github.io/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
@@ -1331,7 +1331,7 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 关闭防火墙：firewall-cmd &amp;ndash;zone=public &amp;ndash;add-port=6379/tcp &amp;ndash;permanent   &lt;br&gt;
 重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;
 关机：shutdown -h now&lt;/p&gt;
-&lt;p&gt;启动数据库：systemctl start mysqld
+&lt;p&gt;启动数据库：systemctl start mysqld&lt;br&gt;
 update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;&lt;/p&gt;
 &lt;h2 id=&#34;nginx&#34;&gt;Nginx
 &lt;/h2&gt;&lt;p&gt;安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel&lt;/p&gt;
