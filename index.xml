@@ -1316,6 +1316,8 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;后端代码部署tomcat&lt;br&gt;
+前端代码部署nginx&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;redis-192168179135&#34;&gt;redis 192.168.179.135
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;redis中文网&lt;/a&gt;&lt;br&gt;
