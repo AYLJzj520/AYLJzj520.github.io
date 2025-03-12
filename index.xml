@@ -1318,6 +1318,11 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;/ul&gt;
 &lt;p&gt;后端代码部署tomcat&lt;br&gt;
 前端代码部署nginx&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;docker相关命令&#34;&gt;docker相关命令
+&lt;/h2&gt;&lt;p&gt;docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+启动redis：docker run &amp;ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &amp;ndash;requirepass &amp;ldquo;123456&amp;rdquo;
+启动mysql：docker run &amp;ndash;name docker-mysql -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0&lt;/p&gt;
 &lt;h2 id=&#34;redis-192168179135&#34;&gt;redis 192.168.179.135
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;redis中文网&lt;/a&gt;&lt;br&gt;
@@ -1333,7 +1338,16 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;
 关机：shutdown -h now&lt;/p&gt;
 &lt;p&gt;启动数据库：systemctl start mysqld&lt;br&gt;
-update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;&lt;/p&gt;
+update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;
+docker拉取镜像：docker pull redis:4.0
+最后的redis表示Redis镜像名
+–name:容器名称
+-p 6379:6379 将端口设置为6379
+-it参表示控制台显示Redis安装的交互信息
+如果后台运行，用-d参数
+-v /data/redis-data 将redis数据挂载到根目录的 /data/redis-data 目录下
+-v $PWD/data/redis-data 将redis数据挂载到当前目录的data/redis-data 目录下
+–requitepass “123456” : 指定redis连接密码，此参数要放在镜像名后面&lt;/p&gt;
 &lt;h2 id=&#34;nginx&#34;&gt;Nginx
 &lt;/h2&gt;&lt;p&gt;安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel&lt;/p&gt;
 </description>
