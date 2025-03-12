@@ -557,6 +557,8 @@
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;idea激活插件：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ih95T2lh1vyh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;li&gt;jetbrain激活插件：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i1gp72qe3ncb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;visual Studio：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i8ZKD2lh1wva&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;VS Code：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/irz3f2lh2b0j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1321,6 +1323,7 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;h2 id=&#34;docker相关命令&#34;&gt;docker相关命令
 &lt;/h2&gt;&lt;p&gt;docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
+查看容器ip：docker inspect -f &amp;lsquo;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&amp;rsquo; 容器id
 启动redis：docker run &amp;ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &amp;ndash;requirepass &amp;ldquo;123456&amp;rdquo;
 启动mysql：docker run &amp;ndash;name docker-mysql -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0&lt;/p&gt;
 &lt;h2 id=&#34;redis-192168179135&#34;&gt;redis 192.168.179.135
