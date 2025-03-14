@@ -248,9 +248,10 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;li&gt;启动redis容器：docker run &amp;ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &amp;ndash;requirepass &amp;ldquo;123456&amp;rdquo;&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;启动mysql容器：docker run &amp;ndash;name docker-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;redis-redis中文网httpswwwredisnetcn&#34;&gt;redis &lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;redis中文网&lt;/a&gt;
-&lt;/h2&gt;&lt;p&gt;进入路径：/usr/local/redis-4.0.0/src&lt;br&gt;
+&lt;h2 id=&#34;redis&#34;&gt;redis
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;中文官网&lt;/a&gt;&lt;br&gt;
+进入路径：/usr/local/redis-4.0.0/src&lt;br&gt;
 运行命令：src/redis-server ./redis.conf&lt;br&gt;
 修改为后台运行：/usr/local/redis-4.0.0/redis.conf&lt;br&gt;
 配置修改：daemonize yes&lt;br&gt;
@@ -261,10 +262,9 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 关闭防火墙：firewall-cmd &amp;ndash;zone=public &amp;ndash;add-port=6379/tcp &amp;ndash;permanent   &lt;br&gt;
 重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;
 关机：shutdown -h now&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;启动数据库：systemctl start mysqld&lt;br&gt;
+&lt;h2 id=&#34;redis-1&#34;&gt;redis
+&lt;/h2&gt;&lt;p&gt;启动数据库：systemctl start mysqld&lt;br&gt;
 update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;&lt;br&gt;
-docker拉取镜像：docker pull redis:4.0&lt;br&gt;
-最后的redis表示Redis镜像名&lt;br&gt;
 –name:容器名称&lt;br&gt;
 -p 6379:6379 将端口设置为6379&lt;br&gt;
 -it参表示控制台显示Redis安装的交互信息&lt;br&gt;
