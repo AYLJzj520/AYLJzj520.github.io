@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Wed, 12 Mar 2025 15:37:48 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 14 Mar 2025 03:41:36 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>新手机到手安装软件</title>
         <link>https://ayljzj520.github.io/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
@@ -289,7 +289,8 @@
         
         <guid>https://ayljzj520.github.io/p/%E4%B8%AA%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/</guid>
         <description>&lt;img src="https://ayljzj520.github.io/p/%E4%B8%AA%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/Amain.jpg" alt="Featured image of post 个人数据存储" /&gt;&lt;blockquote&gt;
-&lt;p&gt;“云盘使用！”&lt;/p&gt;
+&lt;p&gt;“云盘使用！”
+个人压缩文件若使用的密码则均设置为：zxcvbnm&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;引言&#34;&gt;引言
 &lt;/h2&gt;&lt;p&gt;网盘是一种基于云存储的服务，允许用户上传、存储、管理和分享文件，方便用户随时随地访问自己的文件。&lt;br&gt;
@@ -1350,7 +1351,7 @@ docker push new-repo:tagname
 查看容器ip：docker inspect -f &amp;lsquo;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&amp;rsquo; 容器id
 启动redis：docker run &amp;ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &amp;ndash;requirepass &amp;ldquo;123456&amp;rdquo;
 启动mysql：docker run &amp;ndash;name docker-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0&lt;/p&gt;
-&lt;h2 id=&#34;redis-192168179135&#34;&gt;redis 192.168.179.135
+&lt;h2 id=&#34;redis&#34;&gt;redis
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;redis中文网&lt;/a&gt;&lt;br&gt;
 进入路径：/usr/local/redis-4.0.0/src&lt;br&gt;
@@ -6307,6 +6308,40 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;li&gt;2024年6月&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;江西赣州&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;卡首雕&lt;/th&gt;
+          &lt;th&gt;序号&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;正在进行&lt;/td&gt;
+          &lt;td&gt;47,51,52,53,54,55&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;已卡好&lt;/td&gt;
+          &lt;td&gt;48,49,50,&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;已卡好&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;删除&lt;/td&gt;
+          &lt;td&gt;暗月流金&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;删除&lt;/td&gt;
+          &lt;td&gt;快乐无限&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;删除&lt;/td&gt;
+          &lt;td&gt;快乐无限&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;沙滩树教程&#34;&gt;沙滩树教程
 &lt;/h2&gt;&lt;p&gt;&lt;big&gt;&lt;font color=blue&gt;想种沙滩树要先种压岸树！&lt;/font&gt;&lt;/big&gt;&lt;br&gt;&lt;/p&gt;

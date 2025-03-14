@@ -246,7 +246,7 @@ docker push new-repo:tagname
 查看容器ip：docker inspect -f &amp;lsquo;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&amp;rsquo; 容器id
 启动redis：docker run &amp;ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &amp;ndash;requirepass &amp;ldquo;123456&amp;rdquo;
 启动mysql：docker run &amp;ndash;name docker-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0&lt;/p&gt;
-&lt;h2 id=&#34;redis-192168179135&#34;&gt;redis 192.168.179.135
+&lt;h2 id=&#34;redis&#34;&gt;redis
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;redis中文网&lt;/a&gt;&lt;br&gt;
 进入路径：/usr/local/redis-4.0.0/src&lt;br&gt;
