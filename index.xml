@@ -1322,8 +1322,7 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;p&gt;后端代码部署tomcat&lt;br&gt;
 前端代码部署nginx&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;docker相关命令&#34;&gt;docker相关命令
-&lt;/h2&gt;&lt;p&gt;源：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
@@ -1347,9 +1346,9 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
-查看容器ip：docker inspect -f &amp;lsquo;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&amp;rsquo; 容器id
-启动redis：docker run &amp;ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &amp;ndash;requirepass &amp;ldquo;123456&amp;rdquo;
-启动mysql：docker run &amp;ndash;name docker-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0&lt;/p&gt;
+查看容器ip：docker inspect -f &amp;lsquo;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&amp;rsquo; 容器id&lt;br&gt;
+启动redis：docker run &amp;ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &amp;ndash;requirepass &amp;ldquo;123456&amp;rdquo;&lt;br&gt;
+启动mysql：docker run &amp;ndash;name docker-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;redis&#34;&gt;redis
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;redis中文网&lt;/a&gt;&lt;br&gt;
@@ -1363,20 +1362,20 @@ docker push new-repo:tagname
 ./redis-cli.exe -h 192.168.179.135 -p 6379 -a 123456&lt;br&gt;
 关闭防火墙：firewall-cmd &amp;ndash;zone=public &amp;ndash;add-port=6379/tcp &amp;ndash;permanent   &lt;br&gt;
 重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;
-关机：shutdown -h now&lt;/p&gt;
+关机：shutdown -h now&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;启动数据库：systemctl start mysqld&lt;br&gt;
-update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;
-docker拉取镜像：docker pull redis:4.0
-最后的redis表示Redis镜像名
-–name:容器名称
--p 6379:6379 将端口设置为6379
--it参表示控制台显示Redis安装的交互信息
-如果后台运行，用-d参数
--v /data/redis-data 将redis数据挂载到根目录的 /data/redis-data 目录下
--v $PWD/data/redis-data 将redis数据挂载到当前目录的data/redis-data 目录下
-–requitepass “123456” : 指定redis连接密码，此参数要放在镜像名后面&lt;/p&gt;
+update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;&lt;br&gt;
+docker拉取镜像：docker pull redis:4.0&lt;br&gt;
+最后的redis表示Redis镜像名&lt;br&gt;
+–name:容器名称&lt;br&gt;
+-p 6379:6379 将端口设置为6379&lt;br&gt;
+-it参表示控制台显示Redis安装的交互信息&lt;br&gt;
+如果后台运行，用-d参数&lt;br&gt;
+-v /data/redis-data 将redis数据挂载到根目录的 /data/redis-data 目录下&lt;br&gt;
+-v $PWD/data/redis-data 将redis数据挂载到当前目录的data/redis-data 目录下&lt;br&gt;
+–requitepass “123456” : 指定redis连接密码，此参数要放在镜像名后面&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;nginx&#34;&gt;Nginx
-&lt;/h2&gt;&lt;p&gt;安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

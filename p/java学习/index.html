@@ -10,7 +10,7 @@
 <meta property='og:description' content="Java后端开发入门知识">
 <meta property='og:url' content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-08T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-14T11:41:07&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-08T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-14T16:26:06&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg' />
 <meta name="twitter:title" content="java学习">
 <meta name="twitter:description" content="Java后端开发入门知识"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg' />
@@ -320,7 +320,7 @@
                
                 最后修改:
                 <time>
-                    2025-03-14 11:41
+                    2025-03-14 16:26
                 </time>
             </div>
     </footer>
@@ -540,8 +540,7 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。<br></
 <p>后端代码部署tomcat<br>
 前端代码部署nginx<br></p>
 <h2 id="docker相关命令">docker相关命令
-</h2><p>源：</p>
-<div class="highlight"><div class="chroma">
+</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -565,9 +564,9 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。<br></
 </div>
 </div><p>docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
-查看容器ip：docker inspect -f &lsquo;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&rsquo; 容器id
-启动redis：docker run &ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &ndash;requirepass &ldquo;123456&rdquo;
-启动mysql：docker run &ndash;name docker-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0</p>
+查看容器ip：docker inspect -f &lsquo;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&rsquo; 容器id<br>
+启动redis：docker run &ndash;name docker-redis -it -p 6379:6379 -v /data/redis-data  ayljzj/redis:7.4.2 &ndash;requirepass &ldquo;123456&rdquo;<br>
+启动mysql：docker run &ndash;name docker-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:9.2.0<br></p>
 <h2 id="redis">redis
 </h2><p><a class="link" href="https://www.redis.net.cn"  target="_blank" rel="noopener"
     >redis中文网</a><br>
@@ -581,20 +580,20 @@ docker push new-repo:tagname
 ./redis-cli.exe -h 192.168.179.135 -p 6379 -a 123456<br>
 关闭防火墙：firewall-cmd &ndash;zone=public &ndash;add-port=6379/tcp &ndash;permanent   <br>
 重启防火墙：firewall-cmd &ndash;reload<br>
-关机：shutdown -h now</p>
+关机：shutdown -h now<br></p>
 <p>启动数据库：systemctl start mysqld<br>
-update user set authentication_string=passworD(&ldquo;root&rdquo;) where user=&lsquo;root&rsquo;;
-docker拉取镜像：docker pull redis:4.0
-最后的redis表示Redis镜像名
-–name:容器名称
--p 6379:6379 将端口设置为6379
--it参表示控制台显示Redis安装的交互信息
-如果后台运行，用-d参数
--v /data/redis-data 将redis数据挂载到根目录的 /data/redis-data 目录下
--v $PWD/data/redis-data 将redis数据挂载到当前目录的data/redis-data 目录下
-–requitepass “123456” : 指定redis连接密码，此参数要放在镜像名后面</p>
+update user set authentication_string=passworD(&ldquo;root&rdquo;) where user=&lsquo;root&rsquo;;<br>
+docker拉取镜像：docker pull redis:4.0<br>
+最后的redis表示Redis镜像名<br>
+–name:容器名称<br>
+-p 6379:6379 将端口设置为6379<br>
+-it参表示控制台显示Redis安装的交互信息<br>
+如果后台运行，用-d参数<br>
+-v /data/redis-data 将redis数据挂载到根目录的 /data/redis-data 目录下<br>
+-v $PWD/data/redis-data 将redis数据挂载到当前目录的data/redis-data 目录下<br>
+–requitepass “123456” : 指定redis连接密码，此参数要放在镜像名后面<br></p>
 <h2 id="nginx">Nginx
-</h2><p>安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel</p>
+</h2><p>安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel<br></p>
 
 </section>
 
@@ -612,7 +611,7 @@ docker拉取镜像：docker pull redis:4.0
 
 
         <span>
-            最后更新于 2025-03-14 11:41
+            最后更新于 2025-03-14 16:26
         </span>
     </section></footer>
 
@@ -744,7 +743,7 @@ docker拉取镜像：docker pull redis:4.0
         
         
 
-        <p>发布了 20 篇文章 | 共 37825 字</p>
+        <p>发布了 20 篇文章 | 共 37823 字</p>
 
 
 
