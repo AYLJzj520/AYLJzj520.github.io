@@ -15,7 +15,7 @@
         <description>&lt;img src="https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg" alt="Featured image of post java学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;java相关顺序&#34;&gt;Java相关顺序
+&lt;h2 id=&#34;java学习相关顺序&#34;&gt;Java学习相关顺序
 &lt;/h2&gt;&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./javaroad.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;
 &lt;h3 id=&#34;学习思路&#34;&gt;学习思路
 &lt;/h3&gt;&lt;p&gt;学习完java基础之后,先学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
@@ -101,16 +101,15 @@ rest代码风格&lt;br&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;springboot&#34;&gt;SpringBoot
-&lt;/h3&gt;&lt;h3 id=&#34;mybatisplus&#34;&gt;MyBatisPlus
+&lt;h3 id=&#34;mybatisplus&#34;&gt;MyBatisPlus
 &lt;/h3&gt;&lt;p&gt;新增&lt;br&gt;
 删除&lt;br&gt;
 修改&lt;br&gt;
 根据id查询&lt;br&gt;
 查询全部&lt;br&gt;
 分页查询（配置拦截器）&lt;br&gt;
-按条件查询&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;代码生成器（快速搭建框架）&lt;br&gt;&lt;/p&gt;
+按条件查询&lt;br&gt;
+代码生成器（快速搭建框架）&lt;br&gt;&lt;/p&gt;
 &lt;h3 id=&#34;项目描述&#34;&gt;项目描述：
 &lt;/h3&gt;&lt;p&gt;瑞吉外卖是一款专门为餐饮企业（餐厅、饭店）定制的软件产品，包括系统管理后台和移动端应用两部分。系统管理后台主要提供给餐饮企业内部员工使用，用于对餐厅的分类、菜品、套餐、订单、员工等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。&lt;br&gt;&lt;/p&gt;
 &lt;ul&gt;
