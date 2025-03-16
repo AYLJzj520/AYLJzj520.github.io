@@ -15,9 +15,10 @@
         <description>&lt;img src="https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/Amain.jpg" alt="Featured image of post java学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;学习顺序&#34;&gt;学习顺序
+&lt;h2 id=&#34;java相关顺序&#34;&gt;Java相关顺序
 &lt;/h2&gt;&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;./javaroad.jpg&#34;/&gt;&lt;/div&gt;&lt;br&gt;
-&lt;p&gt;学习完java基础之后,先学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
+&lt;h3 id=&#34;学习思路&#34;&gt;学习思路
+&lt;/h3&gt;&lt;p&gt;学习完java基础之后,先学习mysql，然后稍微了解一下javaweb的层，直接去学习springboot，学完了然后往前学ssm，理解为什么springboot淘汰了以前的ssm框架，然后再往前学javaweb，理解框架的好处。这样每个学习都有目标，不至于说学习了javaweb，然后学习ssm的时候觉得之前学习的东西都白学了，学习springboot，觉得ssm白学了。
 等这一套学习了完了之后，去学习设计模式，了解设计思想。然后再去学习数据结构，了解底层。最后才是jvm
 从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。&lt;br&gt;
 还有一点，springboot相较与javaweb和ssm，会简单很多，毕竟springboot约定大于配置。&lt;/p&gt;
@@ -33,8 +34,8 @@
 业务层()
 数据层(JDBC,MyBatis)&lt;/p&gt;
 &lt;p&gt;创建接口后，在接口中定义方法，在接口的实现类中实现方法&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;spring-mvc表现层框架&#34;&gt;spring MVC(表现层框架)
-&lt;/h2&gt;&lt;p&gt;导jar包&lt;br&gt;
+&lt;h3 id=&#34;spring-mvc表现层框架&#34;&gt;spring MVC(表现层框架)
+&lt;/h3&gt;&lt;p&gt;导jar包&lt;br&gt;
 创建SpringMVC控制类&lt;br&gt;
 创建SpringMVC配置类&lt;br&gt;
 方法前加@controller&lt;br&gt;
@@ -47,8 +48,8 @@ rest代码风格&lt;br&gt;
 修改put&lt;br&gt;
 删除delete&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;静态资源放行tomcat处理&lt;/p&gt;
-&lt;h2 id=&#34;ssm整合&#34;&gt;SSM整合
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&#34;ssm整合&#34;&gt;SSM整合
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;spring
 &lt;ul&gt;
 &lt;li&gt;springConfig&lt;/li&gt;
@@ -100,9 +101,9 @@ rest代码风格&lt;br&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;springboot&#34;&gt;SpringBoot
-&lt;/h2&gt;&lt;h2 id=&#34;mybatisplus&#34;&gt;MyBatisPlus
-&lt;/h2&gt;&lt;p&gt;新增&lt;br&gt;
+&lt;h3 id=&#34;springboot&#34;&gt;SpringBoot
+&lt;/h3&gt;&lt;h3 id=&#34;mybatisplus&#34;&gt;MyBatisPlus
+&lt;/h3&gt;&lt;p&gt;新增&lt;br&gt;
 删除&lt;br&gt;
 修改&lt;br&gt;
 根据id查询&lt;br&gt;
@@ -110,8 +111,8 @@ rest代码风格&lt;br&gt;
 分页查询（配置拦截器）&lt;br&gt;
 按条件查询&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;代码生成器（快速搭建框架）&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;项目描述&#34;&gt;项目描述：
-&lt;/h2&gt;&lt;p&gt;瑞吉外卖是一款专门为餐饮企业（餐厅、饭店）定制的软件产品，包括系统管理后台和移动端应用两部分。系统管理后台主要提供给餐饮企业内部员工使用，用于对餐厅的分类、菜品、套餐、订单、员工等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;项目描述&#34;&gt;项目描述：
+&lt;/h3&gt;&lt;p&gt;瑞吉外卖是一款专门为餐饮企业（餐厅、饭店）定制的软件产品，包括系统管理后台和移动端应用两部分。系统管理后台主要提供给餐饮企业内部员工使用，用于对餐厅的分类、菜品、套餐、订单、员工等进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。&lt;br&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;开发环境：
 环境(软件): JDK +MySQL +IDEA+Git+Tomcat&lt;br&gt;
@@ -142,17 +143,6 @@ rest代码风格&lt;br&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;我创建的一个springboot项目，其目录结构包含如下组成部分：
-common、
-config、
-controller、
-dto、
-entity、
-filter、
-mapper、
-service、
-utils、
-我各个层次的功能。&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Controller 接收请求，调用 Service 层处理业务逻辑。&lt;br&gt;
 Service 层调用 Mapper 层进行数据库操作。&lt;br&gt;
 Mapper 层操作 Entity 对象，与数据库交互。&lt;br&gt;
@@ -318,7 +308,7 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run --name mysql- -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:8.0.41
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;redis&#34;&gt;redis
+&lt;/div&gt;&lt;h2 id=&#34;centos下redis设置&#34;&gt;CentOs下redis设置
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;中文官网&lt;/a&gt;&lt;br&gt;
 进入路径：/usr/local/redis-4.0.0/src&lt;br&gt;
@@ -329,10 +319,10 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 退出：redis-cli -h 你的IP地址 -p 你的redis端口号 shutdown&lt;br&gt;
 设置允许远程链接：127.0.0.1添加注释#&lt;br&gt;
 ./redis-cli.exe -h 192.168.179.135 -p 6379 -a 123456&lt;br&gt;
-关闭防火墙：firewall-cmd &amp;ndash;zone=public &amp;ndash;add-port=6379/tcp &amp;ndash;permanent   &lt;br&gt;
-重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;
-关机：shutdown -h now&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;redis-1&#34;&gt;redis
+centOs关闭防火墙：firewall-cmd &amp;ndash;zone=public &amp;ndash;add-port=6379/tcp &amp;ndash;permanent   &lt;br&gt;
+centOs重启防火墙：firewall-cmd &amp;ndash;reload&lt;br&gt;
+centOs关机：shutdown -h now&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;redis&#34;&gt;redis
 &lt;/h2&gt;&lt;p&gt;启动数据库：systemctl start mysqld&lt;br&gt;
 update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where user=&amp;lsquo;root&amp;rsquo;;&lt;br&gt;
 –name:容器名称&lt;br&gt;
