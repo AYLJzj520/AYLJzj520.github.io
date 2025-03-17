@@ -1379,6 +1379,17 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看所有网络:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker network ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;进入容器内部：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1411,7 +1422,30 @@ Config 定义全局配置，Filter 处理请求和响应的拦截逻辑。&lt;br
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run --name mysql- -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d ayljzj/mysql:8.0.41
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;centos下redis设置&#34;&gt;CentOs下redis设置
+&lt;/div&gt;&lt;h2 id=&#34;rabbitmq&#34;&gt;rabbitmq
+&lt;/h2&gt;&lt;p&gt;创建一个目录用于挂载 RabbitMQ 数据：
+mkdir -p /usr/local/docker/rabbitmq
+启动 RabbitMQ 容器
+使用以下命令启动一个新的 RabbitMQ 容器：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rabbitmq&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;network&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rabbit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;usr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;local&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;docker&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rabbitmq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lib&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rabbitmq&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;15672&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;15672&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5672&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5672&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RABBITMQ_DEFAULT_USER&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RABBITMQ_DEFAULT_PASS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;123456&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ayljzj&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rabbitmq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;3.8&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;management&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在这条命令中，我们做了以下配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-id：以交互模式启动容器并在后台运行。&lt;/li&gt;
+&lt;li&gt;&amp;ndash;name=rabbitmq：为容器指定一个名称。&lt;/li&gt;
+&lt;li&gt;-v /usr/local/docker/rabbitmq:/var/lib/rabbitmq：将主机目录挂载到容器内的 /var/lib/rabbitmq，用于持久化数据。&lt;/li&gt;
+&lt;li&gt;-p 15672:15672：映射 RabbitMQ 管理页面端口。&lt;/li&gt;
+&lt;li&gt;-p 5672:5672：映射 RabbitMQ 消息接收端口。&lt;/li&gt;
+&lt;li&gt;-e RABBITMQ_DEFAULT_USER=admin：设置默认用户名。&lt;/li&gt;
+&lt;li&gt;-e RABBITMQ_DEFAULT_PASS=admin：设置默认密码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;centos下redis设置&#34;&gt;CentOs下redis设置
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.redis.net.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;中文官网&lt;/a&gt;&lt;br&gt;
 进入路径：/usr/local/redis-4.0.0/src&lt;br&gt;
@@ -6551,10 +6585,16 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;a class=&#34;link&#34; href=&#34;https://www.123865.com/s/yyl7Vv-o8OF3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;font color=blue&gt;梦想梦想模拟雕像脚本&lt;/font&gt;&lt;/a&gt;(链接失效)&lt;br&gt;
 养号说明：&lt;a class=&#34;link&#34; href=&#34;https://note.youdao.com/s/P86dxEYd&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;单号配置&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;个人上传：&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/s/MEejVv-OEwo3.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;个人云盘海岛脚本&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://note.youdao.com/s/gBwzRrG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;单号配置&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+Toast：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ih3LD2qusvib&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】
+GG修改器：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iTHbq2qusvwf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】
+卡首雕：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iqEyB2qusx9e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】
+芝麻海岛工具：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ieDaf2quszcj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;】
+&lt;a class=&#34;link&#34; href=&#34;https://note.youdao.com/s/gBwzRrG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;font color=blue&gt;最新版腾讯切号使用教程+qq突破登录上限说明&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://boombeach.free3v.work/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;font color=blue&gt;海岛奇兵数据网地址发布页&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
