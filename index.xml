@@ -7,6 +7,30 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright><atom:link href="https://ayljzj520.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>黑马点评学习</title>
+        <link>https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;img src="https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg" alt="Featured image of post 黑马点评学习" /&gt;&lt;blockquote&gt;
+&lt;p&gt;“Work！ ”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;短信登录&#34;&gt;短信登录
+&lt;/h2&gt;&lt;h3 id=&#34;基于session实现登录&#34;&gt;基于Session实现登录
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;发送短信验证码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;短信验证码登录、注册&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;校验登录状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>新手机到手安装软件</title>
         <link>https://ayljzj520.github.io/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
@@ -1126,6 +1150,13 @@
 等这一套学习了完了之后，去学习设计模式，了解设计思想。然后再去学习数据结构，了解底层。最后才是jvm
 从入门，到实际开发，一开始给你成就感，让你有动力继续学习下去，而不是从javaweb开始，盼着早日学到springboot，我就能够出去找工作了。&lt;br&gt;
 还有一点，springboot相较与javaweb和ssm，会简单很多，毕竟springboot约定大于配置。&lt;/p&gt;
+&lt;p&gt;java语言方面常规八股要熟，那些java的集合，重点背hashmap八股吧，jvm类加载机制，运行时分区，垃圾回收算法，垃圾回收器CMS、G1这些，各种乐观锁悲观锁，线程安全，threadlocal这些。
+在进阶一些的比如jvm参数，内存溢出泄漏排查，jvm调优。我这里说的只是冰山一角，详细八股可以去网上找，这不用去买，都免费资源。mysql、redis可以去看小林coding，
+我看你简历上写了，你一定要熟，什么底层b+树、索引结构、innodb、mvcc、undo log、redo log、行级锁表级锁，这些东西高频出现，如果面试官问我这些我都能笑出来。消息队列rabbitmq也好kafka也好，学一种就行，
+什么分区啊副本啊确认机制啊怎么保证不重复消费、怎么保证消息不丢失这些基本的一定要会，进阶一点的比如LEO、高水位线、kafka和rocketmq底层零拷贝的区别等等。计算机网络和操作系统既然你是科班应该理解起来问题不大，去看小林coding这两块吧，深度够了。
+spring boot的八股好好看看吧，一般字节腾讯不这么问，其他的java大厂挺爱问的，什么循环依赖啥的去网上看看。数据结构的话科班应该问题不大，多去力扣集中突击刷题吧。
+项目还是结合八股来，想一想你写的这些技术会给你挖什么坑。除此之外，还有场景题、rpc、设计模式、linux命令、ddd等。不会的就别往简历上写了，虽然技术栈很多的话好看些，但背起来确实累。总结一下，多去实习吧，多跳槽，直到跳到一个不错的中厂做跳板，这是一条可行的进大厂的路线。
+找个小厂的工作的话，没必要全都照这些准备，重点放在框架的使用和一些基础八股吧。&lt;/p&gt;
 &lt;p&gt;java架构层次&lt;br&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;pojo(或entity)：实体类&lt;/li&gt;
@@ -1471,6 +1502,16 @@ update user set authentication_string=passworD(&amp;ldquo;root&amp;rdquo;) where
 –requitepass “123456” : 指定redis连接密码，此参数要放在镜像名后面&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;nginx&#34;&gt;Nginx
 &lt;/h2&gt;&lt;p&gt;安装依赖：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;docker cp nginx:/var/log/nginx C:\afordocker\nginx\log
+docker cp nginx:/usr/share/nginx/html C:\afordocker\nginx&lt;br&gt;
+docker cp nginx:/etc/nginx/nginx.conf C:\afordocker\nginx\conf
+docker cp nginx:/etc/nginx/conf.d C:\afordocker\nginx\conf\conf.d&lt;/p&gt;
+&lt;p&gt;docker run -d &amp;ndash;name nginx -p 8880:80 &lt;br&gt;
+-v C:\afordocker\nginx\conf\nginx.conf:\etc\nginx\nginx.conf &lt;br&gt;
+-v C:\afordocker\nginx\conf\conf.d:\etc\nginx\conf.d &lt;br&gt;
+-v C:\afordocker\nginx\log\log:\var\log\nginx &lt;br&gt;
+-v C:\afordocker\nginx\log\html:\usr\share\nginx\html &lt;br&gt;
+&amp;ndash;privileged=true ayljzj/nginx:1.24.0&lt;/p&gt;
 &lt;h2 id=&#34;windows下docker的mysql57主从辅助一主一从&#34;&gt;Windows下docker的Mysql（5.7）主从辅助（一主一从）
 &lt;/h2&gt;&lt;h3 id=&#34;1拉取mysql镜像&#34;&gt;1、拉取Mysql镜像
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
