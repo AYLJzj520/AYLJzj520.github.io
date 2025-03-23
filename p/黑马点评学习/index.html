@@ -10,7 +10,7 @@
 <meta property='og:description' content="记录学习黑马点评过程中知识要点">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-22T21:26:15&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-23T16:31:03&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
 <meta name="twitter:title" content="黑马点评学习">
 <meta name="twitter:description" content="记录学习黑马点评过程中知识要点"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
@@ -276,8 +276,12 @@
           <ul>
             <li><a href="#321缓存模型与思路">3.2.1缓存模型与思路</a></li>
             <li><a href="#322代码实现">3.2.2代码实现</a></li>
+            <li><a href="#323趁热打铁实现商户类型缓存">3.2.3趁热打铁实现商户类型缓存</a></li>
           </ul>
         </li>
+        <li><a href="#33缓存更新策略">3.3缓存更新策略</a></li>
+        <li><a href="#331数据库和缓存不一致解决方案">3.3.1数据库和缓存不一致解决方案</a></li>
+        <li><a href="#332数据库和缓存不一致采用什么方案">3.3.2数据库和缓存不一致采用什么方案</a></li>
       </ul>
     </li>
   </ul>
@@ -345,7 +349,7 @@
                
                 最后修改:
                 <time>
-                    2025-03-22 21:26
+                    2025-03-23 16:31
                 </time>
             </div>
     </footer>
@@ -1465,7 +1469,175 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
+</div><h4 id="323趁热打铁实现商户类型缓存">3.2.3趁热打铁实现商户类型缓存
+</h4><p>Controller逻辑的实现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@GetMapping</span><span class="p">(</span><span class="s">&#34;list&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">queryTypeList</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">typeService</span><span class="p">.</span><span class="na">queryList</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
+</div><p>queryList()方法的实现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">private</span><span class="w"> </span><span class="n">StringRedisTemplate</span><span class="w"> </span><span class="n">stringRedisTemplate</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">queryList</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">//        整体代码都是类似的，前面只需要将单个店铺信息从JSON和Bean之间相互转换</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">//        这里只不过是将查询到的多个店铺类型信息从JSON和Bean之间相互转换，只是多了一个foreach循环</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//先从Redis中查，这里的常量值是固定前缀 + 店铺id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">shopTypes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stringRedisTemplate</span><span class="p">.</span><span class="na">opsForList</span><span class="p">().</span><span class="na">range</span><span class="p">(</span><span class="n">CACHE_SHOP_TYPE_KEY</span><span class="p">,</span><span class="w"> </span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="n">1</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//如果不为空（查询到了），则转为ShopType类型直接返回</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">shopTypes</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">()){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="n">ShopType</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">shopTypes</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">ShopType</span><span class="w"> </span><span class="n">shopType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JSONUtil</span><span class="p">.</span><span class="na">toBean</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">ShopType</span><span class="p">.</span><span class="na">class</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">arr</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">shopType</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">ok</span><span class="p">(</span><span class="n">arr</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//否则去数据库中查</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">List</span><span class="o">&lt;</span><span class="n">ShopType</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">query</span><span class="p">().</span><span class="na">orderByAsc</span><span class="p">(</span><span class="s">&#34;sort&#34;</span><span class="p">).</span><span class="na">list</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">tmp</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">()){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;店铺类型不存在！&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//查到了转为json字符串，存入redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">ShopType</span><span class="w"> </span><span class="n">shopType</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">tmp</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">jsonStr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JSONUtil</span><span class="p">.</span><span class="na">toJsonStr</span><span class="p">(</span><span class="n">shopType</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">shopTypes</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">jsonStr</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">stringRedisTemplate</span><span class="p">.</span><span class="na">opsForList</span><span class="p">().</span><span class="na">leftPushAll</span><span class="p">(</span><span class="n">CACHE_SHOP_TYPE_KEY</span><span class="p">,</span><span class="n">shopTypes</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//最终把查询到的商户分类信息返回给前端</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">ok</span><span class="p">(</span><span class="n">tmp</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="33缓存更新策略">3.3缓存更新策略
+</h3><ul>
+<li>缓存更新是Redis为了节约内存而设计出来的一个东西，主要是因为内存数据宝贵，当我们想Redis插入太多数据，此时就可能会导致缓存中数据过多，所以Redis会对部分数据进行更新，或者把它成为淘汰更合适</li>
+<li>内存淘汰：Redis自动进行，当Redis内存大道我们设定的max-memery时，会自动触发淘汰机制，淘汰掉一些不重要的数据（可以自己设置策略方式）</li>
+<li>超时剔除：当我们给Redis设置了过期时间TTL之后，Redis会将超时的数据进行删除，方便我们继续使用缓存</li>
+<li>主动更新：我们可以手动调用方法把缓存删除掉，通常用于解决缓存和数据库不一致问题</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>说明</th>
+          <th>内存淘汰</th>
+          <th>超时剔除</th>
+          <th>主动更新</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>说明</td>
+          <td>不用自己维护， 利用Redis的内存淘汰机制，当内存不足时自动淘汰部分数据。 下次查询时更新缓存。</td>
+          <td>给缓存数据添加TTL时间，到期后自动删除缓存。下次查询时更新缓存。</td>
+          <td>编写业务逻辑，在修改数据库的同时，更新缓存。</td>
+      </tr>
+      <tr>
+          <td>一致性</td>
+          <td>差</td>
+          <td>一般</td>
+          <td>好</td>
+      </tr>
+      <tr>
+          <td>维护成本</td>
+          <td>无</td>
+          <td>低</td>
+          <td>高</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>业务场景
+<ul>
+<li>低一致性需求：使用内存淘汰机制，例如店铺类型的查询缓存（因为这个很长一段时间都不需要更新）</li>
+<li>高一致性需求：主动更新，并以超时剔除作为兜底方案，例如店铺详情查询的缓存</li>
+</ul>
+</li>
+</ul>
+<h3 id="331数据库和缓存不一致解决方案">3.3.1数据库和缓存不一致解决方案
+</h3><ul>
+<li>由于我们的缓存数据源来自数据库，而数据库的数据是会发生变化的，因此，如果当数据库中数据发生变化，而缓存却没有同步，此时就会有一致性问题存在，其后果是
+<ul>
+<li>用户使用缓存中的过时数据，就会产生类似多线程数据安全问题，从而影响业务，产品口碑等</li>
+</ul>
+</li>
+<li>那么如何解决这个问题呢？有如下三种方式
+<ul>
+<li>1.Cache Aside Pattern 人工编码方式：缓存调用者在更新完数据库之后再去更新缓存，也称之为双写方案</li>
+<li>2.Read/Write Through Pattern：缓存与数据库整合为一个服务，由服务来维护一致性。调用者调用该服务，无需关心缓存一致性问题。但是维护这样一个服务很复杂，市面上也不容易找到这样的一个现成的服务，开发成本高</li>
+<li>3.Write Behind Caching Pattern：调用者只操作缓存，其他线程去异步处理数据库，最终实现一致性。但是维护这样的一个异步的任务很复杂，需要实时监控缓存中的数据更新，其他线程去异步更新数据库也可能不太及时，而且缓存服务器如果宕机，那么缓存的数据也就丢失了</li>
+</ul>
+</li>
+</ul>
+<h3 id="332数据库和缓存不一致采用什么方案">3.3.2数据库和缓存不一致采用什么方案
+</h3><ul>
+<li>综上所述，在企业的实际应用中，还是方案一最可靠，但是方案一的调用者该如何处理呢？</li>
+<li>如果采用方案一，假设我们每次操作完数据库之后，都去更新一下缓存，但是如果中间并没有人查询数据，那么这个更新动作只有最后一次是有效的，中间的更新动作意义不大，所以我们可以把缓存直接删除，等到有人再次查询时，再将缓存中的数据加载出来</li>
+<li>对比删除缓存与更新缓存
+<ul>
+<li>更新缓存：每次更新数据库都需要更新缓存，无效写操作较多</li>
+<li>删除缓存：更新数据库时让缓存失效，再次查询时更新缓存</li>
+</ul>
+</li>
+<li>如何保证缓存与数据库的操作同时成功/同时失败 (原子性)
+<ul>
+<li>单体系统：将缓存与数据库操作放在同一个事务</li>
+<li>分布式系统：利用TCC等分布式事务方案</li>
+</ul>
+</li>
+<li>先操作缓存还是先操作数据库？我们来仔细分析一下这两种方式的线程安全问题</li>
+<li>先删除缓存，再操作数据库
+异常情况：删除缓存的操作很快，但是更新数据库的操作相对较慢，如果此时有一个线程2刚好进来查询缓存，由于我们刚刚才删除缓存，所以线程2需要查询数据库，并写入缓存，但是我们更新数据库的操作还未完成，所以线程2查询到的数据是脏数据，出现线程安全问题</li>
+<li>先操作数据库，再删除缓存
+异常情况：线程1在查询缓存的时候，缓存TTL刚好失效，需要查询数据库并写入缓存，这个操作耗时相对较短（相比较于上图来说），但是就在这么短的时间内，线程2进来了，更新数据库，删除缓存，但是线程1虽然查询完了数据（更新前的旧数据），但是还没来得及写入缓存，所以线程2的更新数据库与删除缓存，并没有影响到线程1的查询旧数据，写入缓存，造成线程安全问题</li>
+<li>虽然这二者都存在线程安全问题，但是相对来说，后者出现线程安全问题的概率相对较低，所以我们最终采用后者先操作数据库，再删除缓存的方案</li>
+</ul>
+
 </section>
 
 
@@ -1482,7 +1654,7 @@
 
 
         <span>
-            最后更新于 2025-03-22 21:26
+            最后更新于 2025-03-23 16:31
         </span>
     </section></footer>
 
@@ -1640,7 +1812,7 @@
         
         
 
-        <p>发布了 21 篇文章 | 共 46998 字</p>
+        <p>发布了 21 篇文章 | 共 49002 字</p>
 
 
 
