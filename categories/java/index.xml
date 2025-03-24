@@ -2542,7 +2542,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;由于这里并没有后台管理页面，所以我们只能用POSTMAN模拟发送请求来新增秒杀券，请求路径http://localhost:8081/voucher/seckill， 请求方式POST，JSON数据如下，注意优惠券的截止日期设置，若优惠券过期，则不会在页面上显示。&lt;/li&gt;
+&lt;li&gt;由于这里并没有后台管理页面，所以我们只能用POSTMAN模拟发送请求来新增秒杀券，请求路径http://localhost:8080/voucher/seckill， 请求方式POST，JSON数据如下，注意优惠券的截止日期设置，若优惠券过期，则不会在页面上显示。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2579,7 +2579,7 @@
 &lt;li&gt;我们点击限时抢购，然后查看发送的请求&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;请求网址: http://localhost:8080/api/voucher-order/seckill/13&lt;br&gt;
+&lt;p&gt;请求网址: http://localhost:8080/api/voucher-order/seckill/7&lt;br&gt;
 请求方法: POST&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
@@ -3173,8 +3173,9 @@
 &lt;li&gt;失败原因分析：由于我们部署了多个Tomcat，每个Tomcat都有一个属于自己的jvm，那么假设在服务器A的Tomcat内部，有两个线程，即线程1和线程2，这两个线程使用的是同一份代码，那么他们的锁对象是同一个，是可以实现互斥的。但是如果在Tomcat的内部，又有两个线程，但是他们的锁对象虽然写的和服务器A一样，但是锁对象却不是同一个，所以线程3和线程4可以实现互斥，但是却无法和线程1和线程2互斥&lt;/li&gt;
 &lt;li&gt;这就是集群环境下，syn锁失效的原因，在这种情况下，我们需要使用分布式锁来解决这个问题，让锁不存在于每个jvm的内部，而是让所有jvm公用外部的一把锁（Redis）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.
-&lt;/h2&gt;</description>
+&lt;h2 id=&#34;5分布式锁&#34;&gt;5.分布式锁
+&lt;/h2&gt;&lt;h3 id=&#34;51分布式锁&#34;&gt;5.1分布式锁
+&lt;/h3&gt;</description>
         </item>
         <item>
         <title>java学习</title>

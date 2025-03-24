@@ -10,7 +10,7 @@
 <meta property='og:description' content="记录学习黑马点评过程中知识要点">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-24T21:09:08&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-24T21:30:54&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
 <meta name="twitter:title" content="黑马点评学习">
 <meta name="twitter:description" content="记录学习黑马点评过程中知识要点"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
@@ -310,7 +310,11 @@
         <li><a href="#46集群环境下的并发问题">4.6集群环境下的并发问题</a></li>
       </ul>
     </li>
-    <li><a href="#5">5.</a></li>
+    <li><a href="#5分布式锁">5.分布式锁</a>
+      <ul>
+        <li><a href="#51分布式锁">5.1分布式锁</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
@@ -376,7 +380,7 @@
                
                 最后修改:
                 <time>
-                    2025-03-24 21:09
+                    2025-03-24 21:30
                 </time>
             </div>
     </footer>
@@ -2920,7 +2924,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>由于这里并没有后台管理页面，所以我们只能用POSTMAN模拟发送请求来新增秒杀券，请求路径http://localhost:8081/voucher/seckill， 请求方式POST，JSON数据如下，注意优惠券的截止日期设置，若优惠券过期，则不会在页面上显示。</li>
+<li>由于这里并没有后台管理页面，所以我们只能用POSTMAN模拟发送请求来新增秒杀券，请求路径http://localhost:8080/voucher/seckill， 请求方式POST，JSON数据如下，注意优惠券的截止日期设置，若优惠券过期，则不会在页面上显示。</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2957,7 +2961,7 @@
 <li>我们点击限时抢购，然后查看发送的请求</li>
 </ul>
 <blockquote>
-<p>请求网址: http://localhost:8080/api/voucher-order/seckill/13<br>
+<p>请求网址: http://localhost:8080/api/voucher-order/seckill/7<br>
 请求方法: POST</p>
 </blockquote>
 <ul>
@@ -3551,8 +3555,9 @@
 <li>失败原因分析：由于我们部署了多个Tomcat，每个Tomcat都有一个属于自己的jvm，那么假设在服务器A的Tomcat内部，有两个线程，即线程1和线程2，这两个线程使用的是同一份代码，那么他们的锁对象是同一个，是可以实现互斥的。但是如果在Tomcat的内部，又有两个线程，但是他们的锁对象虽然写的和服务器A一样，但是锁对象却不是同一个，所以线程3和线程4可以实现互斥，但是却无法和线程1和线程2互斥</li>
 <li>这就是集群环境下，syn锁失效的原因，在这种情况下，我们需要使用分布式锁来解决这个问题，让锁不存在于每个jvm的内部，而是让所有jvm公用外部的一把锁（Redis）</li>
 </ul>
-<h2 id="5">5.
-</h2>
+<h2 id="5分布式锁">5.分布式锁
+</h2><h3 id="51分布式锁">5.1分布式锁
+</h3>
 </section>
 
 
@@ -3569,7 +3574,7 @@
 
 
         <span>
-            最后更新于 2025-03-24 21:09
+            最后更新于 2025-03-24 21:30
         </span>
     </section></footer>
 
@@ -3727,7 +3732,7 @@
         
         
 
-        <p>发布了 21 篇文章 | 共 63364 字</p>
+        <p>发布了 21 篇文章 | 共 63376 字</p>
 
 
 
