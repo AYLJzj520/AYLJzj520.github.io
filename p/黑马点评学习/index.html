@@ -10,7 +10,7 @@
 <meta property='og:description' content="记录学习黑马点评过程中知识要点">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-24T10:32:36&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-24T11:15:20&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
 <meta name="twitter:title" content="黑马点评学习">
 <meta name="twitter:description" content="记录学习黑马点评过程中知识要点"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
@@ -246,6 +246,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
+    <li><a href="#1内容概述">1.内容概述</a></li>
     <li><a href="#2短信登录">2.短信登录</a>
       <ul>
         <li><a href="#21基于session实现登录">2.1基于Session实现登录</a></li>
@@ -299,6 +300,7 @@
         <li><a href="#39封装redis工具类">3.9封装Redis工具类</a></li>
       </ul>
     </li>
+    <li><a href="#4优惠券秒杀">4.优惠券秒杀</a></li>
   </ul>
 </nav>
         </div>
@@ -364,7 +366,7 @@
                
                 最后修改:
                 <time>
-                    2025-03-24 10:32
+                    2025-03-24 11:15
                 </time>
             </div>
     </footer>
@@ -381,6 +383,35 @@
     <blockquote>
 <p>“Work！ ”</p>
 </blockquote>
+<h2 id="1内容概述">1.内容概述
+</h2><ul>
+<li>短信登录
+<ul>
+<li>这部分会使用Redis共享session来实现</li>
+<li>用Redis替换session来存储邮箱验证码</li>
+</ul>
+</li>
+<li>商户查询缓存
+<ul>
+<li>这部分要理解缓存击穿，缓存穿透，缓存雪崩等问题，对于这些概念的理解不仅仅是停留在概念上，更是能在代码中看到对应的内容</li>
+</ul>
+</li>
+<li>优惠券秒杀(重中之重)
+<ul>
+<li>这部分我们可以学会Redis的计数器功能，结合Lua完成高性能的Redis操作，同时学会Redis分布式锁的原理，包括Redis的三种消息队列</li>
+</ul>
+</li>
+<li>好友关注
+<ul>
+<li>基于Set集合的关注、取消关注，共同关注等等功能，这部分在上篇的练习题中出现过，这次我们在项目中来使用一下</li>
+</ul>
+</li>
+<li>达人探店
+<ul>
+<li>基于List来完成点赞列表的操作，同时基于SortedSet来完成点赞的排行榜功能</li>
+</ul>
+</li>
+</ul>
 <h2 id="2短信登录">2.短信登录
 </h2><h3 id="21基于session实现登录">2.1基于Session实现登录
 </h3><ul>
@@ -2695,7 +2726,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><h2 id="4优惠券秒杀">4.优惠券秒杀
+</h2>
 </section>
 
 
@@ -2712,7 +2744,7 @@
 
 
         <span>
-            最后更新于 2025-03-24 10:32
+            最后更新于 2025-03-24 11:15
         </span>
     </section></footer>
 
@@ -2870,7 +2902,7 @@
         
         
 
-        <p>发布了 21 篇文章 | 共 56666 字</p>
+        <p>发布了 21 篇文章 | 共 57054 字</p>
 
 
 

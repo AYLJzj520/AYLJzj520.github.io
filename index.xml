@@ -15,6 +15,35 @@
         <description>&lt;img src="https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg" alt="Featured image of post 黑马点评学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;1内容概述&#34;&gt;1.内容概述
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;短信登录
+&lt;ul&gt;
+&lt;li&gt;这部分会使用Redis共享session来实现&lt;/li&gt;
+&lt;li&gt;用Redis替换session来存储邮箱验证码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;商户查询缓存
+&lt;ul&gt;
+&lt;li&gt;这部分要理解缓存击穿，缓存穿透，缓存雪崩等问题，对于这些概念的理解不仅仅是停留在概念上，更是能在代码中看到对应的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;优惠券秒杀(重中之重)
+&lt;ul&gt;
+&lt;li&gt;这部分我们可以学会Redis的计数器功能，结合Lua完成高性能的Redis操作，同时学会Redis分布式锁的原理，包括Redis的三种消息队列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;好友关注
+&lt;ul&gt;
+&lt;li&gt;基于Set集合的关注、取消关注，共同关注等等功能，这部分在上篇的练习题中出现过，这次我们在项目中来使用一下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;达人探店
+&lt;ul&gt;
+&lt;li&gt;基于List来完成点赞列表的操作，同时基于SortedSet来完成点赞的排行榜功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;2短信登录&#34;&gt;2.短信登录
 &lt;/h2&gt;&lt;h3 id=&#34;21基于session实现登录&#34;&gt;2.1基于Session实现登录
 &lt;/h3&gt;&lt;ul&gt;
@@ -2329,7 +2358,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;4优惠券秒杀&#34;&gt;4.优惠券秒杀
+&lt;/h2&gt;</description>
         </item>
         <item>
         <title>新手机到手安装软件</title>
@@ -9037,9 +9067,42 @@ GG修改器：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i
         
         <guid>https://ayljzj520.github.io/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;center&gt;&lt;big&gt;Personal Introduction&lt;/big&gt;&lt;/center&gt;&lt;br&gt;
-保护我的眼睛：&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;保护我的眼睛：
 右眼450 散光50 轴位180 瞳距34&lt;br&gt;
-左眼475 散光75 轴位180 瞳距32&lt;br&gt;
+左眼475 散光75 轴位180 瞳距32&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;相关记录：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;事件&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;时间&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;提出入党申请&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2019年9月20日&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;确定为入党积极分子&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2020年3月31日&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;转为预备党员&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2022年12月9日&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;预备党员转正&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2023年12月12日&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 </description>
         </item>
         <item>
