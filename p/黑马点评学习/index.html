@@ -10,7 +10,7 @@
 <meta property='og:description' content="记录学习黑马点评过程中知识要点">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-24T11:15:20&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-24T21:09:08&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
 <meta name="twitter:title" content="黑马点评学习">
 <meta name="twitter:description" content="记录学习黑马点评过程中知识要点"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/Amain.jpg' />
@@ -300,7 +300,17 @@
         <li><a href="#39封装redis工具类">3.9封装Redis工具类</a></li>
       </ul>
     </li>
-    <li><a href="#4优惠券秒杀">4.优惠券秒杀</a></li>
+    <li><a href="#4优惠券秒杀">4.优惠券秒杀</a>
+      <ul>
+        <li><a href="#41redis实现全局唯一id">4.1Redis实现全局唯一ID</a></li>
+        <li><a href="#42添加优惠券">4.2添加优惠券</a></li>
+        <li><a href="#43实现秒杀下单">4.3实现秒杀下单</a></li>
+        <li><a href="#44超卖问题">4.4超卖问题</a></li>
+        <li><a href="#45一人一单">4.5一人一单</a></li>
+        <li><a href="#46集群环境下的并发问题">4.6集群环境下的并发问题</a></li>
+      </ul>
+    </li>
+    <li><a href="#5">5.</a></li>
   </ul>
 </nav>
         </div>
@@ -366,7 +376,7 @@
                
                 最后修改:
                 <time>
-                    2025-03-24 11:15
+                    2025-03-24 21:09
                 </time>
             </div>
     </footer>
@@ -2727,6 +2737,821 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="4优惠券秒杀">4.优惠券秒杀
+</h2><h3 id="41redis实现全局唯一id">4.1Redis实现全局唯一ID
+</h3><ul>
+<li>在各类购物App中，都会遇到商家发放的优惠券</li>
+<li>当用户抢购商品时，生成的订单会保存到tb_voucher_order表中，而订单表如果使用数据库自增ID就会存在一些问题
+<ul>
+<li>1.id规律性太明显</li>
+<li>2.受单表数据量的限制</li>
+</ul>
+</li>
+<li>如果我们的订单id有太明显的规律，那么对于用户或者竞争对手，就很容易猜测出我们的一些敏感信息，例如商城一天之内能卖出多少单，这明显不合适</li>
+<li>随着我们商城的规模越来越大，MySQL的单表容量不宜超过500W，数据量过大之后，我们就要进行拆库拆表，拆分表了之后，他们从逻辑上讲，是同一张表，所以他们的id不能重复，于是乎我们就要保证id的唯一性</li>
+<li>那么这就引出我们的全局ID生成器了</li>
+<li>全局ID生成器是一种在分布式系统下用来生成全局唯一ID的工具，一般要满足一下特性
+<ul>
+<li>唯一性</li>
+<li>高可用</li>
+<li>高性能</li>
+<li>递增性</li>
+<li>安全性</li>
+<li>为了增加ID的安全性，我们可以不直接使用Redis自增的数值，而是拼接一些其他信息</li>
+<li>ID组成部分
+<ul>
+<li>符号位：1bit，永远为0</li>
+<li>时间戳：31bit，以秒为单位，可以使用69年（2^31秒约等于69年）</li>
+<li>序列号：32bit，秒内的计数器，支持每秒传输2^32个不同ID</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>那我们就根据我们分析的ID生成策略，来编写代码</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Component</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">RedisIdWorker</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//设置起始时间，我这里设定的是2022.01.01 00:00:00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">BEGIN_TIMESTAMP</span><span class="o">=</span><span class="n">1640995200L</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//序列号长度</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Long</span><span class="w"> </span><span class="n">COUNT_BIT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">32L</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">StringRedisTemplate</span><span class="w"> </span><span class="n">stringRedisTemplate</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 生成全局唯一id
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param keyPrefix
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">nextId</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">keyPrefix</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//1.生成时间戳</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">LocalDateTime</span><span class="w"> </span><span class="n">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">now</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">long</span><span class="w"> </span><span class="n">nowSecond</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">now</span><span class="p">.</span><span class="na">toEpochSecond</span><span class="p">(</span><span class="n">ZoneOffset</span><span class="p">.</span><span class="na">UTC</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">long</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nowSecond</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">BEGIN_TIMESTAMP</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//2.生成序列号</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//2.1获取当前日，精确到天</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">now</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="n">DateTimeFormatter</span><span class="p">.</span><span class="na">ofPattern</span><span class="p">(</span><span class="s">&#34;yyyy:MM:dd&#34;</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//2.2自增长</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Long</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stringRedisTemplate</span><span class="p">.</span><span class="na">opsForValue</span><span class="p">().</span><span class="na">increment</span><span class="p">(</span><span class="s">&#34;icr&#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">keyPrefix</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;:&#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">date</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//3.拼接并返回,简单位运算</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">COUNT_BIT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="42添加优惠券">4.2添加优惠券
+</h3><ul>
+<li>每个店铺度可以发布优惠券，分为平价券和特价券，平价券可以任意购买，而特价券需要秒杀抢购</li>
+<li>tb_voucher：优惠券的基本信息，优惠金额、使用规则等</li>
+<li>tb_seckill_voucher：优惠券的库存、开始抢购时间，结束抢购时间。特价优惠券才需要填写这些信息</li>
+<li>平价券由于优惠力度并不是很大，所以是可以任意领取</li>
+<li>而代金券由于优惠力度大，所以像第二种券，就得限制数量，从表结构上也能看出，特价券除了具有优惠券的基本信息以外，还具有库存，抢购时间，结束时间等等字段</li>
+<li>添加优惠券的代码已经提供好了</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 新增秒杀券
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param voucher 优惠券信息，包含秒杀信息
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @return 优惠券id
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@PostMapping</span><span class="p">(</span><span class="s">&#34;seckill&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">addSeckillVoucher</span><span class="p">(</span><span class="nd">@RequestBody</span><span class="w"> </span><span class="n">Voucher</span><span class="w"> </span><span class="n">voucher</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">voucherService</span><span class="p">.</span><span class="na">addSeckillVoucher</span><span class="p">(</span><span class="n">voucher</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">ok</span><span class="p">(</span><span class="n">voucher</span><span class="p">.</span><span class="na">getId</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 查询店铺的优惠券列表
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param shopId 店铺id
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @return 优惠券列表
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@GetMapping</span><span class="p">(</span><span class="s">&#34;/list/{shopId}&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">queryVoucherOfShop</span><span class="p">(</span><span class="nd">@PathVariable</span><span class="p">(</span><span class="s">&#34;shopId&#34;</span><span class="p">)</span><span class="w"> </span><span class="n">Long</span><span class="w"> </span><span class="n">shopId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">voucherService</span><span class="p">.</span><span class="na">queryVoucherOfShop</span><span class="p">(</span><span class="n">shopId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Transactional</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">addSeckillVoucher</span><span class="p">(</span><span class="n">Voucher</span><span class="w"> </span><span class="n">voucher</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 保存优惠券</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">save</span><span class="p">(</span><span class="n">voucher</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 保存秒杀信息</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">SeckillVoucher</span><span class="w"> </span><span class="n">seckillVoucher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SeckillVoucher</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">seckillVoucher</span><span class="p">.</span><span class="na">setVoucherId</span><span class="p">(</span><span class="n">voucher</span><span class="p">.</span><span class="na">getId</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">seckillVoucher</span><span class="p">.</span><span class="na">setStock</span><span class="p">(</span><span class="n">voucher</span><span class="p">.</span><span class="na">getStock</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">seckillVoucher</span><span class="p">.</span><span class="na">setBeginTime</span><span class="p">(</span><span class="n">voucher</span><span class="p">.</span><span class="na">getBeginTime</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">seckillVoucher</span><span class="p">.</span><span class="na">setEndTime</span><span class="p">(</span><span class="n">voucher</span><span class="p">.</span><span class="na">getEndTime</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">seckillVoucherService</span><span class="p">.</span><span class="na">save</span><span class="p">(</span><span class="n">seckillVoucher</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>由于这里并没有后台管理页面，所以我们只能用POSTMAN模拟发送请求来新增秒杀券，请求路径http://localhost:8081/voucher/seckill， 请求方式POST，JSON数据如下，注意优惠券的截止日期设置，若优惠券过期，则不会在页面上显示。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JSON" data-lang="JSON"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;shopId&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;title&#34;</span><span class="p">:</span><span class="s2">&#34;100元代金券&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;subTitle&#34;</span><span class="p">:</span><span class="s2">&#34;周一至周五可用&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;rules&#34;</span><span class="p">:</span><span class="s2">&#34;全场通用\\n无需预约\\n可无限叠加&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;payValue&#34;</span><span class="p">:</span><span class="mi">8000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;actualValue&#34;</span><span class="p">:</span><span class="mi">10000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;stock&#34;</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;beginTime&#34;</span><span class="p">:</span><span class="s2">&#34;2022-01-01T00:00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;endTime&#34;</span><span class="p">:</span><span class="s2">&#34;2024-10-31T23:59:59&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="43实现秒杀下单">4.3实现秒杀下单
+</h3><ul>
+<li>我们点击限时抢购，然后查看发送的请求</li>
+</ul>
+<blockquote>
+<p>请求网址: http://localhost:8080/api/voucher-order/seckill/13<br>
+请求方法: POST</p>
+</blockquote>
+<ul>
+<li>那我们现在来分析一下怎么抢优惠券
+<ul>
+<li>首先提交优惠券id，然后查询优惠券信息</li>
+<li>之后判断秒杀时间是否开始
+<ul>
+<li>开始了，则判断是否有剩余库存
+<ul>
+<li>有库存，那么删减一个库存
+<ul>
+<li>然后创建订单</li>
+</ul>
+</li>
+<li>无库存，则返回一个错误信息</li>
+</ul>
+</li>
+<li>没开始，则返回一个错误信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>代码实现</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@RestController</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@RequestMapping</span><span class="p">(</span><span class="s">&#34;/voucher-order&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">VoucherOrderController</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">IVoucherOrderService</span><span class="w"> </span><span class="n">voucherOrderService</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@PostMapping</span><span class="p">(</span><span class="s">&#34;seckill/{id}&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">seckillVoucher</span><span class="p">(</span><span class="nd">@PathVariable</span><span class="p">(</span><span class="s">&#34;id&#34;</span><span class="p">)</span><span class="w"> </span><span class="n">Long</span><span class="w"> </span><span class="n">voucherId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">voucherOrderService</span><span class="p">.</span><span class="na">seckillVoucher</span><span class="p">(</span><span class="n">voucherId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Service</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">VoucherOrderServiceImpl</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ServiceImpl</span><span class="o">&lt;</span><span class="n">VoucherOrderMapper</span><span class="p">,</span><span class="w"> </span><span class="n">VoucherOrder</span><span class="o">&gt;</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IVoucherOrderService</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ISeckillVoucherService</span><span class="w"> </span><span class="n">seckillVoucherService</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">RedisIdWorker</span><span class="w"> </span><span class="n">redisIdWorker</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Transactional</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">seckillVoucher</span><span class="p">(</span><span class="n">Long</span><span class="w"> </span><span class="n">voucherId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//1.查询优惠卷</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">SeckillVoucher</span><span class="w"> </span><span class="n">vouchar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seckillVoucherService</span><span class="p">.</span><span class="na">getById</span><span class="p">(</span><span class="n">voucherId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//2.判断秒杀时间是否开始</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vouchar</span><span class="p">.</span><span class="na">getBeginTime</span><span class="p">().</span><span class="na">isAfter</span><span class="p">(</span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">now</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//尚未开始</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;秒杀尚未开始&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//3.判断秒杀时间是否已经结束</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vouchar</span><span class="p">.</span><span class="na">getEndTime</span><span class="p">().</span><span class="na">isBefore</span><span class="p">(</span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">now</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//已经结束</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;秒杀已经结束&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//4.判断库存是否充足</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vouchar</span><span class="p">.</span><span class="na">getStock</span><span class="p">()</span><span class="o">&lt;</span><span class="n">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//库存不足</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;库存不足&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//5.扣减库存</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seckillVoucherService</span><span class="p">.</span><span class="na">update</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">setSql</span><span class="p">(</span><span class="s">&#34;stock=stock-1&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">eq</span><span class="p">(</span><span class="s">&#34;voucher_id&#34;</span><span class="p">,</span><span class="n">voucherId</span><span class="p">).</span><span class="na">update</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//扣减库存失败</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;库存不足&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//6.创建订单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">VoucherOrder</span><span class="w"> </span><span class="n">voucherOrder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">VoucherOrder</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//6.1订单id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">long</span><span class="w"> </span><span class="n">orderId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">redisIdWorker</span><span class="p">.</span><span class="na">nextId</span><span class="p">(</span><span class="s">&#34;order&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">voucherOrder</span><span class="p">.</span><span class="na">setId</span><span class="p">(</span><span class="n">orderId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//6.2用户订单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Long</span><span class="w"> </span><span class="n">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UserHolder</span><span class="p">.</span><span class="na">getUser</span><span class="p">().</span><span class="na">getId</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">voucherOrder</span><span class="p">.</span><span class="na">setUserId</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//6.3代金券订单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">voucherOrder</span><span class="p">.</span><span class="na">setVoucherId</span><span class="p">(</span><span class="n">voucherId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">save</span><span class="p">(</span><span class="n">voucherOrder</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//7.返回订单id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">ok</span><span class="p">(</span><span class="n">orderId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="44超卖问题">4.4超卖问题
+</h3><ul>
+<li>我们之前的代码其实是有问题的，当遇到高并发场景时，会出现超卖现象，我们可以用Jmeter开200个线程来模拟抢优惠券的场景，URL为 localhost:8081/voucher-order/seckill/12，请求方式为POST</li>
+<li>测试完毕之后，查看数据库中的订单表，我们明明只设置了100张优惠券，却有200条数据，去优惠券表查看，库存为-100，超卖了100张</li>
+<li>那么如何解决这个问题呢？先来看看我们的代码中是怎么写的</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//4.判断库存是否充足</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vouchar</span><span class="p">.</span><span class="na">getStock</span><span class="p">()</span><span class="o">&lt;</span><span class="n">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//库存不足</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;库存不足&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">//5.扣减库存</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">boolean</span><span class="w"> </span><span class="n">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seckillVoucherService</span><span class="p">.</span><span class="na">update</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="na">setSql</span><span class="p">(</span><span class="s">&#34;stock=stock-1&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="na">eq</span><span class="p">(</span><span class="s">&#34;voucher_id&#34;</span><span class="p">,</span><span class="n">voucherId</span><span class="p">).</span><span class="na">update</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//扣减库存失败</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;库存不足&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>假设现在只剩下一张优惠券，线程1过来查询库存，判断库存数大于1，但还没来得及去扣减库存，此时库线程2也过来查询库存，发现库存数也大于1，那么这两个线程都会进行扣减库存操作，最终相当于是多个线程都进行了扣减库存，那么此时就会出现超卖问题</li>
+<li>超卖问题是典型的多线程安全问题，针对这一问题的常见解决方案就是加锁：而对于加锁，我们通常有两种解决方案
+<ul>
+<li>1.悲观锁
+<ul>
+<li>悲观锁认为线程安全问题一定会发生，因此在操作数据之前先获取锁，确保线程串行执行</li>
+<li>例如Synchronized、Lock等，都是悲观锁</li>
+</ul>
+</li>
+<li>2.乐观锁
+<ul>
+<li>乐观锁认为线程安全问题不一定会发生，因此不加锁，只是在更新数据的时候再去判断有没有其他线程对数据进行了修改
+<ul>
+<li>如果没有修改，则认为自己是安全的，自己才可以更新数据</li>
+<li>如果已经被其他线程修改，则说明发生了安全问题，此时可以重试或者异常</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>悲观锁：悲观锁可以实现对于数据的串行化执行，比如syn，和lock都是悲观锁的代表，同时，悲观锁中又可以再细分为公平锁，非公平锁，可重入锁等等</li>
+<li>乐观锁：乐观锁会有一个版本号，每次操作数据会对版本号+1，再提交回数据时，会去校验是否比之前的版本大1 ，如果大1 ，则进行操作成功，这套机制的核心逻辑在于，如果在操作过程中，版本号只比原来大1 ，那么就意味着操作过程中没有人对他进行过修改，他的操作就是安全的，如果不大1，则数据被修改过，当然乐观锁还有一些变种的处理方式比如CAS</li>
+<li>乐观锁的典型代表：就是CAS(Compare-And-Swap)，利用CAS进行无锁化机制加锁，var5 是操作前读取的内存值，while中的var1+var2 是预估值，如果预估值 == 内存值，则代表中间没有被人修改过，此时就将新值去替换 内存值</li>
+<li>在该项目当中并不需要使用一个额外的版本号作为数据库字段 可以使用优惠券表中的stock字段充当版本号，在扣减库存时，比较查询到的优惠券库存和实际数据库中优惠券库存是否相同</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl"> //5. 扣减库存
+</span></span><span class="line"><span class="cl">        boolean success = iSeckillVoucherService.update()
+</span></span><span class="line"><span class="cl">                .setSql(&#34;stock = stock - 1&#34;)
+</span></span><span class="line"><span class="cl">                .eq(&#34;voucher_id&#34;,voucherId)
+</span></span><span class="line"><span class="cl"><span class="gi">+               .eq(&#34;stock&#34;,seckillVoucher.getStock())
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span>                .update();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>以上逻辑的核心含义是：只要我扣减库存时的库存和之前我查询到的库存是一样的，就意味着没有人在中间修改过库存，那么此时就是安全的，但是以上这种方式通过测试发现会有很多失败的情况，失败的原因在于：在使用乐观锁过程中假设100个线程同时都拿到了100的库存，然后大家一起去进行扣减，但是100个人中只有1个人能扣减成功，其他的人在处理时，他们在扣减时，库存已经被修改过了，所以此时其他线程都会失败</li>
+<li>那么我们继续完善代码，修改我们的逻辑，在这种场景，我们可以只判断是否有剩余优惠券，即只要数据库中的库存大于0，都能顺利完成扣减库存操作</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">        //5. 扣减库存
+</span></span><span class="line"><span class="cl">        boolean success = iSeckillVoucherService.update()
+</span></span><span class="line"><span class="cl">                .setSql(&#34;stock = stock - 1&#34;)
+</span></span><span class="line"><span class="cl">                .eq(&#34;voucher_id&#34;,voucherId)
+</span></span><span class="line"><span class="cl"><span class="gd">-				         .eq(&#34;stock&#34;,seckillVoucher.getStock())
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+                //mp语法 判断某个属性是否大于value
+</span></span></span><span class="line"><span class="cl"><span class="gi">+                .gt(&#34;stock&#34;,0)
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span>                .update();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>再用Jmeter测一下 就能发现优惠券不会出现超卖！</li>
+</ul>
+<h3 id="45一人一单">4.5一人一单
+</h3><ul>
+<li>需求：修改秒杀业务，要求同一个优惠券，一个用户只能抢一张</li>
+<li>具体操作逻辑如下：我们在判断库存是否充足之后，根据我们保存的订单数据，判断用户订单是否已存在
+<ul>
+<li>如果已存在，则不能下单，返回错误信息</li>
+<li>如果不存在，则继续下单，获取优惠券</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">    //4.判断库存是否充足
+</span></span><span class="line"><span class="cl">    if (vouchar.getStock()&lt;1) {
+</span></span><span class="line"><span class="cl">        //库存不足
+</span></span><span class="line"><span class="cl">        return Result.fail(&#34;库存不足&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    //5.一人一单
+</span></span><span class="line"><span class="cl"><span class="gi">+    Long userId = UserHolder.getUser().getId();
+</span></span></span><span class="line"><span class="cl"><span class="gi">+    //5.1查询订单
+</span></span></span><span class="line"><span class="cl"><span class="gi">+    int count = query().eq(&#34;user_id&#34;, userId).eq(&#34;voucher_id&#34;, voucherId).count();
+</span></span></span><span class="line"><span class="cl"><span class="gi">+    //5.2判断是否存在
+</span></span></span><span class="line"><span class="cl"><span class="gi">+    if (count &gt; 0) {
+</span></span></span><span class="line"><span class="cl"><span class="gi">+        //用户已经购买过了
+</span></span></span><span class="line"><span class="cl"><span class="gi">+        return Result.fail(&#34;您已经购买过此优惠卷&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="gi">+    }
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span>    //6.扣减库存
+</span></span><span class="line"><span class="cl">    boolean success = seckillVoucherService.update()
+</span></span><span class="line"><span class="cl">            .setSql(&#34;stock=stock-1&#34;)//set stock=stock-1
+</span></span><span class="line"><span class="cl">            .eq(&#34;voucher_id&#34;,voucherId).gt(&#34;stock&#34;,0)//where id=?and stock=?
+</span></span><span class="line"><span class="cl">            .update();
+</span></span><span class="line"><span class="cl">    if (!success) {
+</span></span><span class="line"><span class="cl">        //扣减库存失败
+</span></span><span class="line"><span class="cl">        return Result.fail(&#34;库存不足&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>存在问题：还是和之前一样，如果这个用户故意开多线程抢优惠券，那么在判断库存充足之后，执行一人一单逻辑之前，在这个区间如果进来了多个线程，还是可以抢多张优惠券的，那我们这里使用悲观锁来解决这个问题</li>
+<li>初步代码，我们把一人一单逻辑之后的代码都提取到一个createVoucherOrder方法中，然后给这个方法加锁</li>
+<li>不管哪一个线程（例如线程A），运行到这个方法时，都要检查有没有其它线程B（或者C、 D等）正在用这个方法(或者该类的其他同步方法)，有的话要等正在使用synchronized方法的线程B（或者C 、D）运行完这个方法后再运行此线程A，没有的话，锁定调用者，然后直接运行</li>
+<li>首先不建议把锁加在方法上，因为任何一个用户来了都要加这把锁，而且是同一把锁，方法之间变成串行执行，性能很差。</li>
+<li>因此可以把锁加在用户id上，只有当id相同时才会对锁形成竞争关系。但是因为toString的内部是new了一个String字符串，每调一次toString都是生成一个全新的字符串对象，锁对象会变。</li>
+<li>所以可以调用intern()方法，intern()方法会优先去字符串常量池里查找与目标字符串值相同的引用返回（只要字符串一样能保证返回的结果一样）。</li>
+<li>但是因为事务是在函数执行结束之后由Spring进行提交，如果把锁加在createVoucherOrder内部其实有点小——因为如果解锁之后，其它线程可以进入，而此时事务尚未提交，仍然会导致安全性问题。</li>
+<li>因此最终方案是把synchronized加在createVoucherOrder的方法外部，锁住的是用户id。</li>
+<li>关于代理对象事务的问题：
+<ul>
+<li>通常情况下，当一个使用了@Transactional注解的方法被调用时，Spring会从上下文中获取一个代理对象来管理事务。</li>
+<li>但是如果加@Transactional方法是被同一个类中的另一个方法调用时，Spring不会使用代理对象，而是直接调用该方法，导致事务注解失效。</li>
+<li>为避免这种情况，可以使用AopContext.currentProxy方法获取当前的代理对象，然后通过代理对象调用被@Transactional注解修饰的方法，确保事务生效。</li>
+</ul>
+</li>
+<li>在VoucherOrderServiceImpl中进行如下修改（注意：ctrl+alt+m可以把含有return的代码段进行提取）：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Service</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">VoucherOrderServiceImpl</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ServiceImpl</span><span class="o">&lt;</span><span class="n">VoucherOrderMapper</span><span class="p">,</span><span class="w"> </span><span class="n">VoucherOrder</span><span class="o">&gt;</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IVoucherOrderService</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ISeckillVoucherService</span><span class="w"> </span><span class="n">seckillVoucherService</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">RedisIdWorker</span><span class="w"> </span><span class="n">redisIdWorker</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">seckillVoucher</span><span class="p">(</span><span class="n">Long</span><span class="w"> </span><span class="n">voucherId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//1.查询优惠卷</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">SeckillVoucher</span><span class="w"> </span><span class="n">vouchar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seckillVoucherService</span><span class="p">.</span><span class="na">getById</span><span class="p">(</span><span class="n">voucherId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//2.判断秒杀时间是否开始</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vouchar</span><span class="p">.</span><span class="na">getBeginTime</span><span class="p">().</span><span class="na">isAfter</span><span class="p">(</span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">now</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//尚未开始</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;秒杀尚未开始&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//3.判断秒杀时间是否已经结束</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vouchar</span><span class="p">.</span><span class="na">getEndTime</span><span class="p">().</span><span class="na">isBefore</span><span class="p">(</span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">now</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//已经结束</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;秒杀已经结束&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//4.判断库存是否充足</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vouchar</span><span class="p">.</span><span class="na">getStock</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//库存不足</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;库存不足&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Long</span><span class="w"> </span><span class="n">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UserHolder</span><span class="p">.</span><span class="na">getUser</span><span class="p">().</span><span class="na">getId</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">synchronized</span><span class="w"> </span><span class="p">(</span><span class="n">userId</span><span class="p">.</span><span class="na">toString</span><span class="p">().</span><span class="na">intern</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//获取代理对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">IVoucherOrderService</span><span class="w"> </span><span class="n">proxy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IVoucherOrderService</span><span class="p">)</span><span class="n">AopContext</span><span class="p">.</span><span class="na">currentProxy</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">proxy</span><span class="p">.</span><span class="na">createVoucherOrder</span><span class="p">(</span><span class="n">voucherId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Transactional</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">createVoucherOrder</span><span class="w"> </span><span class="p">(</span><span class="n">Long</span><span class="w"> </span><span class="n">voucherId</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//5.一人一单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Long</span><span class="w"> </span><span class="n">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UserHolder</span><span class="p">.</span><span class="na">getUser</span><span class="p">().</span><span class="na">getId</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//5.1查询订单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">query</span><span class="p">().</span><span class="na">eq</span><span class="p">(</span><span class="s">&#34;user_id&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">userId</span><span class="p">).</span><span class="na">eq</span><span class="p">(</span><span class="s">&#34;voucher_id&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">voucherId</span><span class="p">).</span><span class="na">count</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//5.2判断是否存在</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//用户已经购买过了</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;您已经购买过此优惠卷&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//6.扣减库存</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seckillVoucherService</span><span class="p">.</span><span class="na">update</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">setSql</span><span class="p">(</span><span class="s">&#34;stock=stock-1&#34;</span><span class="p">)</span><span class="c1">//set stock=stock-1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">eq</span><span class="p">(</span><span class="s">&#34;voucher_id&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">voucherId</span><span class="p">).</span><span class="na">gt</span><span class="p">(</span><span class="s">&#34;stock&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">0</span><span class="p">)</span><span class="c1">//where id=?and stock=?</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">update</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//扣减库存失败</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="s">&#34;库存不足&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//7.创建订单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">VoucherOrder</span><span class="w"> </span><span class="n">voucherOrder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">VoucherOrder</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//7.1订单id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">long</span><span class="w"> </span><span class="n">orderId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">redisIdWorker</span><span class="p">.</span><span class="na">nextId</span><span class="p">(</span><span class="s">&#34;order&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">voucherOrder</span><span class="p">.</span><span class="na">setId</span><span class="p">(</span><span class="n">orderId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//7.2用户订单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">voucherOrder</span><span class="p">.</span><span class="na">setUserId</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//7.3代金券订单</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">voucherOrder</span><span class="p">.</span><span class="na">setVoucherId</span><span class="p">(</span><span class="n">voucherId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">save</span><span class="p">(</span><span class="n">voucherOrder</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//8.返回订单id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">ok</span><span class="p">(</span><span class="n">orderId</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>在IVoucherOrderService接口中加入下面这个方法：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Result</span><span class="w"> </span><span class="nf">createVoucherOrder</span><span class="p">(</span><span class="n">Long</span><span class="w"> </span><span class="n">voucherId</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>在pom.xml中引入如下的依赖</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.aspectj<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>aspectjweaver<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在启动类HmDianPingApplication上加如下注解：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@EnableAspectJAutoProxy</span><span class="p">(</span><span class="n">exposeProxy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>测试
+<ul>
+<li>重启服务器，再次使用Jmeter测试，200个线程并发，但是只能抢到一张优惠券，目的达成</li>
+</ul>
+</li>
+</ul>
+<h3 id="46集群环境下的并发问题">4.6集群环境下的并发问题
+</h3><ul>
+<li>通过加锁可以解决在单机情况下的一人一单安全问题，但是在集群模式下就不行了
+<ul>
+<li>1.我们将服务启动两份，端口分别为8081和8082</li>
+<li>2.然后修改nginx的config目录下的nginx.conf文件，配置反向代理和负载均衡（默认轮询就行）
+<ul>
+<li>原始配置</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">proxy_pass http://127.0.0.1:8081;
+</span></span><span class="line"><span class="cl">#proxy_pass http://backend;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">upstream backend {
+</span></span><span class="line"><span class="cl">    server 127.0.0.1:8081 max_fails=5 fail_timeout=10s weight=1;
+</span></span><span class="line"><span class="cl">    #server 127.0.0.1:8082 max_fails=5 fail_timeout=10s weight=1;
+</span></span><span class="line"><span class="cl">}  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><pre><code>  - 修改后
+</code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#proxy_pass http://127.0.0.1:8081;
+</span></span><span class="line"><span class="cl">proxy_pass http://backend;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">upstream backend {
+</span></span><span class="line"><span class="cl">    server 127.0.0.1:8081 max_fails=5 fail_timeout=10s weight=1;
+</span></span><span class="line"><span class="cl">    server 127.0.0.1:8082 max_fails=5 fail_timeout=10s weight=1;
+</span></span><span class="line"><span class="cl">}  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>具体操作，我们使用POSTMAN发送两次请求，header携带同一用户的token，尝试用同一账号抢两张优惠券，发现是可行的。</li>
+<li>失败原因分析：由于我们部署了多个Tomcat，每个Tomcat都有一个属于自己的jvm，那么假设在服务器A的Tomcat内部，有两个线程，即线程1和线程2，这两个线程使用的是同一份代码，那么他们的锁对象是同一个，是可以实现互斥的。但是如果在Tomcat的内部，又有两个线程，但是他们的锁对象虽然写的和服务器A一样，但是锁对象却不是同一个，所以线程3和线程4可以实现互斥，但是却无法和线程1和线程2互斥</li>
+<li>这就是集群环境下，syn锁失效的原因，在这种情况下，我们需要使用分布式锁来解决这个问题，让锁不存在于每个jvm的内部，而是让所有jvm公用外部的一把锁（Redis）</li>
+</ul>
+<h2 id="5">5.
 </h2>
 </section>
 
@@ -2744,7 +3569,7 @@
 
 
         <span>
-            最后更新于 2025-03-24 11:15
+            最后更新于 2025-03-24 21:09
         </span>
     </section></footer>
 
@@ -2902,7 +3727,7 @@
         
         
 
-        <p>发布了 21 篇文章 | 共 57038 字</p>
+        <p>发布了 21 篇文章 | 共 63364 字</p>
 
 
 
