@@ -13444,6 +13444,13 @@ git相关指令学习
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;3常见linux指令&#34;&gt;3.常见linux指令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;列出当前目录中的文件和子目录
+&lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;显示当前工作目录的路径
+&lt;code&gt;pwd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

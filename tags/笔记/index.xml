@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 01 Mar 2025 21:38:11 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 09 Apr 2025 15:57:25 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>git相关操作1</title>
         <link>https://ayljzj520.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C1/</link>
         <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
@@ -96,6 +96,13 @@ git相关指令学习
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3常见linux指令&#34;&gt;3.常见linux指令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;列出当前目录中的文件和子目录
+&lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;显示当前工作目录的路径
+&lt;code&gt;pwd&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
