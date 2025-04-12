@@ -13747,7 +13747,7 @@ git相关指令学习
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;更新镜像&#34;&gt;更新镜像
-&lt;/h3&gt;&lt;p&gt;操作完成后使用如下命令更新镜像：&lt;br&gt;•	&lt;code&gt;sudo apt-get updata&lt;/code&gt; 更新&lt;br&gt;•	&lt;code&gt;sudo apt-get upgrade&lt;/code&gt; 更新&lt;br&gt;&lt;code&gt;sudo add-apt-repository ppa:openjdk-r/ppa&lt;/code&gt;&lt;br&gt;安装jdk：&lt;code&gt;sudo apt-get install openjdk-8-jdk&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+&lt;/h3&gt;&lt;p&gt;操作完成后使用如下命令更新镜像：&lt;br&gt;•	&lt;code&gt;sudo apt-get update&lt;/code&gt; 更新&lt;br&gt;•	&lt;code&gt;sudo apt-get upgrade&lt;/code&gt; 更新&lt;br&gt;&lt;code&gt;sudo add-apt-repository ppa:openjdk-r/ppa&lt;/code&gt;&lt;br&gt;安装jdk：&lt;code&gt;sudo apt-get install openjdk-8-jdk&lt;/code&gt;&lt;br&gt;&lt;br&gt;
 &lt;strong&gt;拓展篇(在环境Ubuntu/Mint物理机上安装python环境)：&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
