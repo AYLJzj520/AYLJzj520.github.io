@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/'>
 
-<link rel="stylesheet" href="/scss/style.min.e91d8acfc5d96f3576569e803ce35948309949da7f6cec8bf8ce3d649f413bf4.css"><meta property='og:title' content="【hugo】Stack主题自定义修改">
+<link rel="stylesheet" href="/scss/style.min.b892849b956d9bc6733ff53a79dc060d2eed9e37d974308f412fdf91e0e0842c.css"><meta property='og:title' content="【hugo】Stack主题自定义修改">
 <meta property='og:description' content="记录一些Stack主题的自定义修改，一般都是不太好分类的，长期更新">
 <meta property='og:url' content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-05-06T17:29:08&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-05-06T17:40:33&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/Amain.jpg' />
 <meta name="twitter:title" content="【hugo】Stack主题自定义修改">
 <meta name="twitter:description" content="记录一些Stack主题的自定义修改，一般都是不太好分类的，长期更新"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/Amain.jpg' />
@@ -262,7 +262,12 @@
   <ul>
     <li><a href="#零碎玩意">零碎玩意</a></li>
     <li><a href="#1显示文章更新时间">1、显示文章更新时间</a></li>
-    <li><a href="#2友链归档多列显示">2、友链、归档多列显示</a></li>
+    <li><a href="#2友链归档">2、友链、归档</a>
+      <ul>
+        <li><a href="#21多列显示">2.1多列显示</a></li>
+        <li><a href="#22卡片缩放动画">2.2卡片缩放动画</a></li>
+      </ul>
+    </li>
     <li><a href="#3首页欢迎横幅">3、首页欢迎横幅</a></li>
     <li><a href="#4头像旋转">4、头像旋转</a></li>
     <li><a href="#5修改布局">5、修改布局</a></li>
@@ -331,7 +336,7 @@
                
                 最后修改:
                 <time>
-                    2025-05-06 17:29
+                    2025-05-06 17:40
                 </time>
             </div>
     </footer>
@@ -898,8 +903,9 @@
 <li>tips: 更新时间的格式去 hugo.yaml 中的 params.dateFormat.lastUpdated 进行修改</li>
 </ul>
 <div align="center"><img src="./person04-hugo-stack.assets/1-4封面时间.jpg"/></div><br>
-<h2 id="2友链归档多列显示">2、友链、归档多列显示
-</h2><ul>
+<h2 id="2友链归档">2、友链、归档
+</h2><h3 id="21多列显示">2.1多列显示
+</h3><ul>
 <li>修改assets/scss/custom.scss文件(不存在则自行创建)，引入以下css样式代码</li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -946,6 +952,32 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="22卡片缩放动画">2.2卡片缩放动画
+</h3><p>在 <code>/assets/scss/custom.scss</code> 中加入以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/*-----------归档页面----------*/
+</span></span><span class="line"><span class="cl">//归档页面卡片缩放
+</span></span><span class="line"><span class="cl">.article-list--tile article {
+</span></span><span class="line"><span class="cl">  transition: .6s ease;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">.article-list--tile article:hover {
+</span></span><span class="line"><span class="cl">  transform: scale(1.03, 1.03);
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
 </div><h2 id="3首页欢迎横幅">3、首页欢迎横幅
 </h2><p>在 <code>/layouts/index.html</code> 的 <code>&lt;section class=&quot;article-list&quot;&gt;</code> 前添加以下代码：</p>
 <div class="highlight"><div class="chroma">
@@ -974,28 +1006,6 @@
 </span></span><span class="line"><span class="cl">  &lt;/p&gt;
 </span></span><span class="line"><span class="cl">&lt;/div&gt;
 </span></span><span class="line"><span class="cl">&lt;!-- 首页欢迎字幅 --&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="4头像旋转">4、头像旋转
-</h2><p>在 <code>/assets/scss/custom.scss</code> 中加入以下代码：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 头像旋转动画
-</span></span><span class="line"><span class="cl">.sidebar header .site-avatar .site-logo {
-</span></span><span class="line"><span class="cl">  transition: transform 1.65s ease-in-out; // 旋转时间
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">.sidebar header .site-avatar .site-logo:hover {
-</span></span><span class="line"><span class="cl">  transform: rotate(360deg); // 旋转角度为360度
-</span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>在 <code>/assets/scss/custom.scss</code> 中加入以下代码：</p>
@@ -1221,6 +1231,28 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h2 id="4头像旋转">4、头像旋转
+</h2><p>在 <code>/assets/scss/custom.scss</code> 中加入以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 头像旋转动画
+</span></span><span class="line"><span class="cl">.sidebar header .site-avatar .site-logo {
+</span></span><span class="line"><span class="cl">  transition: transform 1.65s ease-in-out; // 旋转时间
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">.sidebar header .site-avatar .site-logo:hover {
+</span></span><span class="line"><span class="cl">  transform: rotate(360deg); // 旋转角度为360度
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
 </div><h2 id="5修改布局">5、修改布局
 </h2><p>在 <code>/assets/scss/grid.scss</code> 中修改 <code>left-sidebar</code> 和 <code>right-sidebar</code> 的描述：</p>
 <div class="highlight"><div class="chroma">
@@ -1278,7 +1310,7 @@
 
 
         <span>
-            最后更新于 2025-05-06 17:29
+            最后更新于 2025-05-06 17:40
         </span>
     </section></footer>
 
@@ -1464,7 +1496,7 @@
         
         
 
-        <p>发布了 23 篇文章 | 共 89618 字</p>
+        <p>发布了 23 篇文章 | 共 89702 字</p>
 
 
 
