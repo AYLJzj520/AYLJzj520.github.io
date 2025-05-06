@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/'>
 
-<link rel="stylesheet" href="/scss/style.min.6f236f41ad62930bd96b4a594020bfc6f3629866c785d3900c86706037ee6380.css"><meta property='og:title' content="【hugo】Stack主题自定义修改">
+<link rel="stylesheet" href="/scss/style.min.d2a67444a0debd4906c71051ee27ffba13aef47e147ca30856a1e18c24a33045.css"><meta property='og:title' content="【hugo】Stack主题自定义修改">
 <meta property='og:description' content="记录一些Stack主题的自定义修改，一般都是不太好分类的，长期更新">
 <meta property='og:url' content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-05-06T17:06:24&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-05-06T17:17:24&#43;08:00'/><meta property='og:image' content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/Amain.jpg' />
 <meta name="twitter:title" content="【hugo】Stack主题自定义修改">
 <meta name="twitter:description" content="记录一些Stack主题的自定义修改，一般都是不太好分类的，长期更新"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/Amain.jpg' />
@@ -265,6 +265,7 @@
     <li><a href="#2友链归档多列显示">2、友链、归档多列显示</a></li>
     <li><a href="#3首页欢迎横幅">3、首页欢迎横幅</a></li>
     <li><a href="#4头像旋转">4、头像旋转</a></li>
+    <li><a href="#5修改布局">5、修改布局</a></li>
   </ul>
 </nav>
         </div>
@@ -330,7 +331,7 @@
                
                 最后修改:
                 <time>
-                    2025-05-06 17:06
+                    2025-05-06 17:17
                 </time>
             </div>
     </footer>
@@ -997,6 +998,46 @@
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h2 id="5修改布局">5、修改布局
+</h2><p>在 <code>/assets/scss/grid.scss</code> 中修改 <code>left-sidebar</code> 和 <code>right-sidebar</code> 的描述：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl">    <span class="o">.</span><span class="n">left</span><span class="o">-</span><span class="n">sidebar</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">order</span><span class="p">:</span> <span class="o">-</span><span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">left</span><span class="o">-</span><span class="n">sidebar</span><span class="o">-</span><span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">10</span><span class="o">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">.</span><span class="n">right</span><span class="o">-</span><span class="n">sidebar</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">order</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">right</span><span class="o">-</span><span class="n">sidebar</span><span class="o">-</span><span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">20</span><span class="o">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="o">///</span> <span class="n">Display</span> <span class="n">right</span> <span class="n">sidebar</span> <span class="n">when</span> <span class="nb">min</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="n">lg</span>
+</span></span><span class="line"><span class="cl">        <span class="err">@</span><span class="n">include</span> <span class="n">respond</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
 </div>
 </section>
 
@@ -1014,7 +1055,7 @@
 
 
         <span>
-            最后更新于 2025-05-06 17:06
+            最后更新于 2025-05-06 17:17
         </span>
     </section></footer>
 
@@ -1200,7 +1241,7 @@
         
         
 
-        <p>发布了 23 篇文章 | 共 89208 字</p>
+        <p>发布了 23 篇文章 | 共 89275 字</p>
 
 
 
