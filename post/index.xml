@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Wed, 07 May 2025 13:46:20 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 07 May 2025 14:02:16 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>实习记录</title>
         <link>https://ayljzj520.github.io/p/%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
@@ -14570,7 +14570,7 @@ git相关指令学习
     &gt;Pengwin&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9N8LP0X93VCP&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Pengwin Enterprise&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9p804crf0395&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Alpine WSL&lt;/a&gt;&lt;br&gt;
-&lt;img src=&#34;./jxust01-autoEnvironment.assets/1.jpg&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/01-autoEnvironment/1.jpg&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2修改环境&#34;&gt;2、修改环境
 &lt;/h2&gt;&lt;h3 id=&#34;切换镜像&#34;&gt;切换镜像
 &lt;/h3&gt;&lt;p&gt;修改源：找到 &lt;code&gt;cd /etc/apt&lt;/code&gt; 路径下的 sources.list 文件对其进行修改&lt;br&gt;在此路径下打开命令行，输入sudo vim sources.list&lt;br&gt;命令行中相关操作命令如下：&lt;br&gt;•	g 光标到头部&lt;br&gt;•	d 删除&lt;br&gt;•	shift + g 全部删除&lt;br&gt;•	i 写入&lt;br&gt;•	粘贴 以下 阿里源 或 清华源&lt;br&gt;•	ESC 退出写入模式&lt;br&gt;•	:wq 保存退出&lt;br&gt;&lt;/p&gt;
