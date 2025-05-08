@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Thu, 08 May 2025 05:41:44 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 08 May 2025 06:31:56 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>实习记录</title>
         <link>https://ayljzj520.github.io/p/%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
@@ -13945,11 +13945,11 @@ $$&lt;ul&gt;
 &lt;li&gt;按下 F12 打开浏览器开发者工具（如果没反应那就 fn + F12）&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;输入账号密码，登录进入校园网&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;找到这一串请求url，就是通过这一串url就能够成功登录校园网，把这一串复制下来&lt;br&gt;
-&lt;img src=&#34;./jxust03-netlogin.assets/login.png&#34; width=&#34;90%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/03-netlogin/01-login.png&#34; width=&#34;90%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 &lt;code&gt;http://10.17.8.18:801/eportal/portal/login?callback=dr1003&amp;amp;login_method=1&amp;amp;user_account=你的校园网账号%%40telecom&amp;amp;user_password=你的校园网密码。&lt;/code&gt;&lt;br&gt;
 其中，user_account就是学号；user_password就是密码；login_method是运营商信息。里面信息不需要全部保留也可以登录校园网，保留至user_password的结束位置也能登陆。&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;在搜索栏直接粘贴上文所说的url点击回车，若出现下图的情况即联网成功。&lt;br&gt;
-&lt;img src=&#34;./jxust03-netlogin.assets/login-success.png&#34; width=&#34;80%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/li&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/03-netlogin/02-login-success.png&#34; width=&#34;80%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;原理可行！&lt;/strong&gt;&lt;br&gt;
 那我只要每次开机后电脑能自动访问这条url那不就自动登录校园网了吗？&lt;br&gt;&lt;br&gt;
@@ -14038,7 +14038,7 @@ $$&lt;ul&gt;
 &lt;/ul&gt;
 &lt;p&gt;请检查你自己所获取到的url，在&lt;code&gt;校园网账号&lt;/code&gt;后面应该会有&lt;code&gt;%40&lt;/code&gt;字符，由于复制进脚本后，由脚本通过start命令发起访问会将&lt;code&gt;%40&lt;/code&gt;识别为@，从而导致输进浏览器的url缺失这一关键信息&lt;br&gt;
 若不进行修改就会导致下图的访问结果。&lt;br&gt;
-&lt;img src=&#34;./jxust03-netlogin.assets/login-fail.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/03-netlogin/03-login-fail.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 &lt;font color=red&gt;解决方法：&lt;/font&gt;在&lt;code&gt;%40&lt;/code&gt;这个字符前再加一个&lt;code&gt;%&lt;/code&gt;，这样就能确保url的正确读取并访问。&lt;br&gt;
 接下来运行这个.bat文件，就会自动向校园网登录端发送请求，然后登录你的校园网账号，并且每五分钟会ping一次百度的网站。&lt;br&gt;
 若ping不通，则会再次执行登录请求。&lt;br&gt;&lt;/p&gt;
@@ -14057,7 +14057,7 @@ $$&lt;ul&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;将编写好的.bat脚本复制进去，即可做到开机自动运行。&lt;br&gt;
-&lt;img src=&#34;./jxust03-netlogin.assets/start.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/03-netlogin/04-start.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;补充&#34;&gt;补充
 &lt;/h2&gt;&lt;p&gt;有的时候电脑开机后没有自动连接到校园网，自然也无法完成登录请求。&lt;br&gt;
 由于只ping一个站点有时会造成误判，从而反复执行。所以增加一次操作，对baidu.com和qq.com均ping一次，&lt;br&gt;
@@ -14236,7 +14236,7 @@ $$&lt;ul&gt;
 &lt;big&gt;至此，全部完成&lt;/big&gt;&lt;br&gt;
 会在脚本所在目录下输出`wlan-connect.txt`的日志文件。&lt;br&gt;
 最后实现的效果如下图所示：&lt;br&gt;
-&lt;img src=&#34;./jxust03-netlogin.assets/final.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;</description>
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/03-netlogin/05-final.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;</description>
         </item>
         <item>
         <title>git相关操作</title>
@@ -14726,7 +14726,7 @@ git相关指令学习
 &lt;h2 id=&#34;1实验前准备&#34;&gt;1、实验前准备
 &lt;/h2&gt;&lt;h3 id=&#34;准备条件&#34;&gt;准备条件
 &lt;/h3&gt;&lt;p&gt;拷贝好dist文件夹，确保内部具有正确的文件&lt;br&gt;
-&lt;img src=&#34;./jxust02-autoTest.assets/dist.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/02-autoTest/dist.png&#34; width=&#34;60%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 problems文件夹中存放问题以及Axiom公理集，测试完output中会存放生成相关文件，strategy中存放策略集合，proofStatistics.txt内存放所有问题的证明时间。&lt;br&gt;
 在dist文件夹内打开命令行窗口，使用ls命令，检查文件是否具有可执行权限：&lt;br&gt;
 &lt;code&gt;cse&lt;/code&gt;,&lt;code&gt;eprover&lt;/code&gt;,&lt;code&gt;tptp4X&lt;/code&gt;,以及相关jar包。&lt;br&gt;
