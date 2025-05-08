@@ -635,11 +635,11 @@
 &lt;/div&gt;&lt;br&gt;
 &lt;h2 id=&#34;3-纠错&#34;&gt;3、 纠错
 &lt;/h2&gt;&lt;h3 id=&#34;错误1证明器不存在&#34;&gt;错误1：证明器不存在
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;./jxust01-autoEnvironment.assets/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/01-autoEnvironment/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 检查dist文件夹下有没有这个cprover_priority&lt;br&gt;
-&lt;img src=&#34;./jxust01-autoEnvironment.assets/error1/solve1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/01-autoEnvironment/error1/solve1.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;
 若没有那就把cse 改成这个名字，然后再添加可执行权限&lt;br&gt;
-&lt;img src=&#34;./jxust01-autoEnvironment.assets/error1/solve2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/01-autoEnvironment/error1/solve2.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3 id=&#34;错误2判定异常&#34;&gt;错误2：判定异常
 &lt;/h3&gt;&lt;p&gt;若验证检查结果异常，需记录判定情况，需要记录的有：
 策略：多策略模式下为桌面的strategy文件夹；单策略模式下为strategy.txt文件
@@ -658,7 +658,7 @@
 在别的电脑上调试也能成功
 &lt;strong&gt;解决方法：&lt;/strong&gt;
 重装ubuntu系统&lt;br&gt;
-&lt;img src=&#34;./jxust01-autoEnvironment.assets/error4/error4.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/AYLJzj520/blog-cdn/jxust/01-autoEnvironment/error4/error4.png&#34; width=&#34;70%&#34; align=&#34;center&#34; /&gt;&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
