@@ -309,8 +309,24 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2025-5-6至2025-5-&#34;&gt;📅2025-5-6至2025-5-
-&lt;/h2&gt;</description>
+&lt;h2 id=&#34;2025-5-6至2025-5-9&#34;&gt;📅2025-5-6至2025-5-9
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;完成四个接口的开发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2025-5-12至2025-5-9&#34;&gt;📅2025-5-12至2025-5-9
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;进行iPaaS接口文档的书写&lt;/li&gt;
+&lt;li&gt;优化已完成接口，将token替换为带缓存的token&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
         </item>
         <item>
         <title>文章投稿记录</title>
