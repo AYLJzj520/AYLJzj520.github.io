@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Thu, 22 May 2025 04:47:21 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 29 May 2025 02:14:18 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>马来西亚</title>
         <link>https://ayljzj520.github.io/p/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/</link>
         <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
@@ -379,8 +379,9 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;2025-4-28至2025-4-30&#34;&gt;📅2025-4-28至2025-4-30
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&#34;四月&#34;&gt;四月
+&lt;/h2&gt;&lt;h3 id=&#34;2025-4-28至2025-4-30&#34;&gt;📅2025-4-28至2025-4-30
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
 &lt;ul&gt;
 &lt;li&gt;学习iPaaS的使用规则&lt;/li&gt;
@@ -388,16 +389,17 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2025-5-6至2025-5-9&#34;&gt;📅2025-5-6至2025-5-9
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&#34;五月&#34;&gt;五月
+&lt;/h2&gt;&lt;h3 id=&#34;2025-5-6至2025-5-9&#34;&gt;📅2025-5-6至2025-5-9
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
 &lt;ul&gt;
 &lt;li&gt;完成四个接口的开发&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2025-5-12至2025-5-14&#34;&gt;📅2025-5-12至2025-5-14
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&#34;2025-5-12至2025-5-14&#34;&gt;📅2025-5-12至2025-5-14
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
 &lt;ul&gt;
 &lt;li&gt;进行iPaaS接口文档的书写&lt;/li&gt;
@@ -405,20 +407,29 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2025-5-15至2025-5-16&#34;&gt;📅2025-5-15至2025-5-16
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&#34;2025-5-15至2025-5-16&#34;&gt;📅2025-5-15至2025-5-16
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
 &lt;ul&gt;
 &lt;li&gt;进行《污水厂运行调度系统技术研发（二期）服务项目》投标文件的撰写工作，根据项目投标需求，协助整理相关技术方案并补充部分系统架构描述。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2025-5-19至2025-5-&#34;&gt;📅2025-5-19至2025-5-
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&#34;2025-5-19至2025-5-28&#34;&gt;📅2025-5-19至2025-5-28
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
 &lt;ul&gt;
 &lt;li&gt;整理各业务系统的验收单&lt;/li&gt;
 &lt;li&gt;根据接口的修改变动，将已编写完成的iPaaS接口文档进行修改完善。&lt;/li&gt;
+&lt;li&gt;完成iPaaS接口文档的编写。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2025-5-29至2025-5-&#34;&gt;📅2025-5-29至2025-5-
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;阶段任务&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;调试测试ai接口&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
