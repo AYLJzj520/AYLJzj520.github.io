@@ -454,7 +454,7 @@
       &lt;tr&gt;
           &lt;th&gt;阶段名称&lt;/th&gt;
           &lt;th&gt;处理人&lt;/th&gt;
-          &lt;th&gt;提交时间&lt;/th&gt;
+          &lt;th&gt;开始时间&lt;/th&gt;
           &lt;th&gt;完成时间&lt;/th&gt;
           &lt;th&gt;意见&lt;/th&gt;
       &lt;/tr&gt;
