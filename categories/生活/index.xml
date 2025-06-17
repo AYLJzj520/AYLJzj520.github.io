@@ -135,9 +135,9 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;电话卡/流量&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;马来西亚上网卡&lt;/td&gt;
+          &lt;td&gt;马来西亚上网卡6天&lt;/td&gt;
+          &lt;td&gt;42.6&lt;/td&gt;
+          &lt;td&gt;送转接头，取卡针&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;美瞳（日抛）&lt;/td&gt;
@@ -170,9 +170,19 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
+          &lt;td&gt;潜水袜&lt;/td&gt;
+          &lt;td&gt;19.37&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;冰袖&lt;/td&gt;
+          &lt;td&gt;9.9&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;大白兔晕船药&lt;/td&gt;
+          &lt;td&gt;42.56&lt;/td&gt;
+          &lt;td&gt;跳岛坐船吃&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;小计&lt;/strong&gt;&lt;/td&gt;
@@ -195,19 +205,7 @@
       &lt;tr&gt;
           &lt;td&gt;上海-河内-吉隆坡&lt;/td&gt;
           &lt;td&gt;941&lt;/td&gt;
-          &lt;td&gt;&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/02-autoTest/dist.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;KL塔&#34;
-	
-	
-&gt;
-
-
-&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;吉隆坡-亚庇&lt;/td&gt;
@@ -231,12 +229,12 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;亚庇-3晚&lt;/td&gt;
-          &lt;td&gt;431.28&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;395.64&lt;/td&gt;
+          &lt;td&gt;海滨服务式公寓&lt;br&gt;（Promenade Service Apartments）&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;小计&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;XXXX&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;4027.86&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -322,43 +320,6 @@
           &lt;td&gt;&lt;strong&gt;小计&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;&lt;strong&gt;RM XXXX&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;住宿费用&#34;&gt;住宿费用
-&lt;/h3&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;城市&lt;/th&gt;
-          &lt;th&gt;天数&lt;/th&gt;
-          &lt;th&gt;住宿名称&lt;/th&gt;
-          &lt;th&gt;金额（RM）&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;吉隆坡&lt;/td&gt;
-          &lt;td&gt;X 天&lt;/td&gt;
-          &lt;td&gt;XXX酒店&lt;/td&gt;
-          &lt;td&gt;RM XXX&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;马六甲&lt;/td&gt;
-          &lt;td&gt;X 天&lt;/td&gt;
-          &lt;td&gt;XXX旅馆&lt;/td&gt;
-          &lt;td&gt;RM XXX&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;亚庇&lt;/td&gt;
-          &lt;td&gt;X 天&lt;/td&gt;
-          &lt;td&gt;XXX青旅&lt;/td&gt;
-          &lt;td&gt;RM XXX&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;小计&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;RM XXXX&lt;/strong&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
