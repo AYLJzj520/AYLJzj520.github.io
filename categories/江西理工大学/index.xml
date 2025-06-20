@@ -23,7 +23,7 @@
           &lt;th&gt;处理人&lt;/th&gt;
           &lt;th&gt;开始时间&lt;/th&gt;
           &lt;th&gt;完成时间&lt;/th&gt;
-          &lt;th&gt;意见&lt;/th&gt;
+          &lt;th&gt;备注&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -74,7 +74,7 @@
           &lt;td&gt;编辑部&lt;/td&gt;
           &lt;td&gt;2025-05-20&lt;/td&gt;
           &lt;td&gt;2025-05-29&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;10天时间修改&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;复审&lt;/td&gt;
