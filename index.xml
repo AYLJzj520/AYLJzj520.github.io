@@ -15584,7 +15584,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 &lt;/div&gt;&lt;p&gt;然后使用&lt;code&gt;kill&lt;/code&gt;指令将前三个icdc进程杀死&lt;br&gt;
 拓展(输入./vampire &amp;ndash;ignore_missing on &amp;ndash;mode casc -t 300 +一个问题的绝对路径，就能得到下面这样的证明搜索路径和时间，这样子只能测单个的原始时间)&lt;br&gt;&lt;/p&gt;
 &lt;h3 id=&#34;带界面版本测试命令&#34;&gt;带界面版本测试命令
-&lt;/h3&gt;&lt;p&gt;在虚拟机内：&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;在虚拟机内：选择⽤户args01，密码是icdc1016，若选择guest⽤户请logout切换⽤户&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;(1)启动Terminal;&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;(2)切换⽬录：cd Desktop/dist;&lt;br&gt;&lt;/li&gt;
