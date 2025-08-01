@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Fri, 01 Aug 2025 07:40:00 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 01 Aug 2025 09:06:52 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>健身记录</title>
         <link>https://ayljzj520.github.io/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
@@ -10897,6 +10897,17 @@ Slave_IO_Running: Yes,Slave_SQL_Running: Yes&lt;br&gt;&lt;/p&gt;
     &gt;&lt;font color=blue&gt;VS_code&lt;/font&gt;&lt;/a&gt;&amp;mdash;
 &lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/msdcp/article/details/127033151&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;font color=blue&gt;VS_code教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;21docker下载与汉化&#34;&gt;2.1、docker下载与汉化
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.docker.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;docker官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/asxez/DockerDesktop-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;docker github站点（中文插件）&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在站点中找到与docker版本对应的插件下载：&lt;code&gt;app.asar&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;定位到docker的安装目录：&lt;code&gt;C:\Program Files\Docker\Docker\frontend\resources\app.asar&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将中文插件的&lt;code&gt;app-Windows-x86.asar&lt;/code&gt;重命名为&lt;code&gt;app.asar&lt;/code&gt;替换到docker路径中&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;3maven安装&#34;&gt;3、maven安装
 &lt;/h2&gt;&lt;p&gt;前往&lt;a class=&#34;link&#34; href=&#34;https://maven.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;font color=blue&gt;阿帕奇官网&lt;/font&gt;&lt;/a&gt;，下载apache-maven-3.9.6-bin.zip，
