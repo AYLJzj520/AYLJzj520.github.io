@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 02 Aug 2025 00:45:39 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 02 Aug 2025 07:53:18 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>健身记录</title>
         <link>https://ayljzj520.github.io/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
@@ -8768,15 +8768,26 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;永久关闭“无法验证发布者，你确定要运行此软件吗”弹窗
+&lt;ul&gt;
+&lt;li&gt;win+r输入&lt;code&gt;gpedit.msc&lt;/code&gt;打开本地组策略编辑器；&lt;/li&gt;
+&lt;li&gt;转到用户配置→管理模板→Windows组件→附件管理器&lt;/li&gt;
+&lt;li&gt;在右窗格中找到“中等风险文件类型的包含列表”，将它设置为“已启用”&lt;/li&gt;
+&lt;li&gt;在“指定中等风险扩展名”中输入&lt;code&gt;.cmd; .bat; .exe; .js&lt;/code&gt;，然后点击“确定”&lt;/li&gt;
+&lt;li&gt;win+r输入&lt;code&gt;gpupdate&lt;/code&gt;，然后点击“确定”更新策略&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;必须关闭bitlocker
-通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;br&gt;或者&lt;br&gt;通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]&lt;/li&gt;
-&lt;li&gt;电脑必须检查删除McAfee软件&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;关闭bitlocker
+&lt;ul&gt;
+&lt;li&gt;方法一通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;/li&gt;
+&lt;li&gt;方法一通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;删除McAfee软件&lt;/li&gt;
+&lt;li&gt;其他
+&lt;ul&gt;
 &lt;li&gt;删除defender软件:【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i37nv2lfc0bc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;br&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
 &lt;li&gt;分区助手：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iPMrD2lh4n0d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;微软常用运行库：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iWxgw2lfh49e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -8787,6 +8798,8 @@ Supported glob-style patterns:&lt;/p&gt;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;联想驱动管理：【&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/icvHl2lfaxpc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;下载链接&lt;/a&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;1聊天软件&#34;&gt;1、聊天软件
 &lt;/h2&gt;&lt;p&gt;&lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/p&gt;
