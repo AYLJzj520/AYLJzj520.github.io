@@ -8772,7 +8772,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;/details&gt;
 &lt;details&gt;
   &lt;summary&gt;&lt;font color=blue&gt;关闭bitlocker&lt;/font&gt;&lt;/summary&gt;
-  1.方法一通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。
+  1.方法一通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;br&gt;
   2.方法一通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]
 &lt;/details&gt;
 &lt;ul&gt;

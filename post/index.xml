@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 02 Aug 2025 08:08:24 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 02 Aug 2025 08:14:32 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>健身记录</title>
         <link>https://ayljzj520.github.io/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
@@ -8773,7 +8773,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;/details&gt;
 &lt;details&gt;
   &lt;summary&gt;&lt;font color=blue&gt;关闭bitlocker&lt;/font&gt;&lt;/summary&gt;
-  1.方法一通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。
+  1.方法一通过开始菜单的[设置]-[更新和安全]-[设备加密]，点击 [关闭]。&lt;br&gt;
   2.方法一通过控制面板或“这台电脑”找到要关闭加密的磁盘，右键点击 [管理 BitLocker]，选择 [关闭 BitLocker]
 &lt;/details&gt;
 &lt;ul&gt;
