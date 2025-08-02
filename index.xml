@@ -8740,15 +8740,15 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;关闭自动更新
-&lt;ul&gt;
-&lt;li&gt;关闭Windows Update服务
-&lt;ul&gt;
-&lt;li&gt;win+r输入&lt;code&gt;services.msc&lt;/code&gt;,在弹出的服务窗口中，找到&lt;code&gt;Windows Update&lt;/code&gt;选项并双击打开&lt;/li&gt;
-&lt;li&gt;在弹出的&lt;code&gt;Windows Update的属性&lt;/code&gt;对话框中，将&lt;code&gt;启动类型&lt;/code&gt;设置为&lt;code&gt;禁用&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;然后再单击&lt;code&gt;恢复&lt;/code&gt;，将&lt;code&gt;第几次失败&lt;/code&gt;都设置为&lt;code&gt;无操作&lt;/code&gt;，再单击&lt;code&gt;应用&lt;/code&gt;和&lt;code&gt;确定&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关闭自动更新&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;font color=blue&gt;关闭Windows Update服务&lt;/font&gt;&lt;/summary&gt;
+    1.win+r输入`services.msc`,在弹出的服务窗口中，找到`Windows Update`选项并双击打开
+    2.在弹出的`Windows Update的属性`对话框中，将`启动类型`设置为`禁用`
+    3.然后再单击`恢复`，将`第几次失败`都设置为`无操作`，再单击`应用`和`确定`
+&lt;/details&gt;
+&lt;ul&gt;
 &lt;li&gt;本地组策略编辑器
 &lt;ul&gt;
 &lt;li&gt;win+r输入&lt;code&gt;gpedit.msc&lt;/code&gt;&lt;/li&gt;
@@ -8763,8 +8763,6 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;win+r输入&lt;code&gt;taskschd.msc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;在任务计划程序窗口中，跳转到该路径“任务计划程序库/Microsoft/Windows/WindowsUpdate”&lt;/li&gt;
 &lt;li&gt;然后，选中“Schedule Start”，并在“所选项”中单击“禁用”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;永久关闭“无法验证发布者，你确定要运行此软件吗”弹窗
