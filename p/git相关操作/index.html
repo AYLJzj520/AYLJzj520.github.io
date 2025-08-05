@@ -10,7 +10,7 @@
 <meta property='og:description' content="git的部分操作指南">
 <meta property='og:url' content='https://ayljzj520.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2024-12-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-08-05T16:00:07&#43;08:00'/><meta property='og:image' content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/person/01-git/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='笔记' /><meta property='article:published_time' content='2024-12-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-08-05T16:08:00&#43;08:00'/><meta property='og:image' content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/person/01-git/Amain.jpg' />
 <meta name="twitter:title" content="git相关操作">
 <meta name="twitter:description" content="git的部分操作指南"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/person/01-git/Amain.jpg' />
@@ -340,7 +340,7 @@
                
                 最后修改:
                 <time>
-                    2025-08-05 16:00
+                    2025-08-05 16:08
                 </time>
             </div>
     </footer>
@@ -393,9 +393,9 @@ git相关指令学习</p>
 <li>然后再使用<code>git commit</code>将暂存区的内容提交到本地仓库，记录为一个快照。</li>
 </ul>
 <blockquote>
-<p>🧠 可以把暂存区类比为“快照准备区”，你可以反复修改文件、添加到暂存区，最后一口气提交，确保每次提交都是有意义的逻辑单元。
-🎯 举个例子：</p>
+<p>🧠 可以把暂存区类比为“快照准备区”，你可以反复修改文件、添加到暂存区，最后一口气提交，确保每次提交都是有意义的逻辑单元。<br></p>
 </blockquote>
+<p>🎯 举个例子：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -425,9 +425,9 @@ git相关指令学习</p>
 <ul>
 <li>已暂存的文件：这些文件已使用 git add 添加到暂存区，准备提交。</li>
 <li>未暂存的文件：这些文件被修改，但还未添加到暂存区。</li>
-<li>未跟踪的文件：这些文件是新创建的，Git 并未跟踪它们。
-🎯 通过<code>git status</code>，你可以随时了解当前工作区和暂存区的状态，帮助你决定接下来的操作。</li>
+<li>未跟踪的文件：这些文件是新创建的，Git 并未跟踪它们。</li>
 </ul>
+<p>🎯 通过<code>git status</code>，你可以随时了解当前工作区和暂存区的状态，帮助你决定接下来的操作。</p>
 <h3 id="-五添加文件到暂存区git-add">📥 五、添加文件到暂存区：<code>git add</code>
 </h3><p>当你修改或新增文件后，使用<code>git add</code>将其添加到 Git 的暂存区：</p>
 <div class="highlight"><div class="chroma">
@@ -521,50 +521,50 @@ git相关指令学习</p>
 </h3><div class="table-wrapper"><table>
   <thead>
       <tr>
-          <th>命令</th>
-          <th>作用</th>
+          <th style="text-align: center">命令</th>
+          <th style="text-align: center">作用</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><code>git init</code></td>
-          <td>初始化仓库</td>
+          <td style="text-align: center"><code>git init</code></td>
+          <td style="text-align: center">初始化仓库</td>
       </tr>
       <tr>
-          <td><code>git config</code></td>
-          <td>设置用户名与邮箱</td>
+          <td style="text-align: center"><code>git config</code></td>
+          <td style="text-align: center">设置用户名与邮箱</td>
       </tr>
       <tr>
-          <td><code>git status</code></td>
-          <td>查看当前文件状态</td>
+          <td style="text-align: center"><code>git status</code></td>
+          <td style="text-align: center">查看当前文件状态</td>
       </tr>
       <tr>
-          <td><code>git add</code></td>
-          <td>添加改动到暂存区</td>
+          <td style="text-align: center"><code>git add</code></td>
+          <td style="text-align: center">添加改动到暂存区</td>
       </tr>
       <tr>
-          <td><code>git commit -m</code></td>
-          <td>提交改动</td>
+          <td style="text-align: center"><code>git commit -m</code></td>
+          <td style="text-align: center">提交改动</td>
       </tr>
       <tr>
-          <td><code>git push origin main</code></td>
-          <td>推送代码到远程 main 分支</td>
+          <td style="text-align: center"><code>git push origin main</code></td>
+          <td style="text-align: center">推送代码到远程 main 分支</td>
       </tr>
       <tr>
-          <td><code>git diff</code></td>
-          <td>查看未提交的改动</td>
+          <td style="text-align: center"><code>git diff</code></td>
+          <td style="text-align: center">查看未提交的改动</td>
       </tr>
       <tr>
-          <td><code>git log --oneline</code></td>
-          <td>查看提交历史</td>
+          <td style="text-align: center"><code>git log --oneline</code></td>
+          <td style="text-align: center">查看提交历史</td>
       </tr>
       <tr>
-          <td>``.gitignore`</td>
-          <td>忽略文件</td>
+          <td style="text-align: center">``.gitignore`</td>
+          <td style="text-align: center">忽略文件</td>
       </tr>
       <tr>
-          <td><code>git branch -M main</code></td>
-          <td>重命名分支为 main</td>
+          <td style="text-align: center"><code>git branch -M main</code></td>
+          <td style="text-align: center">重命名分支为 main</td>
       </tr>
   </tbody>
 </table></div>
@@ -792,7 +792,7 @@ git相关指令学习</p>
 
 
         <span>
-            最后更新于 2025-08-05 16:00
+            最后更新于 2025-08-05 16:08
         </span>
     </section></footer>
 
