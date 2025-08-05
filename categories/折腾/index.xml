@@ -5585,7 +5585,7 @@ $$&lt;ul&gt;
 &lt;/h2&gt;&lt;p&gt;📌 Git 是现代开发中不可或缺的版本控制工具，尤其适用于团队协作和代码管理。本文将带你了解 Git 的基础操作命令，包括&lt;code&gt;git init&lt;/code&gt;、&lt;code&gt;git add&lt;/code&gt;、&lt;code&gt;git commit&lt;/code&gt;、&lt;code&gt;git diff&lt;/code&gt;、&lt;code&gt;git log&lt;/code&gt;、.gitignore 等，快速上手版本控制。
 git相关指令学习&lt;/p&gt;
 &lt;h2 id=&#34;1-git相关指令&#34;&gt;1. git相关指令
-&lt;/h2&gt;&lt;h3 id=&#34;一初始化仓库git-init&#34;&gt;一、🛠️初始化仓库：&lt;code&gt;git init&lt;/code&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;一初始化仓库git-init&#34;&gt;🛠️一、初始化仓库：&lt;code&gt;git init&lt;/code&gt;
 &lt;/h3&gt;&lt;p&gt;使用 Git 前，需先初始化一个本地仓库：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
