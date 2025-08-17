@@ -15658,7 +15658,9 @@ git相关指令学习&lt;/p&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/m0_74063149/article/details/137725577&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;font color=blue&gt;安装wsl后虚拟机无法启动&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/opus/861067292754051097&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;原生ubuntu安装教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    &gt;&lt;font color=blue&gt;原生ubuntu安装教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://ubuntu.com/download/desktop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;Ubuntu&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1安装系统&#34;&gt;1、安装系统
 &lt;/h2&gt;&lt;h3 id=&#34;步骤1---启用适用于-linux-的-windows-子系统&#34;&gt;步骤1 - 启用适用于 Linux 的 Windows 子系统：
 &lt;/h3&gt;&lt;p&gt;需要先启用“适用于 Linux 的 Windows 子系统”可选功能，然后才能在 Windows 上安装 Linux 分发。
