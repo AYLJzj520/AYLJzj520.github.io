@@ -134,6 +134,29 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id=&#34;校招&#34;&gt;校招
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;公司名称&lt;/th&gt;
+          &lt;th&gt;岗位&lt;/th&gt;
+          &lt;th&gt;简历&lt;/th&gt;
+          &lt;th&gt;笔试&lt;/th&gt;
+          &lt;th&gt;面试&lt;/th&gt;
+          &lt;th&gt;offer&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;华勤技术&lt;/td&gt;
+          &lt;td&gt;Java开发&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 </description>
         </item>
         <item>

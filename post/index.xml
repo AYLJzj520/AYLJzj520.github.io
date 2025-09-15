@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sun, 14 Sep 2025 08:08:12 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 15 Sep 2025 13:00:01 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>健身记录</title>
         <link>https://ayljzj520.github.io/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
@@ -907,6 +907,29 @@
       &lt;tr&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;信阳分公司研发工程师&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;校招&#34;&gt;校招
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;公司名称&lt;/th&gt;
+          &lt;th&gt;岗位&lt;/th&gt;
+          &lt;th&gt;简历&lt;/th&gt;
+          &lt;th&gt;笔试&lt;/th&gt;
+          &lt;th&gt;面试&lt;/th&gt;
+          &lt;th&gt;offer&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;华勤技术&lt;/td&gt;
+          &lt;td&gt;Java开发&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
