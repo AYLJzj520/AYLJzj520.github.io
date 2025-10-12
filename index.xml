@@ -119,7 +119,7 @@
           &lt;td&gt;郑州&lt;/td&gt;
           &lt;td&gt;人工智能工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;笔试&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;/td&gt;
@@ -135,7 +135,7 @@
           &lt;td&gt;信阳&lt;/td&gt;
           &lt;td&gt;研发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;笔试&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;7&lt;/td&gt;
@@ -231,7 +231,7 @@
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;测评&lt;/td&gt;
+          &lt;td&gt;笔试&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;19&lt;/td&gt;
@@ -248,6 +248,30 @@
           &lt;td&gt;系统实施工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
           &lt;td&gt;群面&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;21&lt;/td&gt;
+          &lt;td&gt;广州邦普电脑&lt;/td&gt;
+          &lt;td&gt;广州&lt;/td&gt;
+          &lt;td&gt;信息处理工程师&lt;/td&gt;
+          &lt;td&gt;网申&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;22&lt;/td&gt;
+          &lt;td&gt;广东领益智造&lt;/td&gt;
+          &lt;td&gt;深圳&lt;/td&gt;
+          &lt;td&gt;信息技术管培生&lt;/td&gt;
+          &lt;td&gt;网申&lt;/td&gt;
+          &lt;td&gt;笔试&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;23&lt;/td&gt;
+          &lt;td&gt;深圳景旺电子&lt;/td&gt;
+          &lt;td&gt;深圳&lt;/td&gt;
+          &lt;td&gt;IT岗&lt;/td&gt;
+          &lt;td&gt;网申&lt;/td&gt;
+          &lt;td&gt;面试&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -487,6 +511,14 @@
           &lt;td&gt;Java开发员&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;29&lt;/td&gt;
+          &lt;td&gt;东莞新兴产投&lt;/td&gt;
+          &lt;td&gt;东莞&lt;/td&gt;
+          &lt;td&gt;软件开发工程师&lt;/td&gt;
+          &lt;td&gt;官网网申&lt;/td&gt;
+          &lt;td&gt;测评&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -16422,6 +16454,13 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 如果那两个数值变为300 0，意味着是原始测出来的数据，
 前一个数值代表eprover测的时间，后一个数值代表CSE测的时间，
 300秒减去前两个数值所剩下的时间也是eprover参与的&lt;/p&gt;
+&lt;h3 id=&#34;jar包修改相关内容&#34;&gt;jar包修改相关内容
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;NetBeans 8.0.2 Mcs_epr.java 第734行&lt;/li&gt;
+&lt;li&gt;String combinedRunCmd = &amp;ldquo;timeout &amp;quot; + firstRunTime + &amp;quot; &amp;quot; + getAppPath() + File.separator + &amp;ldquo;eprover &amp;ndash;delete-bad-limit=2000000000 &amp;ndash;definitional-cnf=24 -s &amp;ndash;print-statistics -R &amp;ndash;print-version &amp;ndash;proof-object &amp;ndash;auto-schedule &amp;ndash;cpu-limit=&amp;rdquo; + 300 + &amp;quot; &amp;quot; + problemPath;&lt;/li&gt;
+&lt;li&gt;根据eprover官网给出的命令进行对应的修改&lt;/li&gt;
+&lt;li&gt;编译后，jar包输出位置为：&lt;code&gt;Desktop/2020_CASC_PROCESS/mcs_epr/dist&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;2代码相关逻辑&#34;&gt;2、代码相关逻辑
 &lt;/h2&gt;&lt;h3 id=&#34;基础代码修改项&#34;&gt;基础代码修改项
 &lt;/h3&gt;&lt;table&gt;

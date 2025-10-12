@@ -10,7 +10,7 @@
 <meta property='og:description' content="实验">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-07-24T16:10:23&#43;08:00'/><meta property='og:image' content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/02-autoTest/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-10-12T10:18:33&#43;08:00'/><meta property='og:image' content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/02-autoTest/Amain.jpg' />
 <meta name="twitter:title" content="自动推理（实验相关内容）">
 <meta name="twitter:description" content="实验"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/02-autoTest/Amain.jpg' />
@@ -280,6 +280,7 @@
         <li><a href="#准备条件">准备条件</a></li>
         <li><a href="#带界面版本测试命令">带界面版本测试命令</a></li>
         <li><a href="#命令行版本测试命令">命令行版本测试命令</a></li>
+        <li><a href="#jar包修改相关内容">jar包修改相关内容</a></li>
       </ul>
     </li>
     <li><a href="#2代码相关逻辑">2、代码相关逻辑</a>
@@ -351,7 +352,7 @@
                
                 最后修改:
                 <time>
-                    2025-07-24 16:10
+                    2025-10-12 10:18
                 </time>
             </div>
     </footer>
@@ -434,6 +435,13 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 如果那两个数值变为300 0，意味着是原始测出来的数据，
 前一个数值代表eprover测的时间，后一个数值代表CSE测的时间，
 300秒减去前两个数值所剩下的时间也是eprover参与的</p>
+<h3 id="jar包修改相关内容">jar包修改相关内容
+</h3><ul>
+<li>NetBeans 8.0.2 Mcs_epr.java 第734行</li>
+<li>String combinedRunCmd = &ldquo;timeout &quot; + firstRunTime + &quot; &quot; + getAppPath() + File.separator + &ldquo;eprover &ndash;delete-bad-limit=2000000000 &ndash;definitional-cnf=24 -s &ndash;print-statistics -R &ndash;print-version &ndash;proof-object &ndash;auto-schedule &ndash;cpu-limit=&rdquo; + 300 + &quot; &quot; + problemPath;</li>
+<li>根据eprover官网给出的命令进行对应的修改</li>
+<li>编译后，jar包输出位置为：<code>Desktop/2020_CASC_PROCESS/mcs_epr/dist</code></li>
+</ul>
 <h2 id="2代码相关逻辑">2、代码相关逻辑
 </h2><h3 id="基础代码修改项">基础代码修改项
 </h3><div class="table-wrapper"><table>
@@ -746,7 +754,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
 
 
         <span>
-            最后更新于 2025-07-24 16:10
+            最后更新于 2025-10-12 10:18
         </span>
     </section></footer>
 
@@ -883,7 +891,7 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
         
         
 
-        <p>发布了 25 篇文章 | 共 94398 字</p>
+        <p>发布了 25 篇文章 | 共 94603 字</p>
 
 
 
