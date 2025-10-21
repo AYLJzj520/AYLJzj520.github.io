@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Mon, 20 Oct 2025 04:27:19 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 21 Oct 2025 03:55:47 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>秋招投简历记录</title>
         <link>https://ayljzj520.github.io/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
@@ -199,7 +199,7 @@
           &lt;td&gt;中核华兴&lt;/td&gt;
           &lt;td&gt;广东&lt;/td&gt;
           &lt;td&gt;信息管理&lt;/td&gt;
-          &lt;td&gt;网申&lt;/td&gt;
+          &lt;td&gt;官网网申&lt;/td&gt;
           &lt;td&gt;测评&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
@@ -410,6 +410,14 @@
           &lt;td&gt;官网网申&lt;/td&gt;
           &lt;td&gt;测评&lt;/td&gt;
       &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;41&lt;/td&gt;
+          &lt;td&gt;中核五公司&lt;/td&gt;
+          &lt;td&gt;全国&lt;/td&gt;
+          &lt;td&gt;信息技术&lt;/td&gt;
+          &lt;td&gt;官网网申&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;校招&#34;&gt;校招
@@ -463,7 +471,7 @@
           &lt;td&gt;珠海&lt;/td&gt;
           &lt;td&gt;软件开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;6&lt;/td&gt;
@@ -471,7 +479,7 @@
           &lt;td&gt;南昌&lt;/td&gt;
           &lt;td&gt;开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;7&lt;/td&gt;
@@ -479,7 +487,7 @@
           &lt;td&gt;株洲&lt;/td&gt;
           &lt;td&gt;JAVA开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;8&lt;/td&gt;
@@ -487,7 +495,7 @@
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;数据开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;9&lt;/td&gt;
@@ -495,7 +503,7 @@
           &lt;td&gt;浙江浦江县&lt;/td&gt;
           &lt;td&gt;软件开发助理工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;10&lt;/td&gt;
@@ -503,7 +511,7 @@
           &lt;td&gt;南京&lt;/td&gt;
           &lt;td&gt;海外业务软件开发&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;11&lt;/td&gt;
@@ -511,7 +519,7 @@
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;JAVA后端开发&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;12&lt;/td&gt;
@@ -519,7 +527,7 @@
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;软件开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;13&lt;/td&gt;
@@ -527,7 +535,7 @@
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;信息处理工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;14&lt;/td&gt;
@@ -535,7 +543,7 @@
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;15&lt;/td&gt;
@@ -543,7 +551,7 @@
           &lt;td&gt;南昌&lt;/td&gt;
           &lt;td&gt;软件开发&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;16&lt;/td&gt;
@@ -551,7 +559,7 @@
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;17&lt;/td&gt;
