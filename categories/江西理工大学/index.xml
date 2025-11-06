@@ -12,8 +12,9 @@
         <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg" alt="Featured image of post 秋招投简历记录" /&gt;&lt;h2 id=&#34;国企&#34;&gt;国企
-&lt;/h2&gt;&lt;table&gt;
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg" alt="Featured image of post 秋招投简历记录" /&gt;&lt;h2 id=&#34;国企47家&#34;&gt;国企（47家）
+&lt;/h2&gt;&lt;h3 id=&#34;第一组30家&#34;&gt;第一组（30家）
+&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th&gt;编号&lt;/th&gt;
@@ -361,8 +362,23 @@
           &lt;td&gt;国聘网申&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;第二组17家&#34;&gt;第二组（17家）
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
       &lt;tr&gt;
-          &lt;td&gt;31&lt;/td&gt;
+          &lt;th&gt;编号&lt;/th&gt;
+          &lt;th&gt;公司名称&lt;/th&gt;
+          &lt;th&gt;base&lt;/th&gt;
+          &lt;th&gt;岗位&lt;/th&gt;
+          &lt;th&gt;流程&lt;/th&gt;
+          &lt;th&gt;流程&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
           &lt;td&gt;华南中远海运&lt;/td&gt;
           &lt;td&gt;徐州&lt;/td&gt;
           &lt;td&gt;数字化IT岗&lt;/td&gt;
@@ -370,7 +386,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;32&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
           &lt;td&gt;江苏苏美达&lt;/td&gt;
           &lt;td&gt;南京&lt;/td&gt;
           &lt;td&gt;实业信息化专员&lt;/td&gt;
@@ -378,7 +394,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;33&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
           &lt;td&gt;中电科国海信通&lt;/td&gt;
           &lt;td&gt;海口&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -386,7 +402,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;34&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
           &lt;td&gt;中钨共享服务&lt;/td&gt;
           &lt;td&gt;株洲&lt;/td&gt;
           &lt;td&gt;信息技术岗&lt;/td&gt;
@@ -394,7 +410,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;35&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
           &lt;td&gt;多益网络&lt;/td&gt;
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;软件工程师&lt;/td&gt;
@@ -402,7 +418,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;36&lt;/td&gt;
+          &lt;td&gt;6&lt;/td&gt;
           &lt;td&gt;振华研究所&lt;/td&gt;
           &lt;td&gt;贵阳&lt;/td&gt;
           &lt;td&gt;后端开发工程师&lt;/td&gt;
@@ -410,7 +426,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;37&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
           &lt;td&gt;驰骋控股&lt;/td&gt;
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;IT发展方向&lt;/td&gt;
@@ -418,7 +434,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;38&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
           &lt;td&gt;新文溯科技&lt;/td&gt;
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -426,7 +442,7 @@
           &lt;td&gt;简历挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;39&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
           &lt;td&gt;南方电网&lt;/td&gt;
           &lt;td&gt;广深珠&lt;/td&gt;
           &lt;td&gt;信息通信类&lt;/td&gt;
@@ -434,7 +450,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
           &lt;td&gt;国家能源集团&lt;/td&gt;
           &lt;td&gt;银川&lt;/td&gt;
           &lt;td&gt;软件开发技术员&lt;/td&gt;
@@ -442,7 +458,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;41&lt;/td&gt;
+          &lt;td&gt;11&lt;/td&gt;
           &lt;td&gt;中核五公司&lt;/td&gt;
           &lt;td&gt;全国&lt;/td&gt;
           &lt;td&gt;信息技术&lt;/td&gt;
@@ -450,7 +466,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;42&lt;/td&gt;
+          &lt;td&gt;12&lt;/td&gt;
           &lt;td&gt;中国五矿集团&lt;/td&gt;
           &lt;td&gt;成都&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -458,7 +474,7 @@
           &lt;td&gt;简历挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;43&lt;/td&gt;
+          &lt;td&gt;13&lt;/td&gt;
           &lt;td&gt;紫金矿业&lt;/td&gt;
           &lt;td&gt;海南/刚果金&lt;/td&gt;
           &lt;td&gt;信息化&lt;/td&gt;
@@ -466,7 +482,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;44&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
           &lt;td&gt;深圳鹏城技师学院&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;大数据老师&lt;/td&gt;
@@ -474,7 +490,7 @@
           &lt;td&gt;面试挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;44&lt;/td&gt;
+          &lt;td&gt;15&lt;/td&gt;
           &lt;td&gt;联通在线信息科技&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;技术类岗位&lt;/td&gt;
@@ -482,7 +498,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;44&lt;/td&gt;
+          &lt;td&gt;16&lt;/td&gt;
           &lt;td&gt;中国电子&lt;/td&gt;
           &lt;td&gt;贵阳&lt;/td&gt;
           &lt;td&gt;后端开发工程师&lt;/td&gt;
@@ -514,7 +530,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;44&lt;/td&gt;
+          &lt;td&gt;17&lt;/td&gt;
           &lt;td&gt;国投证券&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;软件开发工程师&lt;/td&gt;
@@ -532,7 +548,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;校内招聘&#34;&gt;校内招聘
-&lt;/h2&gt;&lt;h3 id=&#34;网申&#34;&gt;网申
+&lt;/h2&gt;&lt;h3 id=&#34;网申32家&#34;&gt;网申（32家）
 &lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -843,7 +859,7 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;线下&#34;&gt;线下
+&lt;h3 id=&#34;线下15家&#34;&gt;线下（15家）
 &lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -979,7 +995,8 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;校外网申&#34;&gt;校外网申
-&lt;/h2&gt;&lt;table&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;第一组30家-1&#34;&gt;第一组（30家）
+&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th&gt;编号&lt;/th&gt;
@@ -1239,8 +1256,23 @@
           &lt;td&gt;官网网申&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;第二组30家&#34;&gt;第二组（30家）
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
       &lt;tr&gt;
-          &lt;td&gt;31&lt;/td&gt;
+          &lt;th&gt;编号&lt;/th&gt;
+          &lt;th&gt;公司名称&lt;/th&gt;
+          &lt;th&gt;base&lt;/th&gt;
+          &lt;th&gt;岗位&lt;/th&gt;
+          &lt;th&gt;流程&lt;/th&gt;
+          &lt;th&gt;流程&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
           &lt;td&gt;顺网科技&lt;/td&gt;
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -1256,7 +1288,7 @@
           &lt;td&gt;测评挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;32&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
           &lt;td&gt;深圳拓竹&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;IT技术支持&lt;/td&gt;
@@ -1264,7 +1296,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;33&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
           &lt;td&gt;海颐软件&lt;/td&gt;
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;软件实施工程师&lt;/td&gt;
@@ -1272,7 +1304,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;34&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
           &lt;td&gt;君乐宝乳业&lt;/td&gt;
           &lt;td&gt;石家庄&lt;/td&gt;
           &lt;td&gt;数字化管培生&lt;/td&gt;
@@ -1280,15 +1312,15 @@
           &lt;td&gt;测评&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;35&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
           &lt;td&gt;恒生科技&lt;/td&gt;
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
           &lt;td&gt;网申&lt;/td&gt;
-          &lt;td&gt;笔试&lt;/td&gt;
+          &lt;td&gt;笔试挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;36&lt;/td&gt;
+          &lt;td&gt;6&lt;/td&gt;
           &lt;td&gt;公牛集团&lt;/td&gt;
           &lt;td&gt;宁波&lt;/td&gt;
           &lt;td&gt;信息技术岗&lt;/td&gt;
@@ -1296,7 +1328,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;37&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
           &lt;td&gt;正泰集团&lt;/td&gt;
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;技术研发类&lt;/td&gt;
@@ -1304,7 +1336,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;38&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
           &lt;td&gt;博众精工&lt;/td&gt;
           &lt;td&gt;苏州&lt;/td&gt;
           &lt;td&gt;软工（充换电）&lt;/td&gt;
@@ -1320,7 +1352,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;39&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
           &lt;td&gt;湖北兴发&lt;/td&gt;
           &lt;td&gt;宜昌&lt;/td&gt;
           &lt;td&gt;信息技术岗&lt;/td&gt;
@@ -1328,7 +1360,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
           &lt;td&gt;凡岛电商发展部&lt;/td&gt;
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;后端工程师&lt;/td&gt;
@@ -1336,7 +1368,7 @@
           &lt;td&gt;简历挂&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;11&lt;/td&gt;
           &lt;td&gt;广联达&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -1344,7 +1376,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;12&lt;/td&gt;
           &lt;td&gt;天融信科技集团&lt;/td&gt;
           &lt;td&gt;北京&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -1352,7 +1384,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;13&lt;/td&gt;
           &lt;td&gt;中国金融期货交易所&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;信息技术类&lt;/td&gt;
@@ -1360,7 +1392,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;14&lt;/td&gt;
           &lt;td&gt;果栗智造&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;软件工程师&lt;/td&gt;
@@ -1368,7 +1400,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;15&lt;/td&gt;
           &lt;td&gt;汇川技术&lt;/td&gt;
           &lt;td&gt;苏州&lt;/td&gt;
           &lt;td&gt;IT开发工程师&lt;/td&gt;
@@ -1376,7 +1408,7 @@
           &lt;td&gt;测评&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;16&lt;/td&gt;
           &lt;td&gt;九号&lt;/td&gt;
           &lt;td&gt;苏州&lt;/td&gt;
           &lt;td&gt;助理JAVA&lt;/td&gt;
@@ -1384,7 +1416,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;17&lt;/td&gt;
           &lt;td&gt;TCL中环&lt;/td&gt;
           &lt;td&gt;苏州&lt;/td&gt;
           &lt;td&gt;信息技术类&lt;/td&gt;
@@ -1392,7 +1424,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
           &lt;td&gt;TCL茂佳科技&lt;/td&gt;
           &lt;td&gt;惠州&lt;/td&gt;
           &lt;td&gt;JAVA开发工程师&lt;/td&gt;
@@ -1400,7 +1432,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;19&lt;/td&gt;
           &lt;td&gt;TCL光伏科技&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;后端开发工程师&lt;/td&gt;
@@ -1408,7 +1440,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;20&lt;/td&gt;
           &lt;td&gt;TCL流程与数字化&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;JAVA开发工程师&lt;/td&gt;
@@ -1416,7 +1448,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;21&lt;/td&gt;
           &lt;td&gt;TCL通力股份&lt;/td&gt;
           &lt;td&gt;惠州&lt;/td&gt;
           &lt;td&gt;IT工程师&lt;/td&gt;
@@ -1424,7 +1456,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;22&lt;/td&gt;
           &lt;td&gt;长园深瑞&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;IT开发工程师&lt;/td&gt;
@@ -1432,7 +1464,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;23&lt;/td&gt;
           &lt;td&gt;东华软件&lt;/td&gt;
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -1440,7 +1472,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;24&lt;/td&gt;
           &lt;td&gt;立景集团&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;IT系统运维&lt;/td&gt;
@@ -1448,7 +1480,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;25&lt;/td&gt;
           &lt;td&gt;海天瑞声&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;后端工程师&lt;/td&gt;
@@ -1456,7 +1488,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;26&lt;/td&gt;
           &lt;td&gt;远算科技&lt;/td&gt;
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;软件开发工程师&lt;/td&gt;
@@ -1464,7 +1496,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;27&lt;/td&gt;
           &lt;td&gt;威派格&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;Java开发工程师&lt;/td&gt;
@@ -1472,7 +1504,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;28&lt;/td&gt;
           &lt;td&gt;益海嘉里&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;IT储备生&lt;/td&gt;
@@ -1480,7 +1512,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;29&lt;/td&gt;
           &lt;td&gt;艾宾信息&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;初级开发工程师&lt;/td&gt;
@@ -1495,8 +1527,23 @@
           &lt;td&gt;官网网申&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;第三组15家&#34;&gt;第三组（15家）
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;th&gt;编号&lt;/th&gt;
+          &lt;th&gt;公司名称&lt;/th&gt;
+          &lt;th&gt;base&lt;/th&gt;
+          &lt;th&gt;岗位&lt;/th&gt;
+          &lt;th&gt;流程&lt;/th&gt;
+          &lt;th&gt;流程&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
           &lt;td&gt;宝信软件&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;软件开发工程师&lt;/td&gt;
@@ -1504,7 +1551,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
           &lt;td&gt;StarThing&lt;/td&gt;
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;后端开发工程师&lt;/td&gt;
@@ -1512,7 +1559,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
           &lt;td&gt;江苏永鼎&lt;/td&gt;
           &lt;td&gt;苏州&lt;/td&gt;
           &lt;td&gt;IT岗&lt;/td&gt;
@@ -1520,7 +1567,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
           &lt;td&gt;万帮数字能源&lt;/td&gt;
           &lt;td&gt;常州&lt;/td&gt;
           &lt;td&gt;JAVA（数字化方向）&lt;/td&gt;
@@ -1536,7 +1583,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
           &lt;td&gt;上海城投（集团）&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;信息技术岗&lt;/td&gt;
@@ -1544,7 +1591,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;6&lt;/td&gt;
           &lt;td&gt;卓动信息科技&lt;/td&gt;
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;后端工程师&lt;/td&gt;
@@ -1552,15 +1599,15 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
           &lt;td&gt;禅游科技&lt;/td&gt;
           &lt;td&gt;深圳&lt;/td&gt;
           &lt;td&gt;Java开发实习生&lt;/td&gt;
           &lt;td&gt;官网网申&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;AI面&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;8&lt;/td&gt;
           &lt;td&gt;宜人智科&lt;/td&gt;
           &lt;td&gt;北京&lt;/td&gt;
           &lt;td&gt;java工程师&lt;/td&gt;
@@ -1568,7 +1615,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
           &lt;td&gt;海隆软件&lt;/td&gt;
           &lt;td&gt;南京&lt;/td&gt;
           &lt;td&gt;软件开发&lt;/td&gt;
@@ -1576,7 +1623,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
           &lt;td&gt;星云开物&lt;/td&gt;
           &lt;td&gt;广州&lt;/td&gt;
           &lt;td&gt;研发培训生（JAVA后端）&lt;/td&gt;
@@ -1584,7 +1631,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;11&lt;/td&gt;
           &lt;td&gt;金蝶&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;软件开发-Java&lt;/td&gt;
@@ -1592,7 +1639,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;12&lt;/td&gt;
           &lt;td&gt;明天医网科技&lt;/td&gt;
           &lt;td&gt;杭州&lt;/td&gt;
           &lt;td&gt;JAVA开发&lt;/td&gt;
@@ -1600,7 +1647,7 @@
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;13&lt;/td&gt;
           &lt;td&gt;奇瑞汽车&lt;/td&gt;
           &lt;td&gt;上海&lt;/td&gt;
           &lt;td&gt;Java后端开发&lt;/td&gt;
@@ -1614,6 +1661,22 @@
           &lt;td&gt;后端助理工程师&lt;/td&gt;
           &lt;td&gt;官网网申&lt;/td&gt;
           &lt;td&gt;测评&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;14&lt;/td&gt;
+          &lt;td&gt;微亚智能科技&lt;/td&gt;
+          &lt;td&gt;深圳&lt;/td&gt;
+          &lt;td&gt;Java后端开发&lt;/td&gt;
+          &lt;td&gt;问卷网申&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;15&lt;/td&gt;
+          &lt;td&gt;CVTE&lt;/td&gt;
+          &lt;td&gt;广州&lt;/td&gt;
+          &lt;td&gt;应用软件工程师&lt;/td&gt;
+          &lt;td&gt;官网网申&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
