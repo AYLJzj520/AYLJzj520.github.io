@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 03 Jan 2026 09:34:34 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 03 Jan 2026 10:57:34 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>秋招投简历记录</title>
         <link>https://ayljzj520.github.io/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
@@ -10799,8 +10799,6 @@ Supported glob-style patterns:&lt;/p&gt;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;TIM：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/icvOa2lf6rre&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;TIM绿色精简化版：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i97wl2lfwzne&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;腾讯会议：&lt;a class=&#34;link&#34; href=&#34;https://meeting.tencent.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;飞书：&lt;a class=&#34;link&#34; href=&#34;https://www.feishu.cn/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -10824,6 +10822,8 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;Visio：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/itPSd2lfkj1e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;LocalSend：&lt;a class=&#34;link&#34; href=&#34;https://localsend.org/zh-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Snipaste：&lt;a class=&#34;link&#34; href=&#34;https://apps.microsoft.com/detail/9p1wxpkb68kx?hl=zh-cn&amp;amp;gl=CN&amp;amp;ocid=pdpshare&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
@@ -10857,6 +10857,8 @@ Supported glob-style patterns:&lt;/p&gt;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Chrome：&lt;a class=&#34;link&#34; href=&#34;https://www.google.cn/chrome/?standalone=1&amp;amp;platform=win64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chrome自翻：&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/zhifan999/fq/-/wikis/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;火狐浏览器：&lt;a class=&#34;link&#34; href=&#34;https://www.firefox.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -10868,8 +10870,6 @@ Supported glob-style patterns:&lt;/p&gt;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;百度云盘：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/download#win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;百度云盘去广告精简版：&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/0d578f4cbd411035/ESkaHRiRSaZIiiq7P1sLjfMBFC1doTdCrfRCzAwMUW7oig?e=jdSuWi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【挂梯下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;123云盘：&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;夸克云盘：&lt;a class=&#34;link&#34; href=&#34;https://pan.quark.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -10885,8 +10885,8 @@ Supported glob-style patterns:&lt;/p&gt;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Potplayer：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iHGsL2lftlze&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;剪映：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iBTMm2lftged&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;剪映：&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/0d578f4cbd411035/IQAqCPYEtsxNQq5Xuze3_Dg_AQisjc2-8QPdnuZX72KzZOg?e=rPvHaG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【挂梯下载】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
 &lt;details&gt;
@@ -10913,11 +10913,8 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;/details&gt;
 &lt;ul&gt;
 &lt;li&gt;密码管理&lt;font color=blue&gt;【必装】&lt;/font&gt;
-&lt;ul&gt;
-&lt;li&gt;Keepass：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo796f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+Keepass：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo796f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;details&gt;
   &lt;summary&gt;其他&lt;/summary&gt;
@@ -10931,16 +10928,15 @@ Supported glob-style patterns:&lt;/p&gt;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Karing：&lt;a class=&#34;link&#34; href=&#34;https://karing.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Hiddify：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iLTRH2lgn3ij&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;v2RayN：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iDJDw2lgne1i&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hiddify：&lt;a class=&#34;link&#34; href=&#34;https://hiddify.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;比特彗星：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iwYTo2lgnipg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;DiskGenius：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ibiv52vhw0ha&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Telegram：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ijoRx32pypgb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+    &gt;【蓝奏下载】&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;https://apps.microsoft.com/detail/9nztwsqntd0s?hl=zh-cn&amp;amp;gl=CN&amp;amp;ocid=pdpshare&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【微软下载】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;4开发工具&#34;&gt;4、开发工具
