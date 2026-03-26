@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="将基础环境搭建，然后进行同步到onedrive">
+<title>笔记本与台式开发环境搭建</title>
+
+<link rel='canonical' href='https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
+
+<link rel="stylesheet" href="/scss/style.min.b892849b956d9bc6733ff53a79dc060d2eed9e37d974308f412fdf91e0e0842c.css"><meta property='og:title' content="笔记本与台式开发环境搭建">
+<meta property='og:description' content="将基础环境搭建，然后进行同步到onedrive">
+<meta property='og:url' content='https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
+<meta property='og:site_name' content='暗影流金的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-03-26T20:59:54&#43;08:00'/><meta property='og:image' content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg' />
+<meta name="twitter:title" content="笔记本与台式开发环境搭建">
+<meta name="twitter:description" content="将基础环境搭建，然后进行同步到onedrive"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg' />
+    <link rel="shortcut icon" href="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/header/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu15005021105466144611.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">暗影流金的博客</a></h1>
+            <h2 class="site-description">记录个人生活</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://dash.cloudflare.com/'
+                        target="_blank"
+                        title="CloudFlare"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Cloudflare</title><path d="M16.493 17.4c.135-.52.08-.983-.161-1.338-.215-.328-.592-.519-1.05-.519l-8.663-.109a.148.148 0 01-.135-.082c-.027-.054-.027-.109-.027-.163.027-.082.108-.164.189-.164l8.744-.11c1.05-.054 2.153-.9 2.556-1.937l.511-1.31c.027-.055.027-.11.027-.164C17.92 8.91 15.66 7 12.942 7c-2.503 0-4.628 1.638-5.381 3.903a2.432 2.432 0 00-1.803-.491c-1.21.109-2.153 1.092-2.287 2.32-.027.328 0 .628.054.9C1.56 13.688 0 15.326 0 17.319c0 .19.027.355.027.545 0 .082.08.137.161.137h15.983c.08 0 .188-.055.215-.164l.107-.437" fill="#F38020"></path><path d="M19.238 11.75h-.242c-.054 0-.108.054-.135.109l-.35 1.2c-.134.52-.08.983.162 1.338.215.328.592.518 1.05.518l1.855.11c.054 0 .108.027.135.082.027.054.027.109.027.163-.027.082-.108.164-.188.164l-1.91.11c-1.05.054-2.153.9-2.557 1.937l-.134.355c-.027.055.026.137.107.137h6.592c.081 0 .162-.055.162-.137.107-.41.188-.846.188-1.31-.027-2.62-2.153-4.777-4.762-4.777" fill="#FCAD32"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://gitee.com/ayljzj'
+                        target="_blank"
+                        title="Gitee"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24"><path fill="currentColor" d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.777c-.982 0-1.778.796-1.778 1.778v5.63c0 .327.266.592.593.592h5.63c.982 0 1.778-.796 1.778-1.778v-.296a.593.593 0 0 0-.592-.593h-4.15a.59.59 0 0 1-.592-.592v-1.482a.593.593 0 0 1 .593-.592h6.815c.327 0 .593.265.593.592v3.408a4 4 0 0 1-4 4H5.926a.593.593 0 0 1-.593-.593V9.778a4.444 4.444 0 0 1 4.445-4.444h8.296Z"/></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/AYLJzj520?tab=repositories'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-1-核心目录架构">📂 1. 核心目录架构</a></li>
+    <li><a href="#-2-环境初始化步骤-a-机">🛠️ 2. 环境初始化步骤 (A 机)</a>
+      <ul>
+        <li><a href="#第一步安装并迁移-scoop">第一步：安装并迁移 Scoop</a></li>
+        <li><a href="#第二步配置这些需要系统变量的软件">第二步：配置这些需要系统变量的软件</a></li>
+      </ul>
+    </li>
+    <li><a href="#-3-换机迁移与修复逻辑-b-机">🔄 3. 换机迁移与修复逻辑 (B 机)</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                
+                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg" loading="lazy" alt="Featured image of post 笔记本与台式开发环境搭建" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/" >
+                江西理工大学
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">笔记本与台式开发环境搭建</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            将基础环境搭建，然后进行同步到onedrive
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                
+                创建日期:
+                <time class="article-time--published">2025-09-10</time>
+            </div>
+        
+        <div class="article-lastmod">
+               
+                最后修改:
+                <time>
+                    2026-03-26 20:59
+                </time>
+            </div>
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>🚀 跨机器科研开发环境配置手册 (A/B 机同步版)
+本手册记录了基于 <strong>Scoop (软件管理)</strong> + <strong>OneDrive/Git (同步盘)</strong> + <strong>Local (本地大文件)</strong> 的混合开发环境配置流程。
+该架构专为 AI 研究（Java 与 Python ）设计，解决了跨机器切换时环境路径不一致、依赖冗余等痛点。</p>
+<hr>
+<h2 id="-1-核心目录架构">📂 1. 核心目录架构
+</h2><p>为了平衡“同步速度”与“运行性能”，环境被拆分为两个核心部分：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">目录名称</th>
+          <th style="text-align: left">物理路径示例</th>
+          <th style="text-align: left">存储内容</th>
+          <th style="text-align: left">同步策略</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Sync（可动）</strong></td>
+          <td style="text-align: left"><code>D:\Workspace\Sync</code></td>
+          <td style="text-align: left">Scoop 软件本体、代码项目、环境修复脚本</td>
+          <td style="text-align: left"><strong>全量同步</strong> (OneDrive)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Local（写死）</strong></td>
+          <td style="text-align: left"><code>D:\Workspace\Local</code></td>
+          <td style="text-align: left">Maven 本地库 (<code>.m2</code>)、Conda 虚拟环境、数据集</td>
+          <td style="text-align: left"><strong>不参与同步</strong> (每台机器独立)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>软件工具路径</strong></td>
+          <td style="text-align: left"><code>D:\Workbench\</code></td>
+          <td style="text-align: left">idea、pycharm等</td>
+          <td style="text-align: left"><strong>不参与同步</strong> (每台机器独立)</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="-2-环境初始化步骤-a-机">🛠️ 2. 环境初始化步骤 (A 机)
+</h2><h3 id="第一步安装并迁移-scoop">第一步：安装并迁移 Scoop
+</h3><ol>
+<li>在 PowerShell 中通过环境变量设置，将 Scoop 的安装位置指定到 <code>Sync</code> 目录下。</li>
+<li>安装核心科研工具链：git，maven，miniconda3，openjdk17</li>
+<li><code>D:\Workspace\Local</code>写死的路径地址，<code>D:\Workspace\Local\.m2\repository</code>为maven仓库地址，以及python虚拟环境的本地地址</li>
+</ol>
+<h3 id="第二步配置这些需要系统变量的软件">第二步：配置这些需要系统变量的软件
+</h3><h2 id="-3-换机迁移与修复逻辑-b-机">🔄 3. 换机迁移与修复逻辑 (B 机)
+</h2><p>当在 B 机获取到同步后的 Sync 文件夹后，必须运行 Repair-Env.ps1 （右键powershell运行）进行一键激活。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># --- 1. 获取动态路径 ---</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$currentSyncPath</span> <span class="p">=</span> <span class="nb">Split-Path</span> <span class="n">-Parent</span> <span class="nv">$MyInvocation</span><span class="p">.</span><span class="py">MyCommand</span><span class="p">.</span><span class="py">Definition</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="o">-not</span> <span class="nv">$currentSyncPath</span><span class="p">)</span> <span class="p">{</span> <span class="nv">$currentSyncPath</span> <span class="p">=</span> <span class="nb">Get-Location</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 固定 Local 路径</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$localRoot</span> <span class="p">=</span> <span class="s2">&#34;D:\Workspace\Local&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$scoopPath</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$currentSyncPath</span> <span class="s2">&#34;Scoop&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 拼接子路径</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$mavenSettings</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$scoopPath</span> <span class="s2">&#34;apps\maven\current\conf\settings.xml&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$localM2Path</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$localRoot</span> <span class="s2">&#34;.m2\repository&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$localCondaEnvs</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$localRoot</span> <span class="s2">&#34;conda-envs&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Host</span> <span class="s2">&#34;</span><span class="se">`n</span><span class="s2">🚀 环境深度修复开始...&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Cyan</span>
+</span></span><span class="line"><span class="cl"><span class="c"># --- 2. 强力清理占用进程 (新增：解决你刚才遇到的错误) ---</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Host</span> <span class="s2">&#34;🧹 正在清理可能占用的 Git/Java 进程...&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Gray</span>
+</span></span><span class="line"><span class="cl"><span class="n">taskkill</span> <span class="p">/</span><span class="n">F</span> <span class="p">/</span><span class="n">IM</span> <span class="n">git</span><span class="p">*</span> <span class="p">/</span><span class="n">T</span> <span class="mf">2</span><span class="p">&gt;</span><span class="vm">$null</span>
+</span></span><span class="line"><span class="cl"><span class="n">taskkill</span> <span class="p">/</span><span class="n">F</span> <span class="p">/</span><span class="n">IM</span> <span class="n">keyboxd</span><span class="p">*</span> <span class="p">/</span><span class="n">T</span> <span class="mf">2</span><span class="p">&gt;</span><span class="vm">$null</span>
+</span></span><span class="line"><span class="cl"><span class="n">taskkill</span> <span class="p">/</span><span class="n">F</span> <span class="p">/</span><span class="n">IM</span> <span class="n">java</span><span class="p">*</span> <span class="p">/</span><span class="n">T</span> <span class="mf">2</span><span class="p">&gt;</span><span class="vm">$null</span>
+</span></span><span class="line"><span class="cl"><span class="c"># --- 3. Scoop &amp; 核心变量修复 (JAVA_HOME / M2_HOME) ---</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nb">Test-Path</span> <span class="nv">$scoopPath</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Host</span> <span class="s2">&#34;</span><span class="se">`n</span><span class="s2">🔗 挂载 Scoop &amp; 注入 Java/Maven 变量...&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Magenta</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 动态获取当前 Sync 下的软件路径</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$jdkPath</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$scoopPath</span> <span class="s2">&#34;apps\openjdk\current&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$mavenPath</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$scoopPath</span> <span class="s2">&#34;apps\maven\current&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 写入系统变量</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="no">Environment</span><span class="p">]::</span><span class="n">SetEnvironmentVariable</span><span class="p">(</span><span class="s2">&#34;SCOOP&#34;</span><span class="p">,</span> <span class="nv">$scoopPath</span><span class="p">,</span> <span class="s2">&#34;User&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="no">Environment</span><span class="p">]::</span><span class="n">SetEnvironmentVariable</span><span class="p">(</span><span class="s2">&#34;JAVA_HOME&#34;</span><span class="p">,</span> <span class="nv">$jdkPath</span><span class="p">,</span> <span class="s2">&#34;User&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="no">Environment</span><span class="p">]::</span><span class="n">SetEnvironmentVariable</span><span class="p">(</span><span class="s2">&#34;M2_HOME&#34;</span><span class="p">,</span> <span class="nv">$mavenPath</span><span class="p">,</span> <span class="s2">&#34;User&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 刷新 Path</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$shims</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$scoopPath</span> <span class="s2">&#34;shims&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$bin</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$scoopPath</span> <span class="s2">&#34;apps\scoop\current\bin&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$oldPath</span> <span class="p">=</span> <span class="p">[</span><span class="no">Environment</span><span class="p">]::</span><span class="n">GetEnvironmentVariable</span><span class="p">(</span><span class="s2">&#34;Path&#34;</span><span class="p">,</span> <span class="s2">&#34;User&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$pathElements</span> <span class="p">=</span> <span class="nv">$oldPath</span><span class="p">.</span><span class="py">Split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span> <span class="o">-notlike</span> <span class="s2">&#34;*Scoop\shims*&#34;</span> <span class="o">-and</span> <span class="nv">$_</span> <span class="o">-notlike</span> <span class="s2">&#34;*Scoop\apps\scoop\current\bin*&#34;</span> <span class="o">-and</span> <span class="nv">$_</span> <span class="o">-ne</span> <span class="s2">&#34;&#34;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$newPath</span> <span class="p">=</span> <span class="s2">&#34;</span><span class="nv">$shims</span><span class="s2">;</span><span class="nv">$bin</span><span class="s2">;&#34;</span> <span class="p">+</span> <span class="p">(</span><span class="nv">$pathElements</span> <span class="n">-join</span> <span class="s1">&#39;;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="no">Environment</span><span class="p">]::</span><span class="n">SetEnvironmentVariable</span><span class="p">(</span><span class="s2">&#34;Path&#34;</span><span class="p">,</span> <span class="nv">$newPath</span><span class="p">,</span> <span class="s2">&#34;User&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c"># 同步到当前会话</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$env:SCOOP</span> <span class="p">=</span> <span class="nv">$scoopPath</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$env:JAVA_HOME</span> <span class="p">=</span> <span class="nv">$jdkPath</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$env:M2_HOME</span> <span class="p">=</span> <span class="nv">$mavenPath</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$env:Path</span> <span class="p">=</span> <span class="s2">&#34;</span><span class="nv">$shims</span><span class="s2">;</span><span class="nv">$bin</span><span class="s2">;&#34;</span> <span class="p">+</span> <span class="nv">$env:Path</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">scoop</span> <span class="n">reset</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c"># --- 4. Conda 路径修复 ---</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$condaScripts</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$scoopPath</span> <span class="s2">&#34;apps\miniconda3\current\Scripts&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nb">Test-Path</span> <span class="nv">$condaScripts</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Host</span> <span class="s2">&#34;</span><span class="se">`n</span><span class="s2">🐍 修正 Conda 存储至 D 盘 Local...&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">-not</span> <span class="p">(</span><span class="nb">Test-Path</span> <span class="nv">$localCondaEnvs</span><span class="p">))</span> <span class="p">{</span> <span class="nb">New-Item</span> <span class="n">-Path</span> <span class="nv">$localCondaEnvs</span> <span class="n">-ItemType</span> <span class="n">Directory</span> <span class="n">-Force</span> <span class="p">|</span> <span class="nb">Out-Null</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">conda</span> <span class="n">config</span> <span class="p">-</span><span class="n">-add</span> <span class="n">envs_dirs</span> <span class="nv">$localCondaEnvs</span>
+</span></span><span class="line"><span class="cl">    <span class="n">conda</span> <span class="n">init</span> <span class="n">powershell</span> <span class="p">-</span><span class="n">-user</span> <span class="p">|</span> <span class="nb">Out-Null</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c"># --- 5. Git 右键菜单 (动态路径) ---</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$gitPath</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$scoopPath</span> <span class="s2">&#34;apps\git\current&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nb">Test-Path</span> <span class="nv">$gitPath</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$regKey</span> <span class="p">=</span> <span class="s2">&#34;HKCU:\Software\Classes\Directory\Background\shell\git_shell&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">New-Item</span> <span class="nv">$regKey</span> <span class="n">-Force</span> <span class="p">|</span> <span class="nb">Out-Null</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Set-ItemProperty</span> <span class="nv">$regKey</span> <span class="n">-Name</span> <span class="s2">&#34;Icon&#34;</span> <span class="n">-Value</span> <span class="s2">&#34;</span><span class="nv">$gitPath</span><span class="s2">\mingw64\share\git\git-for-windows.ico&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Set-ItemProperty</span> <span class="nv">$regKey</span> <span class="n">-Name</span> <span class="s2">&#34;MUIVerb&#34;</span> <span class="n">-Value</span> <span class="s2">&#34;Git Bash Here&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$cmdKey</span> <span class="p">=</span> <span class="nb">Join-Path</span> <span class="nv">$regKey</span> <span class="s2">&#34;command&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">New-Item</span> <span class="nv">$cmdKey</span> <span class="n">-Force</span> <span class="p">|</span> <span class="nb">Out-Null</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Set-ItemProperty</span> <span class="nv">$cmdKey</span> <span class="n">-Name</span> <span class="s2">&#34;(Default)&#34;</span> <span class="n">-Value</span> <span class="s2">&#34;</span><span class="se">`&#34;</span><span class="nv">$gitPath</span><span class="s2">\git-bash.exe</span><span class="se">`&#34;</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Host</span> <span class="s2">&#34;</span><span class="se">`n</span><span class="s2">✅ Git 右键菜单已修复&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Host</span> <span class="s2">&#34;</span><span class="se">`n</span><span class="s2">🎉 [修复完成] 现在可以重启 PyCharm/IDEA 了。&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+</span></span><span class="line"><span class="cl"><span class="n">pause</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>当你移动了文件夹位置，或者在 B 机 第一次打开环境时，相关的软链接（Shims）会失效。必须运行本脚本然后“一瞬间修复”：</p>
+<p>路径自动重锚：自动识别脚本当前所在物理路径，强制更新 SCOOP 全局环境变量。
+软链接重建：执行 scoop reset *，修复 java、mvn、git 等命令的指向。
+Maven 仓库核对：
+定位行数：精准告知 <localRepository> 标签在 settings.xml 中的行数。
+智能弹窗：若路径未指向 D:\Workspace\Local，则自动发送系统提醒并打开记事本。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026-03-26 20:59
+        </span>
+    </section></footer>
+
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg" loading="lazy" data-key="" data-hash="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">秋招投简历记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF%E8%AE%B0%E5%BD%95/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/05-journal/Amain.jpg" loading="lazy" data-key="" data-hash="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/05-journal/Amain.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">文章投稿记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E7%A0%94%E7%A9%B6%E7%94%9F%E6%AF%95%E4%B8%9A%E8%A6%81%E6%B1%82/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/04-graduate/Amain.jpg" loading="lazy" data-key="" data-hash="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/04-graduate/Amain.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">研究生毕业要求</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/03-netlogin/Amain.jpg" loading="lazy" data-key="" data-hash="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/03-netlogin/Amain.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">江西理工大学校园网自动登录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/02-autoTest/Amain.jpg" loading="lazy" data-key="" data-hash="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/jxust/02-autoTest/Amain.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">自动推理（实验相关内容）</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><footer class="site-footer">
+    <section class="copyright">
+        © 
+        
+            2024 - 
+        
+        2026 暗影流金
+    </section>
+    
+    <section class="powerby">
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <p>发布了 26 篇文章 | 共 99299 字</p>
+
+
+
+<section class="powerby">
+    <a>总访客数: </a><span id='busuanzi_value_site_uv'>Loading</span> <a> | </a> <a>总访问量: </a><span id='busuanzi_value_site_pv'>Loading</span></br>
+    <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> <a>designed by Jimmy</a>
+</section>
+
+    </section>
+</footer>
+</body></html>
+
+
+
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script defer src="https://cn.vercount.one/js"></script>
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
+    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
+    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
+    crossorigin="anonymous"
+/>
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+    </body>
+</html>
