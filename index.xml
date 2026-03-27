@@ -9,12 +9,48 @@
         <copyright>暗影流金</copyright><atom:link href="https://ayljzj520.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>笔记本与台式开发环境搭建</title>
         <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
-        <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg" alt="Featured image of post 笔记本与台式开发环境搭建" /&gt;&lt;p&gt;🚀 跨机器科研开发环境配置手册 (A/B 机同步版)
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/02-download/Amain.jpg" alt="Featured image of post 笔记本与台式开发环境搭建" /&gt;&lt;p&gt;🚀 跨机器科研开发环境配置手册 (A/B 机同步版)
 本手册记录了基于 &lt;strong&gt;Scoop (软件管理)&lt;/strong&gt; + &lt;strong&gt;OneDrive/Git (同步盘)&lt;/strong&gt; + &lt;strong&gt;Local (本地大文件)&lt;/strong&gt; 的混合开发环境配置流程。
 该架构专为 AI 研究（Java 与 Python ）设计，解决了跨机器切换时环境路径不一致、依赖冗余等痛点。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;开发IDE的安装&lt;/strong&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.injdk.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;JDK下载&lt;/font&gt;&lt;/a&gt;&amp;mdash;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/tiehou/article/details/129575138&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;JAVA环境配置&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com.cn/idea/download/?section=windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;IDEA官网&lt;/font&gt;&lt;/a&gt;&amp;mdash;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_46485638/article/details/134891162&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;IDEA教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/Download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;VS_code官网&lt;/font&gt;&lt;/a&gt;&amp;mdash;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/msdcp/article/details/127033151&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;VS_code教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/pycharm/download/?section=windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;Pycharm官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.docker.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;docker官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/asxez/DockerDesktop-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;docker github站点（中文插件）&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;font color=blue&gt;windows docker桌面端汉化&lt;/font&gt;&lt;/summary&gt;
+    1.在站点中找到与docker版本对应的插件下载：`app.asar`&lt;br&gt;
+    2.定位到docker的安装目录：`C:\Program Files\Docker\Docker\frontend\resources\app.asar`&lt;br&gt;
+    3.将中文插件的`app-Windows-x86.asar`重命名为`app.asar`替换到docker路径中&lt;br&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hostbuf.com/c/131.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;final shell官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i9Z1332bnl4f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;final shell下载&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;git官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iYknh2lh1vtc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;git下载&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://apifox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;font color=blue&gt;ApiFox官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-1-核心目录架构&#34;&gt;📂 1. 核心目录架构
 &lt;/h2&gt;&lt;p&gt;为了平衡“同步速度”与“运行性能”，环境被拆分为两个核心部分：&lt;/p&gt;
@@ -12446,181 +12482,6 @@ Keepass：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo
 （1）读研期间无违纪行为，德智体美劳诸方面综合表现优秀。&lt;br&gt;
 （2）已修满规定学分，无补考科目，课程加权平均成绩达85分及以上，论文开题至提交论文正式稿时间间隔不少于六个月；&lt;br&gt;
 （3）以第一作者（作者单位为江西理工大学）在中文核心期刊以上刊物上公开发表与本专业相关的学术论文2篇以上；或者以第一作者出版了学术专著；或发表了高水平的期刊论文被SCI、EI、SSCI收录；或获国家发明专利（第一专利权人为江西理工大学）；或者在读期间获得省级及以上研究生科技竞赛二等奖及以上奖项。&lt;br&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Java开发环境介绍与下载</title>
-        <link>https://ayljzj520.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%B8%8B%E8%BD%BD/</link>
-        <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayljzj520.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%B8%8B%E8%BD%BD/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/02-download/Amain.jpg" alt="Featured image of post Java开发环境介绍与下载" /&gt;&lt;blockquote&gt;
-&lt;p&gt;“Work！ ”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://xiaolincoding.com/interview/java.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Java八股&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;1核心开发环境&#34;&gt;1、核心开发环境
-&lt;/h2&gt;&lt;h3 id=&#34;jdk&#34;&gt;JDK
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.injdk.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;JDK下载&lt;/font&gt;&lt;/a&gt;&amp;mdash;
-&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/tiehou/article/details/129575138&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;JAVA环境配置&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&#34;idea&#34;&gt;IDEA
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com.cn/idea/download/?section=windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;IDEA&lt;/font&gt;&lt;/a&gt;&amp;mdash;
-&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_46485638/article/details/134891162&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;IDEA教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&#34;vs_code&#34;&gt;VS_code
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/Download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;VS_code&lt;/font&gt;&lt;/a&gt;&amp;mdash;
-&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/msdcp/article/details/127033151&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;VS_code教程&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&#34;21docker下载与汉化&#34;&gt;2.1、docker下载与汉化
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.docker.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;docker官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://github.com/asxez/DockerDesktop-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;docker github站点（中文插件）&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;details&gt;
-  &lt;summary&gt;&lt;font color=blue&gt;windows docker桌面端汉化&lt;/font&gt;&lt;/summary&gt;
-    1.在站点中找到与docker版本对应的插件下载：`app.asar`&lt;br&gt;
-    2.定位到docker的安装目录：`C:\Program Files\Docker\Docker\frontend\resources\app.asar`&lt;br&gt;
-    3.将中文插件的`app-Windows-x86.asar`重命名为`app.asar`替换到docker路径中&lt;br&gt;
-&lt;/details&gt;
-&lt;h2 id=&#34;3maven下载安装配置&#34;&gt;3、maven下载安装配置
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://maven.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;阿帕奇官网&lt;/font&gt;&lt;/a&gt;，下载apache-maven-3.9.6-bin.zip，解压缩到本地指定文件夹即可&lt;/p&gt;
-&lt;details&gt;
-  &lt;summary&gt;&lt;font color=blue&gt;修改镜像源&lt;/font&gt;&lt;/summary&gt;
-  &lt;pre&gt;&lt;blockcode&gt; 
-&lt;p&gt;调整指定源为阿里云，修改setting.xml文件为如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;mirror&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 指定镜像ID（可自定义名称） --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;Aliyun&lt;span class=&#34;nt&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 匹配中央仓库（不可修改）--&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;mirrorOf&amp;gt;&lt;/span&gt;central&lt;span class=&#34;nt&#34;&gt;&amp;lt;/mirrorOf&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 指定镜像名称（可自定义名称）  --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Aliyun&lt;span class=&#34;nt&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 指定镜像路径（镜像地址） --&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;url&amp;gt;&lt;/span&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;span class=&#34;nt&#34;&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/mirror&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;注意 3.9.6版本Maven默认开启禁止禁止http远端仓库，需将如下配置注释后，阿里云镜像才会生效&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;mirror&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;maven-default-http-blocker&lt;span class=&#34;nt&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;mirrorOf&amp;gt;&lt;/span&gt;external:http:*&lt;span class=&#34;nt&#34;&gt;&amp;lt;/mirrorOf&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;Pseudo repository to mirror external repositories initially using HTTP.&lt;span class=&#34;nt&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;url&amp;gt;&lt;/span&gt;http://0.0.0.0/&lt;span class=&#34;nt&#34;&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;blocked&amp;gt;&lt;/span&gt;true&lt;span class=&#34;nt&#34;&gt;&amp;lt;/blocked&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/mirror&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;配置本地仓库路径：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--配置本地仓库--&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;localRepository&amp;gt;&lt;/span&gt;C:\APP\environment\maven_repository&lt;span class=&#34;nt&#34;&gt;&amp;lt;/localRepository&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;/blockcode&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;/details&gt;
-&lt;details&gt;
-  &lt;summary&gt;&lt;font color=blue&gt;maven环境变量&lt;/font&gt;&lt;/summary&gt;
-  &lt;pre&gt;&lt;blockcode&gt; 
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 创建系统变量					        值&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;M2_HOME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;					&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;对应&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maven&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;解压包下的&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;目录&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MAVEN_HOME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;				&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;对应&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maven&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;解压包的目录&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 在Path下创建&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MAVEN_HOME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bin&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;/blockcode&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;/details&gt;
-&lt;ul&gt;
-&lt;li&gt;完成后将ieda中的构建工具中的MAVEN修改为自己的配置参数。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4jmeter下载安装&#34;&gt;4、jmeter下载安装
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;JMeter是一个纯Java编写的开源软件，主要用于进行性能测试和功能测试。它支持测试的应用/服务/协议包括Web (HTTP, HTTPS)、SOAP/REST Webservices、FTP、Database via JDBC等。我们最常使用的是HTTP和HTTPS协议。
-&lt;a class=&#34;link&#34; href=&#34;https://jmeter.apache.org/download_jmeter.cgi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;下载地址&lt;/a&gt;&lt;br&gt;
-下载安装包后，解压安装 Jmeter 即可&lt;/li&gt;
-&lt;li&gt;环境变量配置
-&lt;ul&gt;
-&lt;li&gt;1.在环境变量中新建系统变量名为： &lt;code&gt;JMETER_HOME&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;2.变量值为jmeter安装目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;修改系统变量的Path
-&lt;ul&gt;
-&lt;li&gt;添加一条：&lt;code&gt;%JMETER_HOME%\bin&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;查看环境变量是否配置成功,打开cmd运行
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;jmeter -v&lt;/code&gt;命令查看是否能查看到Jmeter版本信息&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;jmeter&lt;/code&gt;命令查看是否能启动jmeter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;启动jmeter方式
-&lt;ul&gt;
-&lt;li&gt;进入apache-jmeter-5.6.3/bin，点击jmeter.bat文件，运行JMeter&lt;/li&gt;
-&lt;li&gt;cmd下使用&lt;code&gt;jmeter&lt;/code&gt;启动jmeter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;注意：不管用使用哪一种方式打开，都会打开一个cmd窗口。如果关闭这个cmd窗口，打开的jmeter也会被关闭。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5final-shell下载安装&#34;&gt;5、final shell下载安装
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hostbuf.com/c/131.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;final shell官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i9Z1332bnl4f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;final shell下载&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;6git下载安装&#34;&gt;6、git下载安装
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;git官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iYknh2lh1vtc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;git下载&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;6apifox下载安装&#34;&gt;6、ApiFox下载安装
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://apifox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;font color=blue&gt;ApiFox官网&lt;/font&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

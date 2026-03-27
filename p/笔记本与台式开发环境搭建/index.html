@@ -10,10 +10,10 @@
 <meta property='og:description' content="将基础环境搭建，然后进行同步到onedrive">
 <meta property='og:url' content='https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-03-26T20:59:54&#43;08:00'/><meta property='og:image' content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-03-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-03-27T10:39:23&#43;08:00'/><meta property='og:image' content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/02-download/Amain.jpg' />
 <meta name="twitter:title" content="笔记本与台式开发环境搭建">
 <meta name="twitter:description" content="将基础环境搭建，然后进行同步到onedrive"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg' />
+    <meta name="twitter:image" content='https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/02-download/Amain.jpg' />
     <link rel="shortcut icon" href="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/header/favicon.ico" />
 
     </head>
@@ -298,7 +298,7 @@
         <div class="article-image">
             <a href="/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
                 
-                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/05-qiuzhi/Amain.jpg" loading="lazy" alt="Featured image of post 笔记本与台式开发环境搭建" />
+                    <img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/02-download/Amain.jpg" loading="lazy" alt="Featured image of post 笔记本与台式开发环境搭建" />
                 
             </a>
         </div>
@@ -336,14 +336,14 @@
             <div>
                 
                 创建日期:
-                <time class="article-time--published">2025-09-10</time>
+                <time class="article-time--published">2026-03-26</time>
             </div>
         
         <div class="article-lastmod">
                
                 最后修改:
                 <time>
-                    2026-03-26 20:59
+                    2026-03-27 10:39
                 </time>
             </div>
     </footer>
@@ -360,6 +360,42 @@
     <p>🚀 跨机器科研开发环境配置手册 (A/B 机同步版)
 本手册记录了基于 <strong>Scoop (软件管理)</strong> + <strong>OneDrive/Git (同步盘)</strong> + <strong>Local (本地大文件)</strong> 的混合开发环境配置流程。
 该架构专为 AI 研究（Java 与 Python ）设计，解决了跨机器切换时环境路径不一致、依赖冗余等痛点。</p>
+<hr>
+<p><strong>开发IDE的安装</strong>
+<a class="link" href="https://www.injdk.cn/"  target="_blank" rel="noopener"
+    ><font color=blue>JDK下载</font></a>&mdash;
+<a class="link" href="https://blog.csdn.net/tiehou/article/details/129575138"  target="_blank" rel="noopener"
+    ><font color=blue>JAVA环境配置</font></a><br></p>
+<p><a class="link" href="https://www.jetbrains.com.cn/idea/download/?section=windows"  target="_blank" rel="noopener"
+    ><font color=blue>IDEA官网</font></a>&mdash;
+<a class="link" href="https://blog.csdn.net/weixin_46485638/article/details/134891162"  target="_blank" rel="noopener"
+    ><font color=blue>IDEA教程</font></a><br></p>
+<p><a class="link" href="https://code.visualstudio.com/Download"  target="_blank" rel="noopener"
+    ><font color=blue>VS_code官网</font></a>&mdash;
+<a class="link" href="https://blog.csdn.net/msdcp/article/details/127033151"  target="_blank" rel="noopener"
+    ><font color=blue>VS_code教程</font></a><br>
+<a class="link" href="https://www.jetbrains.com/pycharm/download/?section=windows"  target="_blank" rel="noopener"
+    ><font color=blue>Pycharm官网</font></a><br></p>
+<p><a class="link" href="https://www.docker.com"  target="_blank" rel="noopener"
+    ><font color=blue>docker官网</font></a><br>
+<a class="link" href="https://github.com/asxez/DockerDesktop-CN"  target="_blank" rel="noopener"
+    ><font color=blue>docker github站点（中文插件）</font></a><br></p>
+<details>
+  <summary><font color=blue>windows docker桌面端汉化</font></summary>
+    1.在站点中找到与docker版本对应的插件下载：`app.asar`<br>
+    2.定位到docker的安装目录：`C:\Program Files\Docker\Docker\frontend\resources\app.asar`<br>
+    3.将中文插件的`app-Windows-x86.asar`重命名为`app.asar`替换到docker路径中<br>
+</details>
+<p><a class="link" href="https://www.hostbuf.com/c/131.html"  target="_blank" rel="noopener"
+    ><font color=blue>final shell官网</font></a><br>
+<a class="link" href="https://wwsu.lanzouu.com/i9Z1332bnl4f"  target="_blank" rel="noopener"
+    ><font color=blue>final shell下载</font></a><br></p>
+<p><a class="link" href="https://git-scm.com/book/zh/v2"  target="_blank" rel="noopener"
+    ><font color=blue>git官网</font></a><br>
+<a class="link" href="https://wwsu.lanzouu.com/iYknh2lh1vtc"  target="_blank" rel="noopener"
+    ><font color=blue>git下载</font></a><br></p>
+<p><a class="link" href="https://apifox.com/"  target="_blank" rel="noopener"
+    ><font color=blue>ApiFox官网</font></a><br></p>
 <hr>
 <h2 id="-1-核心目录架构">📂 1. 核心目录架构
 </h2><p>为了平衡“同步速度”与“运行性能”，环境被拆分为两个核心部分：</p>
@@ -563,7 +599,7 @@ Maven 仓库核对：
 
 
         <span>
-            最后更新于 2026-03-26 20:59
+            最后更新于 2026-03-27 10:39
         </span>
     </section></footer>
 
@@ -775,10 +811,8 @@ Maven 仓库核对：
         
         
         
-        
-        
 
-        <p>发布了 26 篇文章 | 共 99299 字</p>
+        <p>发布了 25 篇文章 | 共 98476 字</p>
 
 
 
