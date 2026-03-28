@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 28 Mar 2026 05:44:45 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Mar 2026 05:55:30 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>笔记本与台式开发环境搭建</title>
         <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
@@ -11101,8 +11101,8 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;浏览器必备IDM：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iaDsq2lfwg2j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Edge：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iSAUk2lfmr1e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Edge：&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/zh-cn/edge/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Chrome：&lt;a class=&#34;link&#34; href=&#34;https://www.google.cn/chrome/?standalone=1&amp;amp;platform=win64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Chrome自翻：&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/zhifan999/fq/-/wikis/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -11114,8 +11114,8 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;网盘&lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
 &lt;ul&gt;
-&lt;li&gt;阿里云盘：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iEF2u2lfshsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;阿里云盘：&lt;a class=&#34;link&#34; href=&#34;https://www.alipan.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;百度云盘：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/download#win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;123云盘：&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -11151,8 +11151,6 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Uninstall：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCv5N2lgjzsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;IObitUninstaller：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iWKwn2lgjzaj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
 &lt;ul&gt;
@@ -11165,8 +11163,8 @@ Keepass：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo
 &lt;ul&gt;
 &lt;li&gt;火绒：&lt;a class=&#34;link&#34; href=&#34;https://www.huorong.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Localsend：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iEzWG32pyxxg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Localsend：&lt;a class=&#34;link&#34; href=&#34;https://localsend.org/zh-CN/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Clash：&lt;a class=&#34;link&#34; href=&#34;https://clashe.org/clash-chinese-website&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Karing：&lt;a class=&#34;link&#34; href=&#34;https://karing.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -11181,17 +11179,12 @@ Keepass：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo
 &lt;/ul&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;游戏软件&#34;&gt;游戏软件
-&lt;/h2&gt;&lt;details&gt;
-  &lt;summary&gt;游戏平台&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;Epic：&lt;a class=&#34;link&#34; href=&#34;https://www.epicgames.com/site/zh-CN/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Steam：&lt;a class=&#34;link&#34; href=&#34;https://store.steampowered.com/about/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;战网：&lt;a class=&#34;link&#34; href=&#34;https://ow.blizzard.cn/home.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Steam：&lt;a class=&#34;link&#34; href=&#34;https://store.steampowered.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;战网：&lt;a class=&#34;link&#34; href=&#34;https://shop.battlenet.com.cn/zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/details&gt;
 </description>
         </item>
         <item>
