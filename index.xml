@@ -121,7 +121,8 @@
 &lt;li&gt;&lt;code&gt;D:\Workspace\Local&lt;/code&gt;写死的路径地址，&lt;code&gt;D:\Workspace\Local\.m2\repository&lt;/code&gt;为maven仓库地址，以及python虚拟环境的本地地址&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;第二步配置这些需要系统变量的软件&#34;&gt;第二步：配置这些需要系统变量的软件
-&lt;/h3&gt;&lt;h2 id=&#34;-3-换机迁移与修复逻辑-b-机&#34;&gt;🔄 3. 换机迁移与修复逻辑 (B 机)
+&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&#34;-3-换机迁移与修复逻辑-b-机&#34;&gt;🔄 3. 换机迁移与修复逻辑 (B 机)
 &lt;/h2&gt;&lt;p&gt;当在 B 机获取到同步后的 Sync 文件夹后，必须运行 Repair-Env.ps1 （右键powershell运行）进行一键激活。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
