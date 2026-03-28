@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Fri, 27 Mar 2026 15:38:17 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Mar 2026 05:44:45 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>笔记本与台式开发环境搭建</title>
         <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
@@ -11149,8 +11149,6 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;卸载工具&lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
 &lt;ul&gt;
-&lt;li&gt;geek：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iFpzS2lgjwxe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Uninstall：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCv5N2lgjzsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;IObitUninstaller：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iWKwn2lgjzaj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -11170,8 +11168,7 @@ Keepass：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo
 &lt;li&gt;Localsend：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iEzWG32pyxxg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Clash：&lt;a class=&#34;link&#34; href=&#34;https://clashe.org/clash-chinese-website&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【官网】&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/is4Ha32s5yng&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+    &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Karing：&lt;a class=&#34;link&#34; href=&#34;https://karing.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【官网】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hiddify：&lt;a class=&#34;link&#34; href=&#34;https://hiddify.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
