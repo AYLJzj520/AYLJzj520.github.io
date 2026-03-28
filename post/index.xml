@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 28 Mar 2026 22:03:13 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Mar 2026 22:23:45 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>笔记本与台式开发环境搭建</title>
         <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
@@ -2249,19 +2249,19 @@ Maven 仓库核对：
 &lt;/h3&gt;&lt;p&gt;胸：三个动作&lt;br&gt;
 哑铃推胸，哑铃夹胸，哑铃窄推&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/chest1.jpg&#34; width=&#34;30%&#34;/&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/chest2.jpg&#34; width=&#34;30%&#34;/&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/chest3.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/chest1.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/chest2.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/chest3.jpg&#34; width=&#34;30%&#34;/&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;第二天背二头&#34;&gt;第二天：背+二头
 &lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/back1.jpg&#34; width=&#34;20%&#34;/&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/back2.jpg&#34; width=&#34;20%&#34;/&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/back3.jpg&#34; width=&#34;20%&#34;/&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/back4.jpg&#34; width=&#34;20%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/back1.jpg&#34; width=&#34;20%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/back2.jpg&#34; width=&#34;20%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/back3.jpg&#34; width=&#34;20%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/back4.jpg&#34; width=&#34;20%&#34;/&gt;
 &lt;/div&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/01-fitness/Biceps.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/01-fitness/Biceps.jpg&#34; width=&#34;50%&#34;/&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;第三天腹&#34;&gt;第三天：腹
 &lt;/h3&gt;&lt;p&gt;平板支撑&lt;/p&gt;
@@ -10737,7 +10737,7 @@ Supported glob-style patterns:&lt;/p&gt;
         <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/Amain.jpg" alt="Featured image of post 组装个人电脑" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/Amain.jpg" alt="Featured image of post 组装个人电脑" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“DIY PC！”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
@@ -10749,14 +10749,14 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：475.8+780=1255.8&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/1-cpu-1.jpg&#34; width=&#34;45%&#34;/&gt;     &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/1-cpu-3.jpg&#34; width=&#34;45%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/1-cpu-1.jpg&#34; width=&#34;45%&#34;/&gt;     &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/1-cpu-3.jpg&#34; width=&#34;45%&#34;/&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;卖出：(&lt;del&gt;i3 12100f&lt;/del&gt;)&lt;/li&gt;
 &lt;li&gt;收入：475&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/1-cpu-2.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/1-cpu-2.jpg&#34; width=&#34;50%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出7805font&#34;&gt;&lt;font color=red&gt;总支出：780.5&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;2主板-motherboard&#34;&gt;2、主板 (Motherboard)
@@ -10764,7 +10764,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;买入(微星B660迫击炮WIFI版)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/2-mainboard.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/2-mainboard.jpg&#34; width=&#34;50%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出979font&#34;&gt;&lt;font color=red&gt;总支出：979&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;3内存-ram&#34;&gt;3、内存 (RAM)
@@ -10772,7 +10772,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;买入(金百达银爵32G*2 DDR4 3600)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/3-ram-1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/3-ram-2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/3-ram-1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/3-ram-2.jpg&#34; width=&#34;40%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出31530886238font&#34;&gt;&lt;font color=red&gt;总支出：315+308.8=623.8&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;4显卡-gpu&#34;&gt;4、显卡 (GPU)
@@ -10781,14 +10781,14 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：1303+130+2099=3532&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/4-GPU-1.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/4-GPU-3.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/4-GPU-5.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/4-GPU-1.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/4-GPU-3.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/4-GPU-5.jpg&#34; width=&#34;30%&#34;/&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;卖出：(&lt;del&gt;索泰2070S 8G&lt;/del&gt;)(&lt;del&gt;映众760 2G&lt;/del&gt;)&lt;/li&gt;
 &lt;li&gt;收入：1000+135=1135&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/4-GPU-2.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/4-GPU-4.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/4-GPU-2.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/4-GPU-4.jpg&#34; width=&#34;40%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出2397font&#34;&gt;&lt;font color=red&gt;总支出：2397&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;5硬盘&#34;&gt;5、硬盘
@@ -10798,7 +10798,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：416.5+244.21=660.21&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/5-yinpan-gutai-1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/5-yinpan-gutai2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/5-yinpan-gutai-1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/5-yinpan-gutai2.jpg&#34; width=&#34;40%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;机械硬盘-hdd&#34;&gt;机械硬盘 (HDD)
 &lt;/h4&gt;&lt;ul&gt;
@@ -10807,7 +10807,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;&lt;del&gt;还有一些其它的二手机械盘，送给同学了就不记录了&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/5yinpan-jixie1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/5-yinpan-jixie2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/5yinpan-jixie1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/5-yinpan-jixie2.jpg&#34; width=&#34;40%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出6602141518107539font&#34;&gt;&lt;font color=red&gt;总支出：660.21+415.18=1075.39&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;6电源-psu&#34;&gt;6、电源 (PSU)
@@ -10816,7 +10816,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：547&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/6-power.jpg&#34; width=&#34;50%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/6-power.jpg&#34; width=&#34;50%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出547font&#34;&gt;&lt;font color=red&gt;总支出：547&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;7散热器-cooler&#34;&gt;7、散热器 (Cooler)
@@ -10825,7 +10825,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：141.16+11.8*6+110=321.96&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/7-heat-cpu.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/7-heat-JiXiang1.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/7-heat-JiXiang2.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/7-heat-cpu.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/7-heat-JiXiang1.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/7-heat-JiXiang2.jpg&#34; width=&#34;30%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出32196font&#34;&gt;&lt;font color=red&gt;总支出：321.96&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;8机箱&#34;&gt;8、机箱
@@ -10834,7 +10834,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：145.02+184.83+159=488.85&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/8-JiXiang1.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/8-JiXiang2.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/8-JiXiang3.jpg&#34; width=&#34;30%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/8-JiXiang1.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/8-JiXiang2.jpg&#34; width=&#34;30%&#34;/&gt;  &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/8-JiXiang3.jpg&#34; width=&#34;30%&#34;/&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;卖出：(&lt;del&gt;先马朱雀air&lt;/del&gt;)&lt;/li&gt;
@@ -10849,7 +10849,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：837.1+518.98=1356.28&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/9-monitor1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/9-monitor2.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/9-monitor1.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/9-monitor2.jpg&#34; width=&#34;40%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出135628font&#34;&gt;&lt;font color=red&gt;总支出：1356.28&lt;/font&gt;
 &lt;/h4&gt;&lt;h3 id=&#34;2键鼠&#34;&gt;2、键鼠
@@ -10858,7 +10858,7 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;支出：339+163.98=402.98&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/10-mouse.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Life/02-diypc/10-keyboard.jpg&#34; width=&#34;40%&#34;/&gt;
+&lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/10-mouse.jpg&#34; width=&#34;40%&#34;/&gt;   &lt;img src=&#34;https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/life/02-diypc/10-keyboard.jpg&#34; width=&#34;40%&#34;/&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;font-colorred总支出40298font&#34;&gt;&lt;font color=red&gt;总支出：402.98&lt;/font&gt;
 &lt;/h4&gt;&lt;h2 id=&#34;font-colorred最终总支出780597962382397107539547br321964388513562840298892276font&#34;&gt;&lt;font color=red&gt;最终总支出：780.5+979+623.8+2397+1075.39+547+&lt;br&gt;321.96+438.85+1356.28+402.98=8922.76&lt;/font&gt;
