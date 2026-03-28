@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 28 Mar 2026 21:15:25 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Mar 2026 21:27:25 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>笔记本与台式开发环境搭建</title>
         <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
@@ -21,26 +21,17 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.injdk.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;JDK下载&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/tiehou/article/details/129575138&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;JDK下载&lt;/a&gt;&amp;mdash;&amp;ndash;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/tiehou/article/details/129575138&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;JAVA环境配置&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com.cn/idea/download/?section=windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;IDEA官网&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_46485638/article/details/134891162&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;IDEA官网&lt;/a&gt;&amp;mdash;&amp;ndash;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_46485638/article/details/134891162&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IDEA教程&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/Download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;VS_code官网&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/msdcp/article/details/127033151&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VS_code官网&lt;/a&gt;&amp;mdash;&amp;ndash;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/msdcp/article/details/127033151&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;VS_code教程&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -57,25 +48,21 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.navicat.com.cn/download/navicat-premium&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Navicat17官网&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iB7ty32i799e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Navicat17官网&lt;/a&gt; &amp;mdash;&amp;ndash;&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iB7ty32i799e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Navicat17激活工具&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nacos.io/docs/next/quickstart/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;nacos官网&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hostbuf.com/c/131.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;final shell官网&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i9Z1332bnl4f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;final shell官网&lt;/a&gt;&amp;mdash;&amp;ndash;&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/i9Z1332bnl4f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;final shell下载&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;git官网&lt;/a&gt;&lt;/p&gt;
+    &gt;Git官网&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nacos.io/docs/next/quickstart/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;nacos官网&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://apifox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -83,8 +70,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.docker.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;docker官网&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://github.com/asxez/DockerDesktop-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;docker官网&lt;/a&gt;&amp;mdash;&amp;ndash;&lt;a class=&#34;link&#34; href=&#34;https://github.com/asxez/DockerDesktop-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;docker github站点（中文插件）&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
