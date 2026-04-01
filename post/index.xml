@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Tue, 31 Mar 2026 20:06:16 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 01 Apr 2026 16:17:44 +0800</lastBuildDate><atom:link href="https://ayljzj520.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>笔记本与台式开发环境搭建</title>
         <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
@@ -10996,7 +10996,8 @@ Supported glob-style patterns:&lt;/p&gt;
 &lt;li&gt;2019Office：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/ifaHX2lfk50j&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;】&lt;/li&gt;
 &lt;li&gt;Acrobat（PDF编辑）：&lt;a class=&#34;link&#34; href=&#34;https://1drv.ms/u/c/0d578f4cbd411035/IQBtWvud2ZT1SrDJowdsXla9AbzPt9KXqBvGDCGQzplBqDg?e=tCagpY&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【挂梯下载】&lt;/a&gt;&lt;/li&gt;
+    &gt;【挂梯下载】&lt;/a&gt;&amp;mdash;&amp;ndash;&lt;a class=&#34;link&#34; href=&#34;https://wwbfg.lanzouu.com/iJ6gQ3m45mwj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【破解工具】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Visio：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/itPSd2lfkj1e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;LocalSend：&lt;a class=&#34;link&#34; href=&#34;https://localsend.org/zh-CN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -11072,17 +11073,11 @@ Supported glob-style patterns:&lt;/p&gt;
     &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
-&lt;details&gt;
-  &lt;summary&gt;卸载工具&lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
 &lt;ul&gt;
-&lt;li&gt;Uninstall：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCv5N2lgjzsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-&lt;ul&gt;
-&lt;li&gt;密码管理&lt;font color=blue&gt;【必装】&lt;/font&gt;
-Keepass：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo796f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【蓝奏下载】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;卸载工具：&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCv5N2lgjzsh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【Uninstall：蓝奏】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;密码管理&lt;a class=&#34;link&#34; href=&#34;https://wwsu.lanzouu.com/iCCqB2qo796f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【Keepass：蓝奏】&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;details&gt;
   &lt;summary&gt;其他&lt;/summary&gt;
