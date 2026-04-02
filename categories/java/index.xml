@@ -12,7 +12,7 @@
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/02-java-env/Amain.jpg" alt="Featured image of post 笔记本与台式开发环境搭建" /&gt;&lt;p&gt;🚀 跨机器科研开发环境配置手册 (A/B 机同步版)
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-02-env.jpg" alt="Featured image of post 笔记本与台式开发环境搭建" /&gt;&lt;p&gt;🚀 跨机器科研开发环境配置手册 (A/B 机同步版)
 本手册记录了基于 &lt;strong&gt;Scoop (软件管理)&lt;/strong&gt; + &lt;strong&gt;OneDrive/Git (同步盘)&lt;/strong&gt; + &lt;strong&gt;Local (本地大文件)&lt;/strong&gt; 的混合开发环境配置流程。
 该架构专为 AI 研究（Java 与 Python ）设计，解决了跨机器切换时环境路径不一致、依赖冗余等痛点。&lt;/p&gt;
 &lt;hr&gt;
@@ -280,7 +280,7 @@ Maven 仓库核对：
         <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/04-bxkj/Amain.jpg" alt="Featured image of post 实习记录" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-04-bxkj.jpg" alt="Featured image of post 实习记录" /&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;实习岗位&lt;/strong&gt;：开发实习生&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;实习单位&lt;/strong&gt;：无锡暴雪科技有限公司&lt;/li&gt;
@@ -364,7 +364,7 @@ Maven 仓库核对：
         <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/03-hmdp/Amain.jpg" alt="Featured image of post 黑马点评学习" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-03-hmdp.jpg" alt="Featured image of post 黑马点评学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;1内容概述&#34;&gt;1.内容概述
@@ -7741,7 +7741,7 @@ Supported glob-style patterns:&lt;/p&gt;
         <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/</guid>
-        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/java/01-study/Amain.jpg" alt="Featured image of post java学习" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-01-study.jpg" alt="Featured image of post java学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;java学习相关顺序&#34;&gt;Java学习相关顺序
