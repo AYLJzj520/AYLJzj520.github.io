@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>暗影流金的博客</title>
-        <link>https://ayljzj520.github.io/</link>
+        <link>http://blog.aylj.dpdns.org/</link>
         <description>Recent content on 暗影流金的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>暗影流金</copyright><atom:link href="https://ayljzj520.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>暗影流金</copyright><atom:link href="http://blog.aylj.dpdns.org/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>笔记本与台式开发环境搭建</title>
-        <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-02-env.jpg" alt="Featured image of post 笔记本与台式开发环境搭建" /&gt;&lt;p&gt;🚀 跨机器科研开发环境配置手册 (A/B 机同步版)
 本手册记录了基于 &lt;strong&gt;Scoop (软件管理)&lt;/strong&gt; + &lt;strong&gt;OneDrive/Git (同步盘)&lt;/strong&gt; + &lt;strong&gt;Local (本地大文件)&lt;/strong&gt; 的混合开发环境配置流程。
 该架构专为 AI 研究（Java 与 Python ）设计，解决了跨机器切换时环境路径不一致、依赖冗余等痛点。&lt;/p&gt;
@@ -276,10 +276,10 @@ Maven 仓库核对：
         </item>
         <item>
         <title>秋招投简历记录</title>
-        <link>https://ayljzj520.github.io/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E7%A7%8B%E6%8B%9B%E6%8A%95%E7%AE%80%E5%8E%86%E8%AE%B0%E5%BD%95/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-05-qiuzhi.jpg" alt="Featured image of post 秋招投简历记录" /&gt;&lt;h2 id=&#34;国企&#34;&gt;国企
 &lt;/h2&gt;&lt;h3 id=&#34;第一组30家&#34;&gt;第一组（30家）
 &lt;/h3&gt;&lt;table&gt;
@@ -2239,10 +2239,10 @@ Maven 仓库核对：
         </item>
         <item>
         <title>健身记录</title>
-        <link>https://ayljzj520.github.io/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;“Happy！”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2279,10 +2279,10 @@ Maven 仓库核对：
         </item>
         <item>
         <title>马来西亚</title>
-        <link>https://ayljzj520.github.io/p/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/</link>
         <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;“Travel！”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3018,10 +3018,10 @@ Maven 仓库核对：
         </item>
         <item>
         <title>实习记录</title>
-        <link>https://ayljzj520.github.io/p/%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-04-bxkj.jpg" alt="Featured image of post 实习记录" /&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;实习岗位&lt;/strong&gt;：开发实习生&lt;/li&gt;
@@ -3102,10 +3102,10 @@ Maven 仓库核对：
         </item>
         <item>
         <title>文章投稿记录</title>
-        <link>https://ayljzj520.github.io/p/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF%E8%AE%B0%E5%BD%95/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF%E8%AE%B0%E5%BD%95/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF%E8%AE%B0%E5%BD%95/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/jxust-04-journal.jpg" alt="Featured image of post 文章投稿记录" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“中文核心”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3225,10 +3225,10 @@ Maven 仓库核对：
         </item>
         <item>
         <title>黑马点评学习</title>
-        <link>https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-03-hmdp.jpg" alt="Featured image of post 黑马点评学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -10602,10 +10602,10 @@ Supported glob-style patterns:&lt;/p&gt;
         </item>
         <item>
         <title>新手机到手安装软件</title>
-        <link>https://ayljzj520.github.io/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E6%96%B0%E6%89%8B%E6%9C%BA%E5%88%B0%E6%89%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/person-06-phone.jpg" alt="Featured image of post 新手机到手安装软件" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“手机配置！”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -10738,10 +10738,10 @@ Supported glob-style patterns:&lt;/p&gt;
         </item>
         <item>
         <title>组装个人电脑</title>
-        <link>https://ayljzj520.github.io/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</link>
         <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E7%BB%84%E8%A3%85%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/life-02-diypc.jpg" alt="Featured image of post 组装个人电脑" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“DIY PC！”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -10874,10 +10874,10 @@ Supported glob-style patterns:&lt;/p&gt;
         </item>
         <item>
         <title>电脑软件配置</title>
-        <link>https://ayljzj520.github.io/p/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/person-05-computer.jpg" alt="Featured image of post 电脑软件配置" /&gt;&lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;工欲善其事，必先利其器&amp;rdquo; — 电脑配置是高效工作的第一步！&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -11113,10 +11113,10 @@ Supported glob-style patterns:&lt;/p&gt;
         </item>
         <item>
         <title>【hugo】Stack主题自定义修改</title>
-        <link>https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/</link>
+        <link>http://blog.aylj.dpdns.org/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/</link>
         <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/hugostack%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/person-04-hugo-stack.jpg" alt="Featured image of post 【hugo】Stack主题自定义修改" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Hugo！”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -12064,10 +12064,10 @@ Supported glob-style patterns:&lt;/p&gt;
         </item>
         <item>
         <title>Hugo &#43; Github 免费部署自己的博客</title>
-        <link>https://ayljzj520.github.io/p/hugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+        <link>http://blog.aylj.dpdns.org/p/hugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/hugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/hugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/person-03-hugo.jpg" alt="Featured image of post Hugo &#43; Github 免费部署自己的博客" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Play！”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -12314,10 +12314,10 @@ Supported glob-style patterns:&lt;/p&gt;
         </item>
         <item>
         <title>java学习</title>
-        <link>https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/</link>
+        <link>http://blog.aylj.dpdns.org/p/java%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/java%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/java%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/java-01-study.jpg" alt="Featured image of post java学习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work！ ”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -12928,10 +12928,10 @@ Slave_IO_Running: Yes,Slave_SQL_Running: Yes&lt;br&gt;&lt;/p&gt;
         </item>
         <item>
         <title>hugo博客语法示范</title>
-        <link>https://ayljzj520.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E8%AF%AD%E6%B3%95%E7%A4%BA%E8%8C%83/</link>
+        <link>http://blog.aylj.dpdns.org/p/hugo%E5%8D%9A%E5%AE%A2%E8%AF%AD%E6%B3%95%E7%A4%BA%E8%8C%83/</link>
         <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E8%AF%AD%E6%B3%95%E7%A4%BA%E8%8C%83/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/hugo%E5%8D%9A%E5%AE%A2%E8%AF%AD%E6%B3%95%E7%A4%BA%E8%8C%83/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/person-02-markdown.jpg" alt="Featured image of post hugo博客语法示范" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;font color=blue&gt;obsidian常用技巧&lt;/font&gt;&lt;/a&gt;，
 &lt;a class=&#34;link&#34; href=&#34;https://forum-zh.obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -16768,10 +16768,10 @@ $$&lt;ul&gt;
         </item>
         <item>
         <title>江西理工大学校园网自动登录</title>
-        <link>https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
         <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/jxust-03-netlogin.jpg" alt="Featured image of post 江西理工大学校园网自动登录" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“NetWork”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -17085,10 +17085,10 @@ $$&lt;ul&gt;
         </item>
         <item>
         <title>git相关操作</title>
-        <link>https://ayljzj520.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</link>
+        <link>http://blog.aylj.dpdns.org/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/person-01-git.jpg" alt="Featured image of post git相关操作" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work. ”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -17508,10 +17508,10 @@ git相关指令学习&lt;/p&gt;
         </item>
         <item>
         <title>自动推理（环境搭建）</title>
-        <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/jxust-01-autoEnvironment.jpg" alt="Featured image of post 自动推理（环境搭建）" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work. ”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -17727,10 +17727,10 @@ git相关指令学习&lt;/p&gt;
         </item>
         <item>
         <title>自动推理（实验相关内容）</title>
-        <link>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</link>
+        <link>http://blog.aylj.dpdns.org/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</guid>
+        <guid>http://blog.aylj.dpdns.org/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</guid>
         <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/jxust-02-autoTest.jpg" alt="Featured image of post 自动推理（实验相关内容）" /&gt;&lt;blockquote&gt;
 &lt;p&gt;“Work. ”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -18106,18 +18106,18 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
         </item>
         <item>
         <title>分类</title>
-        <link>https://ayljzj520.github.io/archives/</link>
+        <link>http://blog.aylj.dpdns.org/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/archives/</guid>
+        <guid>http://blog.aylj.dpdns.org/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://ayljzj520.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <link>http://blog.aylj.dpdns.org/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>http://blog.aylj.dpdns.org/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;center&gt;&lt;big&gt;Personal Introduction&lt;/big&gt;&lt;/center&gt;&lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;保护我的眼睛：&lt;/li&gt;
@@ -18182,18 +18182,18 @@ problems文件夹中存放问题以及Axiom公理集，测试完output中会存�
         </item>
         <item>
         <title>搜索</title>
-        <link>https://ayljzj520.github.io/search/</link>
+        <link>http://blog.aylj.dpdns.org/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/search/</guid>
+        <guid>http://blog.aylj.dpdns.org/search/</guid>
         <description></description>
         </item>
         <item>
         <title>友情链接</title>
-        <link>https://ayljzj520.github.io/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
+        <link>http://blog.aylj.dpdns.org/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid>
+        <guid>http://blog.aylj.dpdns.org/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid>
         <description></description>
         </item>
         

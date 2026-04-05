@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 暗影流金的博客</title>
-        <link>https://ayljzj520.github.io/categories/</link>
+        <link>http://blog.aylj.dpdns.org/categories/</link>
         <description>Recent content in Categories on 暗影流金的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sun, 05 Apr 2026 12:42:32 +0000</lastBuildDate><atom:link href="https://ayljzj520.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 05 Apr 2026 12:53:57 +0000</lastBuildDate><atom:link href="http://blog.aylj.dpdns.org/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Java</title>
-        <link>https://ayljzj520.github.io/categories/java/</link>
+        <link>http://blog.aylj.dpdns.org/categories/java/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/categories/java/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/categories/java/main.jpg" alt="Featured image of post Java" /&gt;</description>
+        <guid>http://blog.aylj.dpdns.org/categories/java/</guid>
+        <description>&lt;img src="http://blog.aylj.dpdns.org/categories/java/main.jpg" alt="Featured image of post Java" /&gt;</description>
         </item>
         <item>
         <title>江西理工大学</title>
-        <link>https://ayljzj520.github.io/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/</link>
+        <link>http://blog.aylj.dpdns.org/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/main.jpg" alt="Featured image of post 江西理工大学" /&gt;</description>
+        <guid>http://blog.aylj.dpdns.org/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/</guid>
+        <description>&lt;img src="http://blog.aylj.dpdns.org/categories/%E6%B1%9F%E8%A5%BF%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/main.jpg" alt="Featured image of post 江西理工大学" /&gt;</description>
         </item>
         <item>
         <title>生活</title>
-        <link>https://ayljzj520.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+        <link>http://blog.aylj.dpdns.org/categories/%E7%94%9F%E6%B4%BB/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/categories/%E7%94%9F%E6%B4%BB/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/categories/%E7%94%9F%E6%B4%BB/main.jpg" alt="Featured image of post 生活" /&gt;</description>
+        <guid>http://blog.aylj.dpdns.org/categories/%E7%94%9F%E6%B4%BB/</guid>
+        <description>&lt;img src="http://blog.aylj.dpdns.org/categories/%E7%94%9F%E6%B4%BB/main.jpg" alt="Featured image of post 生活" /&gt;</description>
         </item>
         <item>
         <title>折腾</title>
-        <link>https://ayljzj520.github.io/categories/%E6%8A%98%E8%85%BE/</link>
+        <link>http://blog.aylj.dpdns.org/categories/%E6%8A%98%E8%85%BE/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ayljzj520.github.io/categories/%E6%8A%98%E8%85%BE/</guid>
-        <description>&lt;img src="https://ayljzj520.github.io/categories/%E6%8A%98%E8%85%BE/main.jpg" alt="Featured image of post 折腾" /&gt;</description>
+        <guid>http://blog.aylj.dpdns.org/categories/%E6%8A%98%E8%85%BE/</guid>
+        <description>&lt;img src="http://blog.aylj.dpdns.org/categories/%E6%8A%98%E8%85%BE/main.jpg" alt="Featured image of post 折腾" /&gt;</description>
         </item>
         
     </channel>
