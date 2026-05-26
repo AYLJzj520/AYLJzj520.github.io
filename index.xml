@@ -7,6 +7,419 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright><atom:link href="https://ayljzj520.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MacBook 上手指南</title>
+        <link>https://ayljzj520.github.io/p/macbook-%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</link>
+        <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayljzj520.github.io/p/macbook-%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;img src="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/Cover/person-07-MacBook.jpg" alt="Featured image of post MacBook 上手指南" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;工欲善其事，必先利其器&amp;rdquo; — MacBook配置是高效工作的第一步！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;-前言&#34;&gt;🚀 前言
+&lt;/h2&gt;&lt;p&gt;购入新MacBook后，我们需要快速完成初始化配置，建立一个高效的工作环境。正如古语所说：&amp;ldquo;工欲善其事，必先利其器&amp;rdquo;，只有准备好合适的工具和设置，才能充分发挥MacBook的性能。&lt;/p&gt;
+&lt;p&gt;本文将为你提供一份&lt;strong&gt;完整的MacBook上手指南&lt;/strong&gt;，从系统基础设置到各类必备应用的安装，帮助你快速熟悉macOS生态，建立一个高效、舒适的工作环境。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-macbook基础设置&#34;&gt;⚙️ MacBook基础设置
+&lt;/h2&gt;&lt;h3 id=&#34;-系统初始化与基础配置&#34;&gt;🔑 系统初始化与基础配置
+&lt;/h3&gt;&lt;h4 id=&#34;-网络与apple-id设置&#34;&gt;🌐 网络与Apple ID设置
+&lt;/h4&gt;&lt;details&gt;
+  &lt;summary&gt;&lt;font color=blue&gt;🔑 配置Apple ID&lt;/font&gt;&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击屏幕左上角的  → 系统设置&lt;/li&gt;
+&lt;li&gt;点击左侧边栏中的 &lt;strong&gt;[你的名字]&lt;/strong&gt;（最上面）&lt;/li&gt;
+&lt;li&gt;使用你的Apple ID登录，按照提示完成双因素认证&lt;/li&gt;
+&lt;li&gt;在同一界面启用iCloud、钥匙串等服务&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+&lt;h4 id=&#34;-系统偏好设置优化&#34;&gt;🔧 系统偏好设置优化
+&lt;/h4&gt;&lt;details&gt;
+  &lt;summary&gt;&lt;font color=blue&gt;⌨️ 键盘和触控板设置&lt;/font&gt;&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;系统设置 → 键盘
+&lt;ul&gt;
+&lt;li&gt;调整键重复和延迟速度&lt;/li&gt;
+&lt;li&gt;启用 &lt;strong&gt;快捷键&lt;/strong&gt; 中的自定义快捷键&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统设置 → 触控板
+&lt;ul&gt;
+&lt;li&gt;启用 &lt;strong&gt;轻点来点按&lt;/strong&gt;（默认禁用）&lt;/li&gt;
+&lt;li&gt;调整跟踪速度和点按压力&lt;/li&gt;
+&lt;li&gt;启用 &lt;strong&gt;App Exposé&lt;/strong&gt;（四指向下）和 &lt;strong&gt;调度中心&lt;/strong&gt;（四指向上）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;font color=blue&gt;🖥️ Dock和菜单栏设置&lt;/font&gt;&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;系统设置 → Dock和菜单栏
+&lt;ul&gt;
+&lt;li&gt;调整Dock的大小和位置（建议左侧或右侧）&lt;/li&gt;
+&lt;li&gt;启用 &lt;strong&gt;自动隐藏和显示Dock&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;在菜单栏中添加常用的快捷菜单（电池、声音、WiFi等）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;font color=blue&gt;🔒 安全和隐私&lt;/font&gt;&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;系统设置 → 通用 → 软件更新
+&lt;ul&gt;
+&lt;li&gt;设置自动更新（建议启用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统设置 → 安全性与隐私 → FileVault
+&lt;ul&gt;
+&lt;li&gt;启用磁盘加密（MacBook建议启用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统设置 → 安全性与隐私 → 防火墙
+&lt;ul&gt;
+&lt;li&gt;启用防火墙保护&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;font color=blue&gt;📱 通用设置优化&lt;/font&gt;&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;系统设置 → 通用 → 语言与地区
+&lt;ul&gt;
+&lt;li&gt;选择简体中文和中国（大陆）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统设置 → 通用 → 日期和时间
+&lt;ul&gt;
+&lt;li&gt;选择 &lt;strong&gt;自动设置日期和时间&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统设置 → 通用 → Spotlight
+&lt;ul&gt;
+&lt;li&gt;禁用不需要的搜索项以提高效率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;🛠️ 其他实用工具&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;🔧 &lt;strong&gt;CleanMyMac X&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://cleanmymac.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（系统清理）&lt;/li&gt;
+&lt;li&gt;⚙️ &lt;strong&gt;Alfred&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.alfredapp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（快速启动器）&lt;/li&gt;
+&lt;li&gt;🎯 &lt;strong&gt;Raycast&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://raycast.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（生产力工具）&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;iStat Menus&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://islurp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（系统监控）&lt;/li&gt;
+&lt;li&gt;🔐 &lt;strong&gt;Keychain Access&lt;/strong&gt;：系统内置（密码管理）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;-装机必备&#34;&gt;📦 装机必备
+&lt;/h2&gt;&lt;details&gt;
+  &lt;summary&gt;💻 系统工具&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;🔧 &lt;strong&gt;Homebrew&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://brew.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（包管理器，强烈推荐）&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;Activity Monitor&lt;/strong&gt;：系统内置（任务管理器）&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Finder&lt;/strong&gt;：系统内置（文件管理）&lt;/li&gt;
+&lt;li&gt;🎨 &lt;strong&gt;预览&lt;/strong&gt;：系统内置（图片和PDF查看）&lt;/li&gt;
+&lt;li&gt;💾 &lt;strong&gt;DiskDiag&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://diskdiag.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（磁盘监控）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;💬 聊天软件 &lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;💬 &lt;strong&gt;QQ&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://im.qq.com/macqq/index.shtml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;strong&gt;微信&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://mac.weixin.qq.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💼 &lt;strong&gt;企业微信&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://work.weixin.qq.com/#indexDownload&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📹 &lt;strong&gt;腾讯会议&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://meeting.tencent.com/download-center.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📧 &lt;strong&gt;飞书&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.feishu.cn/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🏢 &lt;strong&gt;钉钉&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.dingtalk.com/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⌨️ &lt;strong&gt;搜狗输入法&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://pinyin.sogou.com/mac/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;📄 文件处理 &lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;📊 &lt;strong&gt;Microsoft Office&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/zh-cn/microsoft-365/mac/microsoft-office-for-mac&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;WPS&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.wps.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📋 &lt;strong&gt;PDF Expert&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/cn/app/pdf-expert-7/id1447043133&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;App Store&lt;/a&gt;（PDF编辑）&lt;/li&gt;
+&lt;li&gt;📐 &lt;strong&gt;OmniGraffle&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.omnigroup.com/omnigraffle/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（流程图）&lt;/li&gt;
+&lt;li&gt;📤 &lt;strong&gt;AnyToDMG&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.anytoiso.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（格式转换）&lt;/li&gt;
+&lt;li&gt;📷 &lt;strong&gt;Snipaste&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://zh.snipaste.com/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（截图工具）&lt;/li&gt;
+&lt;li&gt;📝 &lt;strong&gt;Bear&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://bear.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（笔记应用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;🌐 远程工具&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;🌻 &lt;strong&gt;向日葵&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://sunlogin.oray.com/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖥️ &lt;strong&gt;ToDesk&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.todesk.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 &lt;strong&gt;TeamViewer&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.teamviewer.com/zh-cn/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;📚 开发工具&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;💻 &lt;strong&gt;VS Code&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐍 &lt;strong&gt;Python&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt; 或 Homebrew 安装&lt;/li&gt;
+&lt;li&gt;☕ &lt;strong&gt;Java&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.java.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt; 或 Homebrew 安装&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;Xcode&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/cn/app/xcode/id497799835&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📦 &lt;strong&gt;Git&lt;/strong&gt;：Homebrew 安装或 &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐳 &lt;strong&gt;Docker Desktop&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.docker.com/products/docker-desktop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;🌍 浏览器 &lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;🔷 &lt;strong&gt;Safari&lt;/strong&gt;：系统内置&lt;/li&gt;
+&lt;li&gt;🔷 &lt;strong&gt;Edge&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/zh-cn/edge/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔴 &lt;strong&gt;Chrome&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.google.cn/chrome/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🦊 &lt;strong&gt;Firefox&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.firefox.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⚡ &lt;strong&gt;Arc&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://arc.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（创新浏览器）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;☁️ 网盘 &lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;☁️ &lt;strong&gt;阿里云盘&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.alipan.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;百度云盘&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/download#mac&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;123云盘&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;夸克云盘&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://pan.quark.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;iCloud Drive&lt;/strong&gt;：系统内置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;🎬 视频编辑 &lt;font color=blue&gt;【必装】&lt;/font&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;📹 &lt;strong&gt;OBS&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://obsproject.com/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🎵 &lt;strong&gt;IINA&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://iina.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（视频播放器）&lt;/li&gt;
+&lt;li&gt;✂️ &lt;strong&gt;Final Cut Pro&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/cn/app/final-cut-pro/id424389933&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;✂️ &lt;strong&gt;剪映&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.capcut.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;📦 压缩解压 &lt;font color=blue&gt;【选一安装】&lt;/font&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;📦 &lt;strong&gt;The Unarchiver&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/cn/app/the-unarchiver/id425424353&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;App Store&lt;/a&gt;（推荐）&lt;/li&gt;
+&lt;li&gt;📦 &lt;strong&gt;Keka&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.kekaosx.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📦 &lt;strong&gt;BetterZip&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://macitbetter.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;🔧 其他工具&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;🛡️ &lt;strong&gt;Cyberduck&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://cyberduck.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（FTP/SFTP客户端）&lt;/li&gt;
+&lt;li&gt;📤 &lt;strong&gt;LocalSend&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://localsend.org/zh-CN/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（文件共享）&lt;/li&gt;
+&lt;li&gt;🌍 &lt;strong&gt;Clash for Windows&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://github.com/Fndroid/clash_for_windows_pkg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🌍 &lt;strong&gt;Karing&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://karing.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💾 &lt;strong&gt;Mountain Duck&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://mountainduck.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（云存储挂载）&lt;/li&gt;
+&lt;li&gt;🔐 &lt;strong&gt;1Password&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://1password.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（密码管理）&lt;/li&gt;
+&lt;li&gt;📱 &lt;strong&gt;Telegram&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://macos.telegram.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/cn/app/telegram/id747648890&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⏱️ &lt;strong&gt;Timing&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://timingapp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（时间追踪）&lt;/li&gt;
+&lt;li&gt;🎮 &lt;strong&gt;Steam&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://steampowered.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;（游戏平台）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-推荐外设与配件&#34;&gt;🎧 推荐外设与配件
+&lt;/h2&gt;&lt;h3 id=&#34;-必备配件&#34;&gt;💻 必备配件
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;USB-C Hub / 扩展坞&lt;/strong&gt;：连接外部显示器、USB设备等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MacBook保护壳&lt;/strong&gt;：保护机身，建议选择透明或轻薄款&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;充电器&lt;/strong&gt;：备用充电器建议放在办公室&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;鼠标&lt;/strong&gt;：Magic Mouse 或第三方竖滑鼠标提高工作效率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-可选配件&#34;&gt;🎮 可选配件
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;外置显示器&lt;/strong&gt;：提高工作效率，建议24英寸起&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;机械键盘&lt;/strong&gt;：提升打字体验&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;笔记本支架&lt;/strong&gt;：改善坐姿和屏幕角度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;降噪耳机&lt;/strong&gt;：适合专注工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-macbook-常用快捷键&#34;&gt;⌨️ MacBook 常用快捷键
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;快捷键&lt;/th&gt;
+          &lt;th&gt;功能&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Space&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;打开Spotlight搜索&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Tab&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;应用程序切换&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Q&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;关闭应用&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + W&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;关闭窗口&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Option + Esc&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;强制退出应用&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Delete&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;移动到废纸篓&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Shift + Delete&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;清空废纸篓&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Control + Command + F&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;全屏显示应用&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Control + Q&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;锁定屏幕&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Shift + 3&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;截取全屏&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Shift + 4&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;截取部分屏幕&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Command + Shift + 5&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;截图或录屏工具&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-macbook-使用技巧&#34;&gt;💡 MacBook 使用技巧
+&lt;/h2&gt;&lt;h3 id=&#34;-触控板技巧&#34;&gt;🎯 触控板技巧
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;三指拖动&lt;/strong&gt;：在系统偏好设置中启用，可快速移动窗口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;四指向上&lt;/strong&gt;：打开Mission Control查看所有窗口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;四指向下&lt;/strong&gt;：显示App Exposé&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;两指轻点&lt;/strong&gt;：右键菜单&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;轻点进行点按&lt;/strong&gt;：启用后可轻轻敲击触控板选中项目&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-电池与能源&#34;&gt;🔋 电池与能源
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;长期不用&lt;/strong&gt;：定期充放电可延长电池寿命&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;查看电池健康&lt;/strong&gt;：系统设置 → 系统报告 → 电源&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;降低屏幕亮度&lt;/strong&gt;：可显著延长续航&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-散热与维护&#34;&gt;🌡️ 散热与维护
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;定期清理&lt;/strong&gt;：使用压缩气罐清理键盘和散热口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用散热垫&lt;/strong&gt;：长时间使用可防止机身过热&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免高温环境&lt;/strong&gt;：MacBook最佳工作温度为10-35°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-安全建议&#34;&gt;🔐 安全建议
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;启用 FileVault&lt;/strong&gt;：加密整个磁盘&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定期备份&lt;/strong&gt;：使用Time Machine或iCloud进行备份&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;更新系统&lt;/strong&gt;：定期检查并安装系统和应用更新&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用强密码&lt;/strong&gt;：Apple ID和系统密码都应该足够强&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-常见问题解决&#34;&gt;🎬 常见问题解决
+&lt;/h2&gt;&lt;h3 id=&#34;-macbook-变慢了怎么办&#34;&gt;🐌 MacBook 变慢了怎么办？
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;检查&lt;strong&gt;Activity Monitor&lt;/strong&gt;中的CPU和内存占用&lt;/li&gt;
+&lt;li&gt;关闭不需要的&lt;strong&gt;后台应用刷新&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;清理磁盘空间（保持至少10%可用空间）&lt;/li&gt;
+&lt;li&gt;重启Mac&lt;/li&gt;
+&lt;li&gt;检查是否需要升级内存或存储&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;-音量和音质问题&#34;&gt;🔊 音量和音质问题
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;尝试重置声音设置：系统设置 → 声音&lt;/li&gt;
+&lt;li&gt;检查是否开启了&lt;strong&gt;空间音频&lt;/strong&gt;（可能影响音质）&lt;/li&gt;
+&lt;li&gt;使用&lt;strong&gt;等音器&lt;/strong&gt;优化音效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-网络连接问题&#34;&gt;🌐 网络连接问题
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;忘记WiFi网络后重新连接&lt;/li&gt;
+&lt;li&gt;重启路由器&lt;/li&gt;
+&lt;li&gt;重启Mac的网络：系统设置 → 网络&lt;/li&gt;
+&lt;li&gt;更新无线驱动（通常自动更新）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-推荐阅读与资源&#34;&gt;📚 推荐阅读与资源
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Apple官方文档&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://support.apple.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;support.apple.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MacBook用户手册&lt;/strong&gt;：系统内置（Command + ?）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术博客&lt;/strong&gt;：MacStories、WWDC演讲&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;社区支持&lt;/strong&gt;：MacRumors论坛、Reddit的r/macbook&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-结语&#34;&gt;🎉 结语
+&lt;/h2&gt;&lt;p&gt;购入MacBook是一次重要的投资。通过合理的系统配置、选择合适的应用工具和养成良好的使用习惯，你将充分发挥MacBook的潜力，建立一个高效、舒适的工作环境。&lt;/p&gt;
+&lt;p&gt;希望这份指南能够帮助你快速上手MacBook，享受macOS生态带来的高效体验！&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>笔记本与台式开发环境搭建</title>
         <link>https://ayljzj520.github.io/p/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%B8%8E%E5%8F%B0%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
