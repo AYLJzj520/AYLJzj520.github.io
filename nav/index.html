@@ -15,6 +15,9 @@
 <meta name="twitter:description" content="常用网站导航">
     <link rel="shortcut icon" href="https://jsd-proxy.ygxz.in/gh/AYLJzj520/blog-cdn/header/favicon.ico" />
 
+    
+    <link rel="preconnect" href="https://nav.aylj.dpdns.org/" crossorigin>
+    <link rel="dns-prefetch" href="https://nav.aylj.dpdns.org/">
     <style>
         .nav-page .main {
             gap: 0;
@@ -36,6 +39,14 @@
             height: 100%;
             border: 0;
             background: var(--card-background);
+        }
+
+        .nav-page-loading {
+            display: grid;
+            height: 100%;
+            place-items: center;
+            color: var(--card-text-color-secondary);
+            font-size: 1.6rem;
         }
 
         @media (max-width: 768px) {
@@ -302,53 +313,50 @@
             <main class="main full-width">
     
     <section class="nav-page-shell">
+        <div class="nav-page-loading">导航加载中...</div>
         <iframe
             class="nav-page-frame"
-            src="https://nav.aylj.dpdns.org/"
+            data-src="https://nav.aylj.dpdns.org/"
             title="导航"
-            loading="eager"
+            loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            hidden
         ></iframe>
+        <noscript>
+            <iframe
+                class="nav-page-frame"
+                src="https://nav.aylj.dpdns.org/"
+                title="导航"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </noscript>
     </section>
+
+    <script>
+        (() => {
+            const frame = document.querySelector('.nav-page-frame[data-src]');
+            const loading = document.querySelector('.nav-page-loading');
+            if (!frame) return;
+
+            const loadFrame = () => {
+                frame.src = frame.dataset.src;
+                frame.hidden = false;
+                frame.addEventListener('load', () => loading?.remove(), { once: true });
+            };
+
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadFrame, { timeout: 800 });
+            } else {
+                setTimeout(loadFrame, 0);
+            }
+        })();
+    </script>
 
             </main>
         </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
+        <script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script defer src="https://cn.vercount.one/js"></script>
 
-<script
-    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
-    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
-    crossorigin="anonymous"
-></script>
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
-    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
-    crossorigin="anonymous"
-/>
-<script>
-    NProgress.start();
-    document.addEventListener("readystatechange", () => {
-        if (document.readyState === "interactive") NProgress.inc(0.8);
-        if (document.readyState === "complete") NProgress.done();
-    });
-</script>
 
     </body>
 </html>
